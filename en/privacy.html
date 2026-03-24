@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MyVault — Privacy Policy</title>
+  <meta name="description" content="MyVault privacy policy." />
+  <link rel="stylesheet" href="/assets/style.css" />
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+</head>
+<body>
+  <nav class="nav">
+    <div class="container nav-inner">
+      <div class="brand">MyVault</div>
+      <div class="links">
+        <a href="/zh/privacy.html" class="lang-toggle">中文</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container doc reveal active">
+    <h1>Privacy Policy</h1>
+    <p>Last updated: March 2024</p>
+
+    <div class="feature-chart-grid" style="grid-template-columns: 1fr; gap: 32px; margin-top: 40px">
+      <div class="feature-chart reveal">
+        <h3>1. Data Collection</h3>
+        <p class="feature-desc">MyVault is a "local-first" application. We do not run any backend servers, and we do not collect, store, or upload any of your personal asset data, photos, or text records through the app.</p>
+      </div>
+
+      <div class="feature-chart reveal">
+        <h3>2. Data Storage & Sync</h3>
+        <p class="feature-desc">All your data is stored locally on your iOS device by default. If you enable iCloud Sync, your data will flow within your private iCloud space via encrypted channels provided by Apple. The developer has no access to this data.</p>
+      </div>
+
+      <div class="feature-chart reveal">
+        <h3>3. Permissions</h3>
+        <p class="feature-desc"><strong>Photo Library</strong>: Used only when you actively choose to add photos of your items. <strong>Face ID / Touch ID</strong>: Used only for local app unlocking. Biometric data is protected by the system. <strong>iCloud Access</strong>: Used to sync your asset data across your own devices.</p>
+      </div>
+
+      <div class="feature-chart reveal">
+        <h3>4. Third-Party Services</h3>
+        <p class="feature-desc">This app contains no third-party advertisements, trackers, or analytics plugins. We do not sell your data to any third parties.</p>
+      </div>
+
+      <div class="feature-chart reveal">
+        <h3>5. Contact Us</h3>
+        <p class="feature-desc">If you have any questions about this policy, please contact the developer through the GitHub repository or the feedback channels within the app.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-links">
+        <a href="/en/privacy.html">Privacy Policy</a>
+        <a href="/en/terms.html">Terms of Service</a>
+        <a href="/en/guide.html">User Guide</a>
+      </div>
+      <p>© <span id="y"></span> MyVault. Privacy-first, Local-first.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+        }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>

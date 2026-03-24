@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MyVault — 用户指南</title>
+  <meta name="description" content="MyVault 用户指南：快速上手、录入、图片与附件、标签、空间、备份恢复、导入与隐私说明。" />
+  <link rel="stylesheet" href="/assets/style.css" />
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+</head>
+<body>
+  <nav class="nav">
+    <div class="container nav-inner">
+      <div class="brand">MyVault</div>
+      <div class="links">
+        <a href="/en/guide.html" class="lang-toggle">English</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container doc reveal active">
+    <h1>用户指南</h1>
+    <p>MyVault 是一款本地优先的 iOS 资产与纪念物管理工具。本指南覆盖最常用的操作流程。</p>
+
+    <div class="feature-chart-grid" style="grid-template-columns: 1fr; gap: 32px; margin-top: 40px">
+      <div class="feature-chart reveal">
+        <h3>1. 快速上手</h3>
+        <p class="feature-desc">首次打开 App，按引导页完成初始化。在设置中选择 <strong>主题</strong>（推荐黑金模式）、<strong>语言</strong>、<strong>货币单位</strong>。如需增强隐私，可开启 <strong>Face ID / Touch ID</strong> 应用锁。</p>
+      </div>
+
+      <div class="feature-chart reveal">
+        <h3>2. 新增物品</h3>
+        <p class="feature-desc">点击“+”号录入基本信息。除了品牌、价格、渠道与位置，建议添加实拍照片或发票附件。通过“备注”栏，您可以记录物品背后的情感故事或购买初衷。</p>
+      </div>
+
+      <div class="feature-chart reveal">
+        <h3>3. 整理体系</h3>
+        <p class="feature-desc"><strong>分类</strong>：构建清晰的财务目录。<strong>标签</strong>：轻量的可组合标记。<strong>空间</strong>：现实位置树图（房产→房间→柜子），帮您精准定位实体资产。</p>
+      </div>
+
+      <div class="feature-chart reveal">
+        <h3>4. 效率工具</h3>
+        <p class="feature-desc">支持全局搜索名称、品牌或标签。通过多选进入批量编辑模式，快速完成资产的归类、移动空间或状态变更（如“已送人”、“折旧”）。</p>
+      </div>
+
+      <div class="feature-chart reveal">
+        <h3>5. 数据安全</h3>
+        <p class="feature-desc">数据默认存储于本地。开启 iCloud 同步后，数据仅在您的私有云端流转。建议定期使用“ZIP 导出”功能将包含附件的完整数据备份到其他安全位置。</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-links">
+        <a href="/zh/privacy.html">隐私政策</a>
+        <a href="/zh/terms.html">用户协议</a>
+        <a href="/zh/guide.html">用户指南</a>
+      </div>
+      <p>© <span id="y"></span> MyVault. 隐私第一，本地优先。</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+        }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>

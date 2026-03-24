@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MyVault — User Guide</title>
+  <meta name="description" content="MyVault user guide: getting started, adding items, photos, tags, spaces, backup, restore, import, and privacy." />
+  <link rel="stylesheet" href="/assets/style.css" />
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+</head>
+<body>
+  <nav class="nav">
+    <div class="container nav-inner">
+      <div class="brand">MyVault</div>
+      <div class="links">
+        <a href="/zh/guide.html" class="lang-toggle">中文</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container doc reveal active">
+    <h1>User Guide</h1>
+    <p>MyVault is a local-first iOS app for managing real-world assets and keepsakes. This guide focuses on the common workflows.</p>
+
+    <div class="feature-chart-grid" style="grid-template-columns: 1fr; gap: 32px; margin-top: 40px">
+      <div class="feature-chart reveal">
+        <h3>1. Getting Started</h3>
+        <p class="feature-desc">Open the app and complete the onboarding pages. In Settings, select your <strong>Theme</strong> (Black Gold recommended), <strong>Language</strong>, and <strong>Currency</strong>. For extra privacy, enable the <strong>Face ID / Touch ID</strong> app lock.</p>
+      </div>
+
+      <div class="feature-chart reveal">
+        <h3>2. Adding Items</h3>
+        <p class="feature-desc">Tap the "+" icon to record item details. Beyond brand and price, we recommend adding receipts or photos. Use the "Story" field to preserve the memories or the purpose behind your purchase.</p>
+      </div>
+
+      <div class="feature-chart reveal">
+        <h3>3. Organization</h3>
+        <p class="feature-desc"><strong>Categories</strong>: Build a clear financial structure. <strong>Tags</strong>: Use lightweight labels for grouping. <strong>Spaces</strong>: Use the location tree (Property → Room → Cabinet) to track exactly where items are.</p>
+      </div>
+
+      <div class="feature-chart reveal">
+        <h3>4. Efficiency</h3>
+        <p class="feature-desc">Use global search to find items by name, brand, or tag. Multi-select items to enter batch edit mode, where you can quickly move items between spaces or update their status (e.g., "Gifted", "Depreciated").</p>
+      </div>
+
+      <div class="feature-chart reveal">
+        <h3>5. Data Security</h3>
+        <p class="feature-desc">Your data stays local by default. With iCloud Sync enabled, data only moves within your private cloud. Regularly use "ZIP Export" to backup your entire library, including all attachments, to a safe location.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-links">
+        <a href="/en/privacy.html">Privacy Policy</a>
+        <a href="/en/terms.html">Terms of Service</a>
+        <a href="/en/guide.html">User Guide</a>
+      </div>
+      <p>© <span id="y"></span> MyVault. Privacy-first, Local-first.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+        }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>

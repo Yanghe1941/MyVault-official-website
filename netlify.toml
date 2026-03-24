@@ -1,0 +1,34 @@
+[build]
+  publish = "."
+  command = ""
+
+# Optional: ensure clean URLs like /en/guide (Netlify will also serve guide.html)
+[[redirects]]
+  from = "/en/guide"
+  to = "/en/guide.html"
+  status = 200
+
+[[redirects]]
+  from = "/en/privacy"
+  to = "/en/privacy.html"
+  status = 200
+
+[[redirects]]
+  from = "/en/terms"
+  to = "/en/terms.html"
+  status = 200
+
+[[redirects]]
+  from = "/zh/guide"
+  to = "/zh/guide.html"
+  status = 200
+
+[[redirects]]
+  from = "/zh/privacy"
+  to = "/zh/privacy.html"
+  status = 200
+
+[[redirects]]
+  from = "/zh/terms"
+  to = "/zh/terms.html"
+  status = 200

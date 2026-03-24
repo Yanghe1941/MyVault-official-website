@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MyVault — Terms of Service</title>
+  <meta name="description" content="MyVault terms of service." />
+  <link rel="stylesheet" href="/assets/style.css" />
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+</head>
+<body>
+  <nav class="nav">
+    <div class="container nav-inner">
+      <div class="brand">MyVault</div>
+      <div class="links">
+        <a href="/zh/terms.html" class="lang-toggle">中文</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container doc reveal active">
+    <h1>Terms of Service</h1>
+    <p>Last updated: March 2024</p>
+
+    <div class="feature-chart-grid" style="grid-template-columns: 1fr; gap: 32px; margin-top: 40px">
+      <div class="feature-chart reveal">
+        <h3>1. Agreement</h3>
+        <p class="feature-desc">By downloading, installing, or using MyVault (the "App"), you agree to these Terms of Service. If you do not agree, please do not use the App.</p>
+      </div>
+
+      <div class="feature-chart reveal">
+        <h3>2. License</h3>
+        <p class="feature-desc">We grant you a personal, non-transferable license to use the App on your iOS devices for personal, non-commercial purposes. All rights not expressly granted are reserved by the developer.</p>
+      </div>
+
+      <div class="feature-chart reveal">
+        <h3>3. User Responsibility</h3>
+        <p class="feature-desc">You are solely responsible for any data (names, photos, stories, etc.) you add to the App. As the App uses local storage, data backup and security are managed by you through the App's backup features or iCloud.</p>
+      </div>
+
+      <div class="feature-chart reveal">
+        <h3>4. Disclaimers</h3>
+        <p class="feature-desc">The App is provided "as is". The developer makes no warranties, express or implied, regarding its performance, stability, or suitability for any particular purpose. The developer is not liable for any data loss resulting from the use of the App.</p>
+      </div>
+
+      <div class="feature-chart reveal">
+        <h3>5. Changes to Terms</h3>
+        <p class="feature-desc">We may update these Terms from time to time. You are encouraged to review this page periodically for any changes.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-links">
+        <a href="/en/privacy.html">Privacy Policy</a>
+        <a href="/en/terms.html">Terms of Service</a>
+        <a href="/en/guide.html">User Guide</a>
+      </div>
+      <p>© <span id="y"></span> MyVault. Privacy-first, Local-first.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+        }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
