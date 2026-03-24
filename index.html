@@ -69,40 +69,77 @@
 
     <section id="features" class="section">
       <div class="container">
-        <div class="subheading">三段式能力</div>
-        <h2 class="section-title">重新定义现实资产管理</h2>
-        <p class="section-lead">物理、财务与情感信息一次收纳，兼顾安全性与叙事性。</p>
-        <div class="feature-grid">
-          <article class="feature-card reveal">
-            <span class="icon-chip">物理 & 财务</span>
-            <h3>不只是记账，更像资产档案</h3>
-            <p>记录序列号、购入价格、保修期限与存放说明书 PDF，全景掌握物品全生命周期。</p>
-            <ul>
-              <li>24+ 自定义字段</li>
-              <li>多级空间：房产→房间→柜子</li>
-              <li>保修、折旧、日均成本</li>
-            </ul>
-          </article>
-          <article class="feature-card reveal">
-            <span class="icon-chip">故事 & 情感</span>
-            <h3>每件物品都有来历</h3>
-            <p>记录它是谁送的、陪伴过的瞬间，以及你在意的碎片记忆。情绪与价值共存。</p>
-            <ul>
-              <li>故事流文本与多媒体</li>
-              <li>标签化情绪节点</li>
-              <li>时间线回顾模式</li>
-            </ul>
-          </article>
-          <article class="feature-card reveal">
-            <span class="icon-chip">绝对隐私</span>
-            <h3>它是你设备上的保险柜</h3>
-            <p>完全离线，Face ID / Touch ID 加锁，数据加密存储，不经过任何第三方服务器。</p>
-            <ul>
-              <li>无需账号 · 零追踪</li>
-              <li>一键 ZIP 导出</li>
-              <li>本地/私有云备份可控</li>
-            </ul>
-          </article>
+        <h2 class="section-title reveal">核心功能</h2>
+        <div class="feature-chart-grid">
+          <div class="feature-chart reveal">
+            <h3>物品录入</h3>
+            <p class="feature-desc">深度记录资产：包括名称、品牌、日期、价格、渠道与位置。支持照片附件与背后的故事，让每一件物品都有温度。</p>
+            <div class="chart-wrap">
+              <svg viewBox="0 0 400 120">
+                <path class="animate-path" d="M20,100 Q100,80 180,90 T380,20" fill="none" stroke="var(--accent)" stroke-width="4"/>
+                <circle cx="380" cy="20" r="6" fill="var(--accent)"/>
+              </svg>
+            </div>
+            <div class="meta"><span>字段 <b class="val-count" data-target="24">0</b>+</span><span>多图支持</span><span>情感存留</span></div>
+          </div>
+          <div class="feature-chart reveal">
+            <h3>分类与空间</h3>
+            <p class="feature-desc">建立逻辑化的现实位置映射。通过树状结构（房产→房间→柜子），精准定位每一件资产的“归宿”。</p>
+            <div class="chart-wrap">
+              <svg viewBox="0 0 400 120">
+                <g fill="none" stroke="var(--accent)" stroke-width="2">
+                  <circle cx="40" cy="60" r="8"/>
+                  <path class="animate-path" d="M48,60 L120,30 M48,60 L120,90"/>
+                  <circle cx="128" cy="30" r="6"/>
+                  <circle cx="128" cy="90" r="6"/>
+                  <path class="animate-path" d="M136,30 L210,15 M136,30 L210,45 M136,90 L210,75 M136,90 L210,105"/>
+                </g>
+              </svg>
+            </div>
+            <div class="meta"><span>多级空间</span><span>位置树图</span><span>快速检索</span></div>
+          </div>
+          <div class="feature-chart reveal">
+            <h3>生命周期管理</h3>
+            <p class="feature-desc">关注长期持有价值。追踪维修记录、保修到期、日均成本与折旧情况，让资产管理更理性。</p>
+            <div class="chart-wrap" style="flex-direction:column; justify-content:center; gap:15px">
+              <div class="bar-track"><div class="bar-fill" style="--target-width: 85%"></div></div>
+              <div class="bar-track"><div class="bar-fill" style="--target-width: 60%"></div></div>
+              <div class="bar-track"><div class="bar-fill" style="--target-width: 40%"></div></div>
+            </div>
+            <div class="meta"><span>保修倒计时</span><span>持有成本</span><span>折旧跟踪</span></div>
+          </div>
+          <div class="feature-chart reveal">
+            <h3>看板与效率</h3>
+            <p class="feature-desc">全局视角管理资产。提供总资产/净资产看板，支持多维度筛选、秒级搜索与高效批量编辑。</p>
+            <div class="chart-wrap">
+              <svg viewBox="0 0 400 120">
+                <rect x="20" y="20" width="360" height="80" rx="10" fill="none" stroke="var(--line)" stroke-width="1"/>
+                <path class="animate-path" d="M40,80 L100,50 L160,70 L220,30 L280,60 L340,20" fill="none" stroke="var(--accent)" stroke-width="3"/>
+              </svg>
+            </div>
+            <div class="meta"><span>资产曲线</span><span>批量操作</span><span>毫秒搜索</span></div>
+          </div>
+          <div class="feature-chart reveal">
+            <h3>备份与恢复</h3>
+            <p class="feature-desc">数据主权归您所有。支持一键导出包含附件的完整 ZIP 备份，兼容 iCloud 同步与离线恢复。</p>
+            <div class="chart-wrap">
+              <svg viewBox="0 0 400 120">
+                <rect class="animate-path" x="150" y="30" width="100" height="60" rx="8" fill="none" stroke="var(--accent)" stroke-width="2"/>
+                <path class="animate-path" d="M200,10 L200,30 M180,20 L200,30 L220,20" fill="none" stroke="var(--accent)" stroke-width="2"/>
+              </svg>
+            </div>
+            <div class="meta"><span>ZIP 导出</span><span>iCloud 存储</span><span>完全掌控</span></div>
+          </div>
+          <div class="feature-chart reveal">
+            <h3>隐私与多语言</h3>
+            <p class="feature-desc">全本地存储，无广告与追踪。原生支持中英双语动态切换，提供自然且隐私安全的极致体验。</p>
+            <div class="chart-wrap" style="display:flex; gap:20px; align-items:center; justify-content:center">
+              <span style="font-size:48px; color:var(--accent); font-weight:900">中</span>
+              <span style="font-size:32px; color:var(--muted)">/</span>
+              <span style="font-size:48px; color:var(--accent); font-weight:900">EN</span>
+            </div>
+            <div class="meta"><span>FaceID 锁</span><span>零追踪</span><span>双语原生</span></div>
+          </div>
         </div>
       </div>
     </section>

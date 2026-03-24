@@ -69,40 +69,77 @@
 
     <section id="features" class="section">
       <div class="container">
-        <div class="subheading">Three pillars</div>
-        <h2 class="section-title">Reimagining asset management</h2>
-        <p class="section-lead">Physical specs, financial context, and emotional stories — organized in one private place.</p>
-        <div class="feature-grid">
-          <article class="feature-card reveal">
-            <span class="icon-chip">Physical & Financial</span>
-            <h3>Beyond inventory, build a dossier</h3>
-            <p>Store serial numbers, purchase price, warranty dates, and PDF manuals to control every phase of ownership.</p>
-            <ul>
-              <li>24+ customizable fields</li>
-              <li>Property → Room → Cabinet hierarchy</li>
-              <li>Warranty, depreciation, daily cost</li>
-            </ul>
-          </article>
-          <article class="feature-card reveal">
-            <span class="icon-chip">Stories & Sentiment</span>
-            <h3>Every item carries meaning</h3>
-            <p>Document who gifted it, the moments it witnessed, and the memories it unlocks. Keep context with the object.</p>
-            <ul>
-              <li>Rich text & media stories</li>
-              <li>Emotion tags and milestones</li>
-              <li>Timeline playback</li>
-            </ul>
-          </article>
-          <article class="feature-card reveal">
-            <span class="icon-chip">Absolute Privacy</span>
-            <h3>Your device is the vault</h3>
-            <p>Offline by design, Face ID/Touch ID lock, encrypted storage, and no third-party servers involved.</p>
-            <ul>
-              <li>No account, zero trackers</li>
-              <li>One-tap ZIP export</li>
-              <li>Local or private cloud backups</li>
-            </ul>
-          </article>
+        <h2 class="section-title reveal">Core Features</h2>
+        <div class="feature-chart-grid">
+          <div class="feature-chart reveal">
+            <h3>Item Input</h3>
+            <p class="feature-desc">Deeply record asset info: from brand and price to physical location, from invoices to warranty docs, and the emotional story behind it.</p>
+            <div class="chart-wrap">
+              <svg viewBox="0 0 400 120">
+                <path class="animate-path" d="M20,100 Q100,80 180,90 T380,20" fill="none" stroke="var(--accent)" stroke-width="4"/>
+                <circle cx="380" cy="20" r="6" fill="var(--accent)"/>
+              </svg>
+            </div>
+            <div class="meta"><span>Fields <b class="val-count" data-target="24">0</b>+</span><span>Photos & Receipts</span><span>Memories</span></div>
+          </div>
+          <div class="feature-chart reveal">
+            <h3>Categories & Spaces</h3>
+            <p class="feature-desc">Build a logical map of real locations. Property → Room → Cabinet to instantly find everything.</p>
+            <div class="chart-wrap">
+              <svg viewBox="0 0 400 120">
+                <g fill="none" stroke="var(--accent)" stroke-width="2">
+                  <circle cx="40" cy="60" r="8"/>
+                  <path class="animate-path" d="M48,60 L120,30 M48,60 L120,90"/>
+                  <circle cx="128" cy="30" r="6"/>
+                  <circle cx="128" cy="90" r="6"/>
+                  <path class="animate-path" d="M136,30 L210,15 M136,30 L210,45 M136,90 L210,75 M136,90 L210,105"/>
+                </g>
+              </svg>
+            </div>
+            <div class="meta"><span>Hierarchies</span><span>Location tree</span><span>Quick search</span></div>
+          </div>
+          <div class="feature-chart reveal">
+            <h3>Lifecycle Management</h3>
+            <p class="feature-desc">Track maintenance logs, warranty expiration, daily holding cost, and depreciation.</p>
+            <div class="chart-wrap" style="flex-direction:column; justify-content:center; gap:15px">
+              <div class="bar-track"><div class="bar-fill" style="--target-width: 85%"></div></div>
+              <div class="bar-track"><div class="bar-fill" style="--target-width: 60%"></div></div>
+              <div class="bar-track"><div class="bar-fill" style="--target-width: 40%"></div></div>
+            </div>
+            <div class="meta"><span>Warranty alerts</span><span>Daily cost</span><span>Depreciation</span></div>
+          </div>
+          <div class="feature-chart reveal">
+            <h3>Dashboard & Efficiency</h3>
+            <p class="feature-desc">Global asset overview with total/net boards, multifilter controls, lightning search, and batch edit.</p>
+            <div class="chart-wrap">
+              <svg viewBox="0 0 400 120">
+                <rect x="20" y="20" width="360" height="80" rx="10" fill="none" stroke="var(--line)" stroke-width="1"/>
+                <path class="animate-path" d="M40,80 L100,50 L160,70 L220,30 L280,60 L340,20" fill="none" stroke="var(--accent)" stroke-width="3"/>
+              </svg>
+            </div>
+            <div class="meta"><span>Asset curves</span><span>Batch actions</span><span>Instant search</span></div>
+          </div>
+          <div class="feature-chart reveal">
+            <h3>Backup & Restore</h3>
+            <p class="feature-desc">Data sovereignty: export full ZIP with attachments, works offline and with iCloud.</p>
+            <div class="chart-wrap">
+              <svg viewBox="0 0 400 120">
+                <rect class="animate-path" x="150" y="30" width="100" height="60" rx="8" fill="none" stroke="var(--accent)" stroke-width="2"/>
+                <path class="animate-path" d="M200,10 L200,30 M180,20 L200,30 L220,20" fill="none" stroke="var(--accent)" stroke-width="2"/>
+              </svg>
+            </div>
+            <div class="meta"><span>ZIP export</span><span>iCloud ready</span><span>Full control</span></div>
+          </div>
+          <div class="feature-chart reveal">
+            <h3>Privacy & Localization</h3>
+            <p class="feature-desc">Fully local storage, no ads or trackers, native EN/ZH switching for a natural, safe experience.</p>
+            <div class="chart-wrap" style="display:flex; gap:20px; align-items:center; justify-content:center">
+              <span style="font-size:48px; color:var(--accent); font-weight:900">EN</span>
+              <span style="font-size:32px; color:var(--muted)">/</span>
+              <span style="font-size:48px; color:var(--accent); font-weight:900">中</span>
+            </div>
+            <div class="meta"><span>Face ID lock</span><span>Zero trackers</span><span>Native i18n</span></div>
+          </div>
         </div>
       </div>
     </section>
