@@ -11,15 +11,18 @@
 <body>
   <nav class="nav">
     <div class="container nav-inner">
-      <div class="brand">MyVault</div>
+      <a href="index.html" class="brand">MyVault</a>
       <div class="links">
-        <a href="guide.html" class="lang-toggle">中文</a>
+        <a href="../zh/guide.html" class="lang-toggle" data-lang-target="zh">中文</a>
       </div>
     </div>
   </nav>
 
   <main class="container doc reveal active">
     <h1>MyVault User Guide</h1>
+    <div class="doc-back">
+      <a href="index.html">← Back to homepage</a>
+    </div>
 
     <article class="doc-section">
       <h2>1. Quick Start</h2>
@@ -99,6 +102,7 @@
     </div>
   </footer>
 
+  <script src="../assets/lang.js"></script>
   <script>
     document.getElementById('y').textContent = new Date().getFullYear();
     const observer = new IntersectionObserver((entries) => {

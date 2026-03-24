@@ -11,9 +11,9 @@
 <body>
   <nav class="nav">
     <div class="container nav-inner">
-      <div class="brand">MyVault</div>
+      <a href="../index.html" class="brand">MyVault</a>
       <div class="links">
-        <a href="privacy.html" class="lang-toggle">English</a>
+        <a href="../en/privacy.html" class="lang-toggle" data-lang-target="en">English</a>
       </div>
     </div>
   </nav>
@@ -21,6 +21,9 @@
   <main class="container doc reveal active">
     <h1>MyVault 隐私协议</h1>
     <p class="section-lead">生效日期：2026-03-24 · 更新日期：2026-03-24</p>
+    <div class="doc-back">
+      <a href="../index.html">← 返回首页</a>
+    </div>
 
     <article class="doc-section">
       <h2>1. 我们收集的信息</h2>
@@ -113,6 +116,7 @@
     </div>
   </footer>
 
+  <script src="../assets/lang.js"></script>
   <script>
     document.getElementById('y').textContent = new Date().getFullYear();
     const observer = new IntersectionObserver((entries) => {

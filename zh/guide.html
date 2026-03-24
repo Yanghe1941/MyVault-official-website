@@ -11,15 +11,18 @@
 <body>
   <nav class="nav">
     <div class="container nav-inner">
-      <div class="brand">MyVault</div>
+      <a href="../index.html" class="brand">MyVault</a>
       <div class="links">
-        <a href="guide.html" class="lang-toggle">English</a>
+        <a href="../en/guide.html" class="lang-toggle" data-lang-target="en">English</a>
       </div>
     </div>
   </nav>
 
   <main class="container doc reveal active">
     <h1>MyVault 使用指南</h1>
+    <div class="doc-back">
+      <a href="../index.html">← 返回首页</a>
+    </div>
 
     <article class="doc-section">
       <h2>1. 快速开始</h2>
@@ -99,6 +102,7 @@
     </div>
   </footer>
 
+  <script src="../assets/lang.js"></script>
   <script>
     document.getElementById('y').textContent = new Date().getFullYear();
     const observer = new IntersectionObserver((entries) => {
