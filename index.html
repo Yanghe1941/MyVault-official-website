@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="en">
+<html lang="zh-Hans">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>MyVault — Official Website</title>
-  <meta name="description" content="MyVault is a privacy-first, local-first iOS app for managing real-world assets and keepsakes." />
+  <title>MyVault — 隐私优先的现实资产与纪念物管理</title>
+  <meta name="description" content="MyVault 是一款隐私优先、本地优先的 iOS 应用，用于管理现实资产与纪念物。" />
   <link rel="stylesheet" href="/assets/style.css" />
   <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
 </head>
@@ -13,29 +13,164 @@
     <div class="container nav-inner">
       <div class="brand">MyVault</div>
       <div class="links">
-        <span class="badge" style="display:block; border:1px solid var(--line); padding:6px 14px; border-radius:999px; font-size:12px; color:var(--muted)">Official Website</span>
+        <a href="/en/index.html" class="lang-toggle">English</a>
       </div>
     </div>
   </nav>
 
-  <main class="container">
-    <section class="hero reveal active" style="min-height:70vh; display:flex; flex-direction:column; justify-content:center">
-      <h1 class="h-title">Choose Your Language<br>选择您的语言</h1>
-      <p class="h-sub">MyVault — 隐私优先的现实资产与纪念物管理 <br>Privacy-first Asset & Keepsake Manager</p>
-      <div class="cta-row" style="justify-content:center; margin-top:40px">
-        <a class="btn primary" href="/zh/">简体中文</a>
-        <a class="btn" href="/en/" style="border:1.5px solid var(--accent); color:var(--accent)">English</a>
+  <main>
+    <section class="hero reveal">
+      <div class="container">
+        <h1 class="h-title">管理你的现实资产<br>也留住它的故事</h1>
+        <p class="h-sub">MyVault 是一款隐私优先、本地优先的资产管理应用。帮你深度记录物品的物理与财务属性，存放凭证并留存情感点滴。数据完全掌控在您手中。</p>
+        <div class="cta-row" style="justify-content:center">
+          <a class="btn primary" href="#features">探索核心功能</a>
+          <a class="btn" href="/zh/guide.html">用户指南</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="section">
+      <div class="container">
+        <h2 class="section-title reveal">核心功能</h2>
+        <div class="feature-chart-grid">
+          <!-- 1. 物品录入 -->
+          <div class="feature-chart reveal">
+            <h3>物品录入</h3>
+            <p class="feature-desc">深度记录资产：包括名称、品牌、日期、价格、渠道与位置。支持照片附件与背后的故事，让每一件物品都有温度。</p>
+            <div class="chart-wrap">
+              <svg viewBox="0 0 400 120">
+                <path class="animate-path" d="M20,100 Q100,80 180,90 T380,20" fill="none" stroke="var(--accent)" stroke-width="4"/>
+                <circle cx="380" cy="20" r="6" fill="var(--accent)"/>
+              </svg>
+            </div>
+            <div class="meta"><span>字段 <b class="val-count" data-target="24">0</b>+</span><span>多图支持</span><span>情感存留</span></div>
+          </div>
+
+          <!-- 2. 分类与空间 -->
+          <div class="feature-chart reveal">
+            <h3>分类与空间</h3>
+            <p class="feature-desc">建立逻辑化的现实位置映射。通过树状结构（房产→房间→柜子），精准定位每一件资产的“归宿”。</p>
+            <div class="chart-wrap">
+              <svg viewBox="0 0 400 120">
+                <g fill="none" stroke="var(--accent)" stroke-width="2">
+                  <circle cx="40" cy="60" r="8"/>
+                  <path class="animate-path" d="M48,60 L120,30 M48,60 L120,90"/>
+                  <circle cx="128" cy="30" r="6"/>
+                  <circle cx="128" cy="90" r="6"/>
+                  <path class="animate-path" d="M136,30 L210,15 M136,30 L210,45 M136,90 L210,75 M136,90 L210,105"/>
+                </g>
+              </svg>
+            </div>
+            <div class="meta"><span>多级空间</span><span>位置树图</span><span>快速检索</span></div>
+          </div>
+
+          <!-- 3. 生命周期管理 -->
+          <div class="feature-chart reveal">
+            <h3>生命周期管理</h3>
+            <p class="feature-desc">关注长期持有价值。追踪维修记录、保修到期、日均成本与折旧情况，让资产管理更理性。</p>
+            <div class="chart-wrap" style="flex-direction:column; justify-content:center; gap:15px">
+              <div class="bar-track"><div class="bar-fill" style="--target-width: 85%"></div></div>
+              <div class="bar-track"><div class="bar-fill" style="--target-width: 60%"></div></div>
+              <div class="bar-track"><div class="bar-fill" style="--target-width: 40%"></div></div>
+            </div>
+            <div class="meta"><span>保修倒计时</span><span>持有成本</span><span>折旧跟踪</span></div>
+          </div>
+
+          <!-- 4. 看板与效率 -->
+          <div class="feature-chart reveal">
+            <h3>看板与效率</h3>
+            <p class="feature-desc">全局视角管理资产。提供总资产/净资产看板，支持多维度筛选、秒级搜索与高效批量编辑。</p>
+            <div class="chart-wrap">
+              <svg viewBox="0 0 400 120">
+                <rect x="20" y="20" width="360" height="80" rx="10" fill="none" stroke="var(--line)" stroke-width="1"/>
+                <path class="animate-path" d="M40,80 L100,50 L160,70 L220,30 L280,60 L340,20" fill="none" stroke="var(--accent)" stroke-width="3"/>
+              </svg>
+            </div>
+            <div class="meta"><span>资产曲线</span><span>批量操作</span><span>毫秒搜索</span></div>
+          </div>
+
+          <!-- 5. 备份与恢复 -->
+          <div class="feature-chart reveal">
+            <h3>备份与恢复</h3>
+            <p class="feature-desc">数据主权归您所有。支持一键导出包含附件的完整 ZIP 备份，兼容 iCloud 同步与离线恢复。</p>
+            <div class="chart-wrap">
+              <svg viewBox="0 0 400 120">
+                <rect class="animate-path" x="150" y="30" width="100" height="60" rx="8" fill="none" stroke="var(--accent)" stroke-width="2"/>
+                <path class="animate-path" d="M200,10 L200,30 M180,20 L200,30 L220,20" fill="none" stroke="var(--accent)" stroke-width="2"/>
+              </svg>
+            </div>
+            <div class="meta"><span>ZIP 导出</span><span>iCloud 存储</span><span>完全掌控</span></div>
+          </div>
+
+          <!-- 6. 国际化与隐私 -->
+          <div class="feature-chart reveal">
+            <h3>隐私与多语言</h3>
+            <p class="feature-desc">全本地存储，无广告与追踪。原生支持中英双语动态切换，提供自然且隐私安全的极致体验。</p>
+            <div class="chart-wrap" style="display:flex; gap:20px; align-items:center; justify-content:center">
+              <span style="font-size:48px; color:var(--accent); font-weight:900">中</span>
+              <span style="font-size:32px; color:var(--muted)">/</span>
+              <span style="font-size:48px; color:var(--accent); font-weight:900">EN</span>
+            </div>
+            <div class="meta"><span>FaceID 锁</span><span>零追踪</span><span>双语原生</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <div class="container">
+        <div class="feature-chart" style="text-align:center; align-items:center">
+          <h2 class="section-title" style="margin-bottom:20px">协议与合规</h2>
+          <p class="feature-desc">我们重视隐私。公开透明的服务条款，确保您的数据安全无忧。</p>
+          <div class="cta-row" style="margin-top:20px">
+            <a class="btn" href="/zh/privacy.html">隐私政策</a>
+            <a class="btn" href="/zh/terms.html">用户协议</a>
+          </div>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
     <div class="container">
-      <p>© <span id="y"></span> MyVault. Privacy-first, Local-first.</p>
+      <div class="footer-links">
+        <a href="/zh/privacy.html">隐私政策</a>
+        <a href="/zh/terms.html">用户协议</a>
+        <a href="/zh/guide.html">用户指南</a>
+      </div>
+      <p>© <span id="y"></span> MyVault. 隐私第一，本地优先。</p>
     </div>
   </footer>
+
   <script>
     document.getElementById('y').textContent = new Date().getFullYear();
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+          const counts = entry.target.querySelectorAll('.val-count');
+          counts.forEach(count => {
+            const target = parseInt(count.getAttribute('data-target'));
+            let current = 0;
+            const duration = 1500;
+            const step = target / (duration / 30);
+            const timer = setInterval(() => {
+              current += step;
+              if (current >= target) {
+                count.textContent = target;
+                clearInterval(timer);
+              } else {
+                count.textContent = Math.floor(current);
+              }
+            }, 30);
+          });
+        }
+      });
+    }, { threshold: 0.15 });
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
   </script>
 </body>
 </html>
