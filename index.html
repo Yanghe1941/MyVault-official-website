@@ -16,7 +16,7 @@
 <body>
   <nav class="nav">
     <div class="container nav-inner">
-      <div class="brand">MyVault</div>
+      <a href="./index.html" class="brand">MyVault</a>
       <div class="links">
         <a href="./en/index.html" class="lang-toggle">English</a>
       </div>
@@ -29,8 +29,8 @@
         <div class="hero-grid">
           <div class="hero-copy">
             <div class="eyebrow">隐私优先 · 本地优先</div>
-            <h1 class="h-title">管理你的现实资产<br>也留住它的故事</h1>
-            <p class="h-sub">MyVault 是一款离线运行的私密资产笔记。记录物理属性、财务细节与情感记忆，所有数据 100% 本地存储，无需账号登录。</p>
+            <h1 class="h-title">管理你的 RWA 现实资产<br>也留住它的故事</h1>
+            <p class="h-sub">MyVault 是一款私密的实物资产管理工具。记录物理属性、财务细节与情感记忆，所有数据 100% 本地存储，无需账号登录，云端副本仅保留在你自己的 iCloud 账户。</p>
             <div class="trust-badges">
               <span class="badge">100% 本地存储</span>
               <span class="badge">无云端同步</span>
@@ -63,6 +63,32 @@
             <p class="story-text">大学毕业旅行时父亲送的礼物。第一次用它拍下职业作品，也记录下家人的笑脸。</p>
             <div class="story-tag">只存于你的设备</div>
           </div>
+        </div>
+        <div class="insight-grid">
+          <article class="insight-card">
+            <div class="mini-chart">
+              <svg viewBox="0 0 200 70"><path d="M10,55 Q50,25 90,35 T190,15"/></svg>
+            </div>
+            <h3>物理 & 财务视角</h3>
+            <p>序列号、保修与购入信息一次掌握，24+ 字段自定义，构建属于自己的资产黑盒。</p>
+            <div class="metric"><strong>24+</strong><span>字段</span></div>
+          </article>
+          <article class="insight-card">
+            <div class="mini-chart">
+              <svg viewBox="0 0 200 70"><path d="M10,50 C50,20 80,60 120,25 150,10 190,40"/></svg>
+            </div>
+            <h3>情感时间线</h3>
+            <p>记录是谁送的、见证过什么场景，让纪念物拥有可回放的故事与标签化情绪。</p>
+            <div class="metric"><strong>∞</strong><span>故事</span></div>
+          </article>
+          <article class="insight-card">
+            <div class="mini-chart">
+              <svg viewBox="0 0 200 70"><path d="M10,40 L60,20 L110,50 L160,25 L190,30"/></svg>
+            </div>
+            <h3>隐私与掌控</h3>
+            <p>离线运行 + Face ID 锁 + ZIP 备份，数据只在你的设备与自有 iCloud 中流动。</p>
+            <div class="metric"><strong>0</strong><span>泄露</span></div>
+          </article>
         </div>
       </div>
     </section>
@@ -191,13 +217,62 @@
 
     <section class="section reveal">
       <div class="container">
-        <div class="glass-panel legal-card">
-          <h2 class="section-title" style="margin-bottom:12px">协议与隐私承诺</h2>
-          <p class="section-lead" style="margin-bottom:28px">透明的隐私政策与用户协议，强化信任。</p>
-          <div class="cta-row" style="justify-content:center">
-            <a class="btn secondary" href="./zh/privacy.html">隐私政策</a>
-            <a class="btn secondary" href="./zh/terms.html">用户协议</a>
-          </div>
+        <div class="subheading">帮助与合规</div>
+        <h2 class="section-title">用户指南 · 隐私 · 协议 · 更新日志</h2>
+        <p class="section-lead">基于 MyVault 产品体验与 README 文档整理，为你提供更丰富的参考内容。</p>
+        <div class="info-grid">
+          <article class="info-card">
+            <h3>用户指南</h3>
+            <p>从物品录入到空间树管理，再到生命周期与备份，每一步都有可操作流程。</p>
+            <ul>
+              <li>批量导入 CSV/Markdown，自动补全品牌、标签与空间</li>
+              <li>拍照、链接解析、多场景录入一应俱全</li>
+              <li>多选批量操作 + 智能搜索，适配大体量资产</li>
+            </ul>
+            <div class="spacer"></div>
+            <div class="btn-row">
+              <a class="btn secondary" href="./zh/guide.html">查看指南</a>
+            </div>
+          </article>
+          <article class="info-card">
+            <h3>隐私协议</h3>
+            <p>坚持本地优先与零追踪，云端仅通过 iCloud 由你自行掌控备份。</p>
+            <ul>
+              <li>应用数据默认仅存于本机加密数据库</li>
+              <li>可选择离线 ZIP 备份或私有云储存</li>
+              <li>无广告、无第三方 SDK，日志仅用于本地诊断</li>
+            </ul>
+            <div class="spacer"></div>
+            <div class="btn-row">
+              <a class="btn secondary" href="./zh/privacy.html">隐私政策</a>
+            </div>
+          </article>
+          <article class="info-card">
+            <h3>用户协议</h3>
+            <p>明确使用范围、版权、责任与售后支持，保障双方权益。</p>
+            <ul>
+              <li>买断制 / 免费版本授权条款</li>
+              <li>本地数据主权与责任界定</li>
+              <li>售后支持、反馈渠道与版本更新约定</li>
+            </ul>
+            <div class="spacer"></div>
+            <div class="btn-row">
+              <a class="btn secondary" href="./zh/terms.html">用户协议</a>
+            </div>
+          </article>
+          <article class="info-card">
+            <h3>更新日志</h3>
+            <p>追踪最新功能：空间管理、发现页效率工具、主题与多语言等持续进化。</p>
+            <ul>
+              <li>记录版本亮点与性能优化</li>
+              <li>展示发现页效率工具、心愿单、时间轴等新增模块</li>
+              <li>主题、货币、场景管理等偏好设置迭代</li>
+            </ul>
+            <div class="spacer"></div>
+            <div class="btn-row">
+              <a class="btn secondary" href="https://github.com/Yanghe1941/RWVault#readme" target="_blank" rel="noopener">查看日志</a>
+            </div>
+          </article>
         </div>
       </div>
     </section>

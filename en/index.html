@@ -16,7 +16,7 @@
 <body>
   <nav class="nav">
     <div class="container nav-inner">
-      <div class="brand">MyVault</div>
+      <a href="../index.html" class="brand">MyVault</a>
       <div class="links">
         <a href="../zh/index.html" class="lang-toggle">中文</a>
       </div>
@@ -29,8 +29,8 @@
         <div class="hero-grid">
           <div class="hero-copy">
             <div class="eyebrow">Privacy-First · Local-First</div>
-            <h1 class="h-title">Manage your real assets<br>and keep their stories safe</h1>
-            <p class="h-sub">MyVault is an offline-only asset notebook. Capture physical details, financial attributes, and emotional memories. Everything stays 100% on-device.</p>
+            <h1 class="h-title">Manage your RWA assets<br>and keep their stories</h1>
+            <p class="h-sub">MyVault is a private, offline asset notebook. Capture physical specs, financial details, and emotional memories. Data stays 100% on your device; any cloud copy only lives in your personal iCloud account.</p>
             <div class="trust-badges">
               <span class="badge">100% Local Storage</span>
               <span class="badge">No Cloud Sync</span>
@@ -63,6 +63,32 @@
             <p class="story-text">A graduation gift from my father. Shot my first paid assignment with it and captured family portraits I still revisit.</p>
             <div class="story-tag">Secured on your device</div>
           </div>
+        </div>
+        <div class="insight-grid">
+          <article class="insight-card">
+            <div class="mini-chart">
+              <svg viewBox="0 0 200 70"><path d="M10,55 Q50,25 90,35 T190,15"/></svg>
+            </div>
+            <h3>Physical & Financial view</h3>
+            <p>Serials, warranty, purchase info, and 24+ custom fields let you build a complete on-device dossier.</p>
+            <div class="metric"><strong>24+</strong><span>FIELDS</span></div>
+          </article>
+          <article class="insight-card">
+            <div class="mini-chart">
+              <svg viewBox="0 0 200 70"><path d="M10,50 C50,20 80,60 120,25 150,10 190,40"/></svg>
+            </div>
+            <h3>Story timeline</h3>
+            <p>Capture who gifted it, the milestones it witnessed, and emotion tags for instant recall.</p>
+            <div class="metric"><strong>∞</strong><span>STORIES</span></div>
+          </article>
+          <article class="insight-card">
+            <div class="mini-chart">
+              <svg viewBox="0 0 200 70"><path d="M10,40 L60,20 L110,50 L160,25 L190,30"/></svg>
+            </div>
+            <h3>Privacy & control</h3>
+            <p>Offline runtime + Face ID lock + ZIP export keep data between your device and personal iCloud.</p>
+            <div class="metric"><strong>0</strong><span>LEAKS</span></div>
+          </article>
         </div>
       </div>
     </section>
@@ -191,13 +217,62 @@
 
     <section class="section reveal">
       <div class="container">
-        <div class="glass-panel legal-card">
-          <h2 class="section-title" style="margin-bottom:12px">Privacy promise</h2>
-          <p class="section-lead" style="margin-bottom:28px">Transparent policies reinforce the trust you expect from a vault.</p>
-          <div class="cta-row" style="justify-content:center">
-            <a class="btn secondary" href="privacy.html">Privacy Policy</a>
-            <a class="btn secondary" href="terms.html">Terms of Service</a>
-          </div>
+        <div class="subheading">Help & compliance</div>
+        <h2 class="section-title">Guide · Privacy · Terms · Release Notes</h2>
+        <p class="section-lead">Expanded references inspired by the MyVault README to help you onboard, stay safe, and follow updates.</p>
+        <div class="info-grid">
+          <article class="info-card">
+            <h3>User guide</h3>
+            <p>Step-by-step instructions for item intake, spatial trees, lifecycle tracking, and backups.</p>
+            <ul>
+              <li>Bulk import CSV/Markdown with automatic brand/tag/space enrichment</li>
+              <li>Camera, link parsing, manual entry, and scenario templates</li>
+              <li>Multi-select batch actions and lightning search for high-volume vaults</li>
+            </ul>
+            <div class="spacer"></div>
+            <div class="btn-row">
+              <a class="btn secondary" href="guide.html">Read guide</a>
+            </div>
+          </article>
+          <article class="info-card">
+            <h3>Privacy policy</h3>
+            <p>Local-first with zero trackers; iCloud backups are optional and fully owned by you.</p>
+            <ul>
+              <li>All data stays in encrypted on-device storage by default</li>
+              <li>Optional ZIP export and private cloud backups</li>
+              <li>No ads or third-party SDKs; diagnostics remain local</li>
+            </ul>
+            <div class="spacer"></div>
+            <div class="btn-row">
+              <a class="btn secondary" href="privacy.html">Privacy Policy</a>
+            </div>
+          </article>
+          <article class="info-card">
+            <h3>User terms</h3>
+            <p>Clarifies license scope, responsibilities, and support for both paid and free tiers.</p>
+            <ul>
+              <li>One-time purchase / free tier license language</li>
+              <li>Data sovereignty responsibilities for local storage</li>
+              <li>Support, feedback loop, and update commitments</li>
+            </ul>
+            <div class="spacer"></div>
+            <div class="btn-row">
+              <a class="btn secondary" href="terms.html">Terms of Service</a>
+            </div>
+          </article>
+          <article class="info-card">
+            <h3>Release notes</h3>
+            <p>Track discoveries, wishlist, themes, and localization updates as MyVault evolves.</p>
+            <ul>
+              <li>Highlights performance and UX improvements</li>
+              <li>Showcases Discovery tools, wishlist, and timeline features</li>
+              <li>Documents theme, currency, and scene management changes</li>
+            </ul>
+            <div class="spacer"></div>
+            <div class="btn-row">
+              <a class="btn secondary" href="https://github.com/Yanghe1941/RWVault#readme" target="_blank" rel="noopener">Release notes</a>
+            </div>
+          </article>
         </div>
       </div>
     </section>
