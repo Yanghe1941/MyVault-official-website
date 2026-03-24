@@ -3,9 +3,14 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>MyVault — Privacy-First Asset & Keepsake Manager</title>
-  <meta name="description" content="MyVault is a privacy-first, local-first iOS app for managing real-world assets and keepsakes." />
-  <link rel="stylesheet" href="../assets/style.css" />
+  <title>MyVault — Manage Real Assets & Preserve Their Stories</title>
+  <meta name="description" content="MyVault is a privacy-first, local-first iOS app for cataloguing real-world assets, finances, and the memories behind them." />
+  <meta property="og:title" content="MyVault: Manage Your Real Assets & Preserve Their Stories" />
+  <meta property="og:description" content="Privacy-first, local-first asset notebook. Capture physical specs, financial attributes, and emotional memories. Data never leaves your device." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://myvault.app/en" />
+  <meta property="og:image" content="https://myvault.app/assets/og-cover.png" />
+  <link rel="stylesheet" href="../assets/style.css?v=1.1" />
   <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
 </head>
 <body>
@@ -21,111 +26,140 @@
   <main>
     <section class="hero reveal">
       <div class="container">
-        <h1 class="h-title">Manage Your Assets<br>Preserve Their Stories</h1>
-        <p class="h-sub">MyVault is a privacy-first, local-first asset management app. Record physical & financial attributes, store receipts, and preserve the emotional memories behind your belongings. Data stays entirely in your hands.</p>
-        <div class="cta-row" style="justify-content:center">
-          <a class="btn primary" href="#features">Explore Features</a>
-          <a class="btn" href="guide.html">User Guide</a>
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <div class="eyebrow">Privacy-First · Local-First</div>
+            <h1 class="h-title">Manage your real assets<br>and keep their stories safe</h1>
+            <p class="h-sub">MyVault is an offline-only asset notebook. Capture physical details, financial attributes, and emotional memories. Everything stays 100% on-device.</p>
+            <div class="trust-badges">
+              <span class="badge">100% Local Storage</span>
+              <span class="badge">No Cloud Sync</span>
+              <span class="badge">No Account Needed</span>
+              <span class="badge">Free Data Export</span>
+            </div>
+            <div class="cta-row">
+              <a class="app-store-badge" href="https://apps.apple.com/" aria-label="Download on the App Store">
+                <svg viewBox="0 0 24 24" fill="currentColor" role="img" aria-hidden="true"><path d="M17.4 12.9c-.02-2.2 1.8-3.3 1.9-3.3-1-.5-2-.6-2.5-.6-1.1-.1-2.1.6-2.7.6-.6 0-1.4-.6-2.4-.6-1.2 0-2.4.7-3 1.8-1.3 2.1-.3 5.1.9 6.8.6.8 1.3 1.8 2.2 1.8.9 0 1.2-.6 2.3-.6s1.3.6 2.4.6c1 0 1.6-.9 2.2-1.7.7-.9 1-1.8 1-1.8-.02 0-1.9-.7-1.9-3z"/><path d="M15.4 7.6c.5-.6.9-1.4.8-2.3-.8.03-1.7.5-2.2 1.1-.5.5-.9 1.3-.8 2.2.9.07 1.7-.4 2.2-1z"/></svg>
+                <div>
+                  <small>Download on the</small>
+                  <strong>App Store</strong>
+                </div>
+              </a>
+              <a class="ghost-link" href="guide.html">Read the guide</a>
+              <a class="ghost-link" href="https://linear.app/myvault" target="_blank" rel="noopener">Product roadmap</a>
+            </div>
+          </div>
+          <div class="glass-panel hero-card">
+            <div class="card-header">
+              <span>Vault Record · Preview</span>
+              <span class="chip">Offline</span>
+            </div>
+            <h3>Vintage Lens from Home</h3>
+            <ul class="story-meta">
+              <li><span>Purchased</span><strong>Fall 2018</strong></li>
+              <li><span>Value</span><strong>¥3,200</strong></li>
+              <li><span>Location</span><strong>Studio · Glass shelf</strong></li>
+            </ul>
+            <p class="story-text">A graduation gift from my father. Shot my first paid assignment with it and captured family portraits I still revisit.</p>
+            <div class="story-tag">Secured on your device</div>
+          </div>
         </div>
       </div>
     </section>
 
     <section id="features" class="section">
       <div class="container">
-        <h2 class="section-title reveal">Core Features</h2>
-        <div class="feature-chart-grid">
-          <!-- 1. Item Input -->
-          <div class="feature-chart reveal">
-            <h3>Item Input</h3>
-            <p class="feature-desc">Deeply record asset info: from brand and price to physical location, from invoices to warranty documents, and even the emotional story behind it.</p>
-            <div class="chart-wrap">
-              <svg viewBox="0 0 400 120">
-                <path class="animate-path" d="M20,100 Q100,80 180,90 T380,20" fill="none" stroke="var(--accent)" stroke-width="4"/>
-                <circle cx="380" cy="20" r="6" fill="var(--accent)"/>
-              </svg>
-            </div>
-            <div class="meta"><span>Fields <b class="val-count" data-target="24">0</b>+</span><span>Photos/Receipts</span><span>Memories</span></div>
-          </div>
+        <div class="subheading">Three pillars</div>
+        <h2 class="section-title">Reimagining asset management</h2>
+        <p class="section-lead">Physical specs, financial context, and emotional stories — organized in one private place.</p>
+        <div class="feature-grid">
+          <article class="feature-card reveal">
+            <span class="icon-chip">Physical & Financial</span>
+            <h3>Beyond inventory, build a dossier</h3>
+            <p>Store serial numbers, purchase price, warranty dates, and PDF manuals to control every phase of ownership.</p>
+            <ul>
+              <li>24+ customizable fields</li>
+              <li>Property → Room → Cabinet hierarchy</li>
+              <li>Warranty, depreciation, daily cost</li>
+            </ul>
+          </article>
+          <article class="feature-card reveal">
+            <span class="icon-chip">Stories & Sentiment</span>
+            <h3>Every item carries meaning</h3>
+            <p>Document who gifted it, the moments it witnessed, and the memories it unlocks. Keep context with the object.</p>
+            <ul>
+              <li>Rich text & media stories</li>
+              <li>Emotion tags and milestones</li>
+              <li>Timeline playback</li>
+            </ul>
+          </article>
+          <article class="feature-card reveal">
+            <span class="icon-chip">Absolute Privacy</span>
+            <h3>Your device is the vault</h3>
+            <p>Offline by design, Face ID/Touch ID lock, encrypted storage, and no third-party servers involved.</p>
+            <ul>
+              <li>No account, zero trackers</li>
+              <li>One-tap ZIP export</li>
+              <li>Local or private cloud backups</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
 
-          <!-- 2. Categories & Spaces -->
-          <div class="feature-chart reveal">
-            <h3>Categories & Spaces</h3>
-            <p class="feature-desc">Establish a logical mapping of real-world locations. Through a tree structure (Property → Room → Cabinet), precisely locate every asset.</p>
-            <div class="chart-wrap">
-              <svg viewBox="0 0 400 120">
-                <g fill="none" stroke="var(--accent)" stroke-width="2">
-                  <circle cx="40" cy="60" r="8"/>
-                  <path class="animate-path" d="M48,60 L120,30 M48,60 L120,90"/>
-                  <circle cx="128" cy="30" r="6"/>
-                  <circle cx="128" cy="90" r="6"/>
-                  <path class="animate-path" d="M136,30 L210,15 M136,30 L210,45 M136,90 L210,75 M136,90 L210,105"/>
-                </g>
-              </svg>
-            </div>
-            <div class="meta"><span>Hierarchies</span><span>Location Tree</span><span>Quick Search</span></div>
+    <section class="section reveal story-card">
+      <div class="container">
+        <div class="subheading">Story sample</div>
+        <h2 class="section-title">Narrative archive block</h2>
+        <div class="glass-panel">
+          <div class="card-header">
+            <span>Asset: Vintage Lens from Home</span>
+            <span class="chip">Story Mode</span>
           </div>
-
-          <!-- 3. Lifecycle Management -->
-          <div class="feature-chart reveal">
-            <h3>Lifecycle Management</h3>
-            <p class="feature-desc">Focus on long-term value. Track maintenance history, warranty expiration, daily holding cost, and depreciation to make asset management rational.</p>
-            <div class="chart-wrap" style="flex-direction:column; justify-content:center; gap:15px">
-              <div class="bar-track"><div class="bar-fill" style="--target-width: 85%"></div></div>
-              <div class="bar-track"><div class="bar-fill" style="--target-width: 60%"></div></div>
-              <div class="bar-track"><div class="bar-fill" style="--target-width: 40%"></div></div>
-            </div>
-            <div class="meta"><span>Warranty Alerts</span><span>Daily Cost</span><span>Depreciation</span></div>
-          </div>
-
-          <!-- 4. Dashboard & Efficiency -->
-          <div class="feature-chart reveal">
-            <h3>Dashboard & Efficiency</h3>
-            <p class="feature-desc">Manage assets from a global perspective. Total/Net asset boards with multi-dimensional filters, fast search, and efficient batch editing.</p>
-            <div class="chart-wrap">
-              <svg viewBox="0 0 400 120">
-                <rect x="20" y="20" width="360" height="80" rx="10" fill="none" stroke="var(--line)" stroke-width="1"/>
-                <path class="animate-path" d="M40,80 L100,50 L160,70 L220,30 L280,60 L340,20" fill="none" stroke="var(--accent)" stroke-width="3"/>
-              </svg>
-            </div>
-            <div class="meta"><span>Asset Curves</span><span>Batch Actions</span><span>Instant Search</span></div>
-          </div>
-
-          <!-- 5. Backup & Restore -->
-          <div class="feature-chart reveal">
-            <h3>Backup & Restore</h3>
-            <p class="feature-desc">Data sovereignty belongs to you. Export a full ZIP backup including attachments. Compatible with iCloud sync and offline restoration.</p>
-            <div class="chart-wrap">
-              <svg viewBox="0 0 400 120">
-                <rect class="animate-path" x="150" y="30" width="100" height="60" rx="8" fill="none" stroke="var(--accent)" stroke-width="2"/>
-                <path class="animate-path" d="M200,10 L200,30 M180,20 L200,30 L220,20" fill="none" stroke="var(--accent)" stroke-width="2"/>
-              </svg>
-            </div>
-            <div class="meta"><span>ZIP Export</span><span>iCloud Sync</span><span>Full Control</span></div>
-          </div>
-
-          <!-- 6. Localization & Privacy -->
-          <div class="feature-chart reveal">
-            <h3>Privacy & Localization</h3>
-            <p class="feature-desc">Fully local storage with no ads or tracking. Native support for EN/ZH switching, providing a natural and privacy-secure experience.</p>
-            <div class="chart-wrap" style="display:flex; gap:20px; align-items:center; justify-content:center">
-              <span style="font-size:48px; color:var(--accent); font-weight:900">EN</span>
-              <span style="font-size:32px; color:var(--muted)">/</span>
-              <span style="font-size:48px; color:var(--accent); font-weight:900">中</span>
-            </div>
-            <div class="meta"><span>FaceID Lock</span><span>Zero Trackers</span><span>Native i18n</span></div>
-          </div>
+          <p class="story-example">
+            📅 Purchased: Fall 2018<br>
+            💰 Value: ¥3,200<br>
+            ✍️ Story: Gifted by dad after graduation. Used on my first professional shoot and to capture my grandmother’s final trip outdoors.
+          </p>
         </div>
       </div>
     </section>
 
     <section class="section reveal">
       <div class="container">
-        <div class="feature-chart" style="text-align:center; align-items:center">
-          <h2 class="section-title" style="margin-bottom:20px">Legal & Compliance</h2>
-          <p class="feature-desc">We value your privacy. Public and transparent terms ensure your data is safe and secure.</p>
-          <div class="cta-row" style="margin-top:20px">
-            <a class="btn" href="privacy.html">Privacy Policy</a>
-            <a class="btn" href="terms.html">Terms of Service</a>
+        <div class="subheading">Why MyVault</div>
+        <h2 class="section-title">The safer alternative</h2>
+        <div class="compare-grid">
+          <article class="compare-card other">
+            <h3>Other apps</h3>
+            <ul>
+              <li>Cloud sync with breach risks</li>
+              <li>Forced accounts & subscriptions</li>
+              <li>Designed for budgeting, not archives</li>
+              <li>Limited or no data export</li>
+            </ul>
+          </article>
+          <article class="compare-card mine">
+            <h3>MyVault</h3>
+            <ul>
+              <li><strong>Runs locally · Zero leakage</strong></li>
+              <li><strong>One-time purchase / free tier</strong></li>
+              <li><strong>Instant launch & lightning search</strong></li>
+              <li><strong>ZIP export · Full control</strong></li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <div class="container">
+        <div class="glass-panel legal-card">
+          <h2 class="section-title" style="margin-bottom:12px">Privacy promise</h2>
+          <p class="section-lead" style="margin-bottom:28px">Transparent policies reinforce the trust you expect from a vault.</p>
+          <div class="cta-row" style="justify-content:center">
+            <a class="btn secondary" href="privacy.html">Privacy Policy</a>
+            <a class="btn secondary" href="terms.html">Terms of Service</a>
           </div>
         </div>
       </div>

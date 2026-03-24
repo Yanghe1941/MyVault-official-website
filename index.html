@@ -3,9 +3,14 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>MyVault — 隐私优先的现实资产与纪念物管理</title>
-  <meta name="description" content="MyVault 是一款隐私优先、本地优先的 iOS 应用，用于管理现实资产与纪念物。" />
-  <link rel="stylesheet" href="./assets/style.css?v=1.0" />
+  <title>MyVault — 管理现实资产，也留住它的故事</title>
+  <meta name="description" content="MyVault 是一款隐私优先、本地优先的 iOS 应用，结合物理资产、财务属性与情感故事，100% 本地存储，无需账号。" />
+  <meta property="og:title" content="MyVault: 管理你的现实资产，也留住它的故事" />
+  <meta property="og:description" content="隐私优先、本地运行的资产笔记。记录购入信息、保修凭证与情感故事，数据只属于你。" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://myvault.app/" />
+  <meta property="og:image" content="https://myvault.app/assets/og-cover.png" />
+  <link rel="stylesheet" href="./assets/style.css?v=1.1" />
   <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
 </head>
 <body>
@@ -21,111 +26,140 @@
   <main>
     <section class="hero reveal">
       <div class="container">
-        <h1 class="h-title">管理你的现实资产<br>也留住它的故事</h1>
-        <p class="h-sub">MyVault 是一款隐私优先、本地优先的资产管理应用。帮你深度记录物品的物理与财务属性，存放凭证并留存情感点滴。数据完全掌控在您手中。</p>
-        <div class="cta-row" style="justify-content:center">
-          <a class="btn primary" href="#features">探索核心功能</a>
-          <a class="btn" href="./zh/guide.html">用户指南</a>
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <div class="eyebrow">隐私优先 · 本地优先</div>
+            <h1 class="h-title">管理你的现实资产<br>也留住它的故事</h1>
+            <p class="h-sub">MyVault 是一款离线运行的私密资产笔记。记录物理属性、财务细节与情感记忆，所有数据 100% 本地存储，无需账号登录。</p>
+            <div class="trust-badges">
+              <span class="badge">100% 本地存储</span>
+              <span class="badge">无云端同步</span>
+              <span class="badge">无需账号注册</span>
+              <span class="badge">数据导出自由</span>
+            </div>
+            <div class="cta-row">
+              <a class="app-store-badge" href="https://apps.apple.com/" aria-label="Download on the App Store">
+                <svg viewBox="0 0 24 24" fill="currentColor" role="img" aria-hidden="true"><path d="M17.4 12.9c-.02-2.2 1.8-3.3 1.9-3.3-1-.5-2-.6-2.5-.6-1.1-.1-2.1.6-2.7.6-.6 0-1.4-.6-2.4-.6-1.2 0-2.4.7-3 1.8-1.3 2.1-.3 5.1.9 6.8.6.8 1.3 1.8 2.2 1.8.9 0 1.2-.6 2.3-.6s1.3.6 2.4.6c1 0 1.6-.9 2.2-1.7.7-.9 1-1.8 1-1.8-.02 0-1.9-.7-1.9-3z"/><path d="M15.4 7.6c.5-.6.9-1.4.8-2.3-.8.03-1.7.5-2.2 1.1-.5.5-.9 1.3-.8 2.2.9.07 1.7-.4 2.2-1z"/></svg>
+                <div>
+                  <small>Download on the</small>
+                  <strong>App Store</strong>
+                </div>
+              </a>
+              <a class="ghost-link" href="./zh/guide.html">查看用户指南</a>
+              <a class="ghost-link" href="https://linear.app/myvault" target="_blank" rel="noopener">查看路线图</a>
+            </div>
+          </div>
+          <div class="glass-panel hero-card">
+            <div class="card-header">
+              <span>资产档案 · 预览</span>
+              <span class="chip">离线草稿</span>
+            </div>
+            <h3>老家旧相机镜头</h3>
+            <ul class="story-meta">
+              <li><span>购入</span><strong>2018 年秋</strong></li>
+              <li><span>价值</span><strong>¥3,200</strong></li>
+              <li><span>位置</span><strong>书房 · 玻璃柜</strong></li>
+            </ul>
+            <p class="story-text">大学毕业旅行时父亲送的礼物。第一次用它拍下职业作品，也记录下家人的笑脸。</p>
+            <div class="story-tag">只存于你的设备</div>
+          </div>
         </div>
       </div>
     </section>
 
     <section id="features" class="section">
       <div class="container">
-        <h2 class="section-title reveal">核心功能</h2>
-        <div class="feature-chart-grid">
-          <!-- 1. 物品录入 -->
-          <div class="feature-chart reveal">
-            <h3>物品录入</h3>
-            <p class="feature-desc">深度记录资产：包括名称、品牌、日期、价格、渠道与位置。支持照片附件与背后的故事，让每一件物品都有温度。</p>
-            <div class="chart-wrap">
-              <svg viewBox="0 0 400 120">
-                <path class="animate-path" d="M20,100 Q100,80 180,90 T380,20" fill="none" stroke="var(--accent)" stroke-width="4"/>
-                <circle cx="380" cy="20" r="6" fill="var(--accent)"/>
-              </svg>
-            </div>
-            <div class="meta"><span>字段 <b class="val-count" data-target="24">0</b>+</span><span>多图支持</span><span>情感存留</span></div>
-          </div>
+        <div class="subheading">三段式能力</div>
+        <h2 class="section-title">重新定义现实资产管理</h2>
+        <p class="section-lead">物理、财务与情感信息一次收纳，兼顾安全性与叙事性。</p>
+        <div class="feature-grid">
+          <article class="feature-card reveal">
+            <span class="icon-chip">物理 & 财务</span>
+            <h3>不只是记账，更像资产档案</h3>
+            <p>记录序列号、购入价格、保修期限与存放说明书 PDF，全景掌握物品全生命周期。</p>
+            <ul>
+              <li>24+ 自定义字段</li>
+              <li>多级空间：房产→房间→柜子</li>
+              <li>保修、折旧、日均成本</li>
+            </ul>
+          </article>
+          <article class="feature-card reveal">
+            <span class="icon-chip">故事 & 情感</span>
+            <h3>每件物品都有来历</h3>
+            <p>记录它是谁送的、陪伴过的瞬间，以及你在意的碎片记忆。情绪与价值共存。</p>
+            <ul>
+              <li>故事流文本与多媒体</li>
+              <li>标签化情绪节点</li>
+              <li>时间线回顾模式</li>
+            </ul>
+          </article>
+          <article class="feature-card reveal">
+            <span class="icon-chip">绝对隐私</span>
+            <h3>它是你设备上的保险柜</h3>
+            <p>完全离线，Face ID / Touch ID 加锁，数据加密存储，不经过任何第三方服务器。</p>
+            <ul>
+              <li>无需账号 · 零追踪</li>
+              <li>一键 ZIP 导出</li>
+              <li>本地/私有云备份可控</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
 
-          <!-- 2. 分类与空间 -->
-          <div class="feature-chart reveal">
-            <h3>分类与空间</h3>
-            <p class="feature-desc">建立逻辑化的现实位置映射。通过树状结构（房产→房间→柜子），精准定位每一件资产的“归宿”。</p>
-            <div class="chart-wrap">
-              <svg viewBox="0 0 400 120">
-                <g fill="none" stroke="var(--accent)" stroke-width="2">
-                  <circle cx="40" cy="60" r="8"/>
-                  <path class="animate-path" d="M48,60 L120,30 M48,60 L120,90"/>
-                  <circle cx="128" cy="30" r="6"/>
-                  <circle cx="128" cy="90" r="6"/>
-                  <path class="animate-path" d="M136,30 L210,15 M136,30 L210,45 M136,90 L210,75 M136,90 L210,105"/>
-                </g>
-              </svg>
-            </div>
-            <div class="meta"><span>多级空间</span><span>位置树图</span><span>快速检索</span></div>
+    <section class="section reveal story-card">
+      <div class="container">
+        <div class="subheading">故事示例</div>
+        <h2 class="section-title">模拟档案 · 情感留存</h2>
+        <div class="glass-panel">
+          <div class="card-header">
+            <span>资产：老家旧相机的镜头</span>
+            <span class="chip">Story Mode</span>
           </div>
-
-          <!-- 3. 生命周期管理 -->
-          <div class="feature-chart reveal">
-            <h3>生命周期管理</h3>
-            <p class="feature-desc">关注长期持有价值。追踪维修记录、保修到期、日均成本与折旧情况，让资产管理更理性。</p>
-            <div class="chart-wrap" style="flex-direction:column; justify-content:center; gap:15px">
-              <div class="bar-track"><div class="bar-fill" style="--target-width: 85%"></div></div>
-              <div class="bar-track"><div class="bar-fill" style="--target-width: 60%"></div></div>
-              <div class="bar-track"><div class="bar-fill" style="--target-width: 40%"></div></div>
-            </div>
-            <div class="meta"><span>保修倒计时</span><span>持有成本</span><span>折旧跟踪</span></div>
-          </div>
-
-          <!-- 4. 看板与效率 -->
-          <div class="feature-chart reveal">
-            <h3>看板与效率</h3>
-            <p class="feature-desc">全局视角管理资产。提供总资产/净资产看板，支持多维度筛选、秒级搜索与高效批量编辑。</p>
-            <div class="chart-wrap">
-              <svg viewBox="0 0 400 120">
-                <rect x="20" y="20" width="360" height="80" rx="10" fill="none" stroke="var(--line)" stroke-width="1"/>
-                <path class="animate-path" d="M40,80 L100,50 L160,70 L220,30 L280,60 L340,20" fill="none" stroke="var(--accent)" stroke-width="3"/>
-              </svg>
-            </div>
-            <div class="meta"><span>资产曲线</span><span>批量操作</span><span>毫秒搜索</span></div>
-          </div>
-
-          <!-- 5. 备份与恢复 -->
-          <div class="feature-chart reveal">
-            <h3>备份与恢复</h3>
-            <p class="feature-desc">数据主权归您所有。支持一键导出包含附件的完整 ZIP 备份，兼容 iCloud 同步与离线恢复。</p>
-            <div class="chart-wrap">
-              <svg viewBox="0 0 400 120">
-                <rect class="animate-path" x="150" y="30" width="100" height="60" rx="8" fill="none" stroke="var(--accent)" stroke-width="2"/>
-                <path class="animate-path" d="M200,10 L200,30 M180,20 L200,30 L220,20" fill="none" stroke="var(--accent)" stroke-width="2"/>
-              </svg>
-            </div>
-            <div class="meta"><span>ZIP 导出</span><span>iCloud 存储</span><span>完全掌控</span></div>
-          </div>
-
-          <!-- 6. 国际化与隐私 -->
-          <div class="feature-chart reveal">
-            <h3>隐私与多语言</h3>
-            <p class="feature-desc">全本地存储，无广告与追踪。原生支持中英双语动态切换，提供自然且隐私安全的极致体验。</p>
-            <div class="chart-wrap" style="display:flex; gap:20px; align-items:center; justify-content:center">
-              <span style="font-size:48px; color:var(--accent); font-weight:900">中</span>
-              <span style="font-size:32px; color:var(--muted)">/</span>
-              <span style="font-size:48px; color:var(--accent); font-weight:900">EN</span>
-            </div>
-            <div class="meta"><span>FaceID 锁</span><span>零追踪</span><span>双语原生</span></div>
-          </div>
+          <p class="story-example">
+            📅 购入：2018 年秋<br>
+            💰 价值：¥3,200<br>
+            ✍️ 故事：这是大学毕业旅行时，父亲送给我的礼物。用它拍下第一张职业摄影作品，也记录了祖母的最后一次外出。
+          </p>
         </div>
       </div>
     </section>
 
     <section class="section reveal">
       <div class="container">
-        <div class="feature-chart" style="text-align:center; align-items:center">
-          <h2 class="section-title" style="margin-bottom:20px">协议与合规</h2>
-          <p class="feature-desc">我们重视隐私。公开透明的服务条款，确保您的数据安全无忧。</p>
-          <div class="cta-row" style="margin-top:20px">
-            <a class="btn" href="./zh/privacy.html">隐私政策</a>
-            <a class="btn" href="./zh/terms.html">用户协议</a>
+        <div class="subheading">为什么选择 MyVault?</div>
+        <h2 class="section-title">对比别的方案，你更安全</h2>
+        <div class="compare-grid">
+          <article class="compare-card other">
+            <h3>其他应用</h3>
+            <ul>
+              <li>云端同步，存在泄露风险</li>
+              <li>强制账号登录与订阅</li>
+              <li>功能为记账而非资产档案</li>
+              <li>数据导出受限</li>
+            </ul>
+          </article>
+          <article class="compare-card mine">
+            <h3>MyVault</h3>
+            <ul>
+              <li><strong>本地运行 · 绝对安全</strong></li>
+              <li><strong>买断制或免费版本</strong></li>
+              <li><strong>极速启动，毫秒级搜索</strong></li>
+              <li><strong>ZIP 导出，完全掌控</strong></li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <div class="container">
+        <div class="glass-panel legal-card">
+          <h2 class="section-title" style="margin-bottom:12px">协议与隐私承诺</h2>
+          <p class="section-lead" style="margin-bottom:28px">透明的隐私政策与用户协议，强化信任。</p>
+          <div class="cta-row" style="justify-content:center">
+            <a class="btn secondary" href="./zh/privacy.html">隐私政策</a>
+            <a class="btn secondary" href="./zh/terms.html">用户协议</a>
           </div>
         </div>
       </div>
