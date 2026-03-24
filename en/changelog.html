@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MyVault — Release Notes</title>
+  <meta name="description" content="MyVault changelog tracking version releases and feature additions." />
+  <link rel="stylesheet" href="../assets/style.css" />
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
+</head>
+<body>
+  <nav class="nav">
+    <div class="container nav-inner">
+      <div class="brand">MyVault</div>
+      <div class="links">
+        <a href="../zh/changelog.html" class="lang-toggle">中文</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container doc reveal active">
+    <h1>MyVault Release Notes</h1>
+    <p class="section-lead">All releases are archived here. Current version: <strong>v1.0</strong> (2026-03-24).</p>
+
+    <article class="doc-section">
+      <h2>v1.0 · 2026-03-24</h2>
+      <ul>
+        <li>Asset management: create, edit, and delete full asset records.</li>
+        <li>Classification system: categories, tags, brand library, spaces, and locations.</li>
+        <li>Asset photos: capture via camera or import from the photo library.</li>
+        <li>Maintenance logs: record maintenance, repair, cleaning, and upgrade events.</li>
+        <li>Analytics: total value, average value, daily holding cost, category stats, and more.</li>
+        <li>Purchase calendar: review historical purchases by date.</li>
+        <li>Global search: find items by name, brand, or tags.</li>
+        <li>Bulk operations: batch edit and delete.</li>
+        <li>Data import: Excel / Markdown (CSV template supported).</li>
+        <li>E-commerce link capture: parse major marketplace URLs into structured fields.</li>
+        <li>Photo recognition capture: AI-assisted prefill for item data.</li>
+        <li>Backup & restore: generate <code>.zip</code> archives and restore from them.</li>
+        <li>Data export: export asset datasets for archiving or sharing.</li>
+      </ul>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+        <a href="guide.html">User Guide</a>
+        <a href="changelog.html">Release Notes</a>
+      </div>
+      <p>© <span id="y"></span> MyVault. Privacy-first, Local-first.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

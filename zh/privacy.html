@@ -19,35 +19,87 @@
   </nav>
 
   <main class="container doc reveal active">
-    <h1>隐私政策</h1>
-    <p>最近更新日期：2024年3月</p>
+    <h1>MyVault 隐私协议</h1>
+    <p class="section-lead">生效日期：2026-03-24 · 更新日期：2026-03-24</p>
 
-    <div class="feature-chart-grid" style="grid-template-columns: 1fr; gap: 32px; margin-top: 40px">
-      <div class="feature-chart reveal">
-        <h3>1. 数据收集</h3>
-        <p class="feature-desc">MyVault 是一款“本地优先”的应用。我们不运行任何后端服务器，也不通过 App 收集、存储或上传您的任何个人资产数据、照片或文字记录。</p>
-      </div>
+    <article class="doc-section">
+      <h2>1. 我们收集的信息</h2>
+      <h3>1.1 用户主动提供的数据</h3>
+      <ul>
+        <li>资产信息：名称、价格、购买日期、购买渠道、城市、描述、状态、保修期限等</li>
+        <li>分类 / 标签 / 品牌 / 空间 / 位置等结构化信息</li>
+        <li>维护记录：维护类型、日期、费用、服务商、备注</li>
+        <li>资产照片与图片</li>
+        <li>场景 / 清单与偏好设置（主题、语言、货币等）</li>
+      </ul>
+      <h3>1.2 设备权限信息</h3>
+      <ul>
+        <li>相机权限：用于拍照录入资产图片</li>
+        <li>相册权限：用于选择照片</li>
+        <li>面容 / 触控 ID：用于本地解锁验证（如用户启用）</li>
+        <li>文件访问：用于导入 / 导出、备份 / 恢复文件（包括 iCloud Drive）</li>
+      </ul>
+      <h3>1.3 我们不会强制收集</h3>
+      <ul>
+        <li>账户信息（当前版本不要求注册）</li>
+        <li>联系人、短信、通话记录等与资产管理无关的数据</li>
+      </ul>
+    </article>
 
-      <div class="feature-chart reveal">
-        <h3>2. 数据存储与同步</h3>
-        <p class="feature-desc">您的所有数据默认存储在您的 iOS 设备本地。如果您启用了 iCloud 同步，数据将通过 Apple 提供的加密通道在您的私有 iCloud 空间内进行流转，开发者无法访问这些数据。</p>
-      </div>
+    <article class="doc-section">
+      <h2>2. 信息使用目的</h2>
+      <p>2.1 用于资产管理功能的本地存储与展示。</p>
+      <p>2.2 用于生成统计分析与可视化结果。</p>
+      <p>2.3 用于导入 / 导出、备份 / 恢复的本地文件处理。</p>
+      <p>2.4 用于提升使用体验（语言、主题、货币等偏好）。</p>
+    </article>
 
-      <div class="feature-chart reveal">
-        <h3>3. 权限说明</h3>
-        <p class="feature-desc"><strong>相册权限</strong>：仅用于您主动选择并添加物品照片。<strong>Face ID / Touch ID</strong>：仅用于本地解锁应用，生物识别数据由系统保护。<strong>iCloud 访问</strong>：用于在您的设备间同步资产数据。</p>
-      </div>
+    <article class="doc-section">
+      <h2>3. 数据存储与处理方式</h2>
+      <p>3.1 资产数据默认保存在用户设备本地（Core Data 与本地文件）。</p>
+      <p>3.2 备份文件为本地生成的 <code>.zip</code> 文件，由用户选择保存到 iCloud Drive 或其他位置。</p>
+      <p>3.3 导出文件在本地生成，具体文件位置由系统文件选择器或导出流程决定。</p>
+      <p>3.4 我们不搭建自有云端服务器存储你的资产数据（以当前版本为准）。</p>
+    </article>
 
-      <div class="feature-chart reveal">
-        <h3>4. 第三方服务</h3>
-        <p class="feature-desc">本应用不包含任何第三方广告、追踪器或分析插件。我们不会将您的数据出售给任何第三方。</p>
-      </div>
+    <article class="doc-section">
+      <h2>4. 第三方服务与共享</h2>
+      <p>4.1 本应用不向第三方出售或共享用户资产数据。</p>
+      <p>4.2 备份 / 恢复或导出 / 导入过程可能调用系统文件服务（如 iCloud Drive），该过程受 Apple 服务条款约束。</p>
+      <p>4.3 照片识别界面标注 “Powered by DeepSeek”。若未来版本使用第三方模型服务进行识别，我们将在功能使用前明确提示并征得用户授权。</p>
+    </article>
 
-      <div class="feature-chart reveal">
-        <h3>5. 联系我们</h3>
-        <p class="feature-desc">如果您对本政策有任何疑问，请通过 GitHub 仓库或应用内的反馈渠道联系开发者。</p>
-      </div>
-    </div>
+    <article class="doc-section">
+      <h2>5. 数据安全</h2>
+      <p>5.1 数据主要保存在设备本地，用户应妥善保管设备与解锁方式。</p>
+      <p>5.2 应用提供 Face ID / Touch ID 作为本地解锁防护。</p>
+      <p>5.3 如用户将备份文件存储到云盘，其安全性由用户与云盘服务提供方共同保障。</p>
+    </article>
+
+    <article class="doc-section">
+      <h2>6. 数据保留与删除</h2>
+      <p>6.1 用户可在应用内删除单项资产或清空所有数据。</p>
+      <p>6.2 删除后数据将从本地数据库移除；已导出的文件不受影响，用户需自行清理。</p>
+      <p>6.3 如设备卸载应用，本地数据会随应用卸载而删除（取决于系统机制与用户设置）。</p>
+    </article>
+
+    <article class="doc-section">
+      <h2>7. 儿童隐私</h2>
+      <p>7.1 本应用面向普通用户，不面向 14 岁以下儿童收集个人信息。</p>
+      <p>7.2 如发现儿童信息被误收集，请通过联系方式联系我们处理。</p>
+    </article>
+
+    <article class="doc-section">
+      <h2>8. 协议更新</h2>
+      <p>8.1 我们可能根据功能变化更新隐私协议。</p>
+      <p>8.2 重大变更将通过应用内提示或更新日志告知。</p>
+    </article>
+
+    <article class="doc-section">
+      <h2>9. 联系我们</h2>
+      <p>9.1 联系邮箱：<strong>[support@yourdomain.com]</strong></p>
+      <p>9.2 开发者 / 公司名称：<strong>[主体名称]</strong></p>
+    </article>
   </main>
 
   <footer class="footer">
