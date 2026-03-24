@@ -28,12 +28,10 @@
       <div class="container">
         <div class="hero-grid">
           <div class="hero-copy">
-            <div class="eyebrow">Privacy-First · Local-First</div>
-            <h1 class="h-title">Manage your RWA assets<br>and keep their stories</h1>
+            <h1 class="h-title">Manage your RWA assets</h1>
             <p class="h-sub">MyVault is a private, offline asset notebook. Capture physical specs, financial details, and emotional memories. Data stays 100% on your device; any cloud copy only lives in your personal iCloud account.</p>
             <div class="trust-badges">
               <span class="badge">100% Local Storage</span>
-              <span class="badge">No Cloud Sync</span>
               <span class="badge">No Account Needed</span>
               <span class="badge">Free Data Export</span>
             </div>
@@ -99,70 +97,108 @@
         <div class="feature-chart-grid">
           <div class="feature-chart reveal">
             <h3>Item Input</h3>
-            <p class="feature-desc">Deeply record asset info: from brand and price to physical location, from invoices to warranty docs, and the emotional story behind it.</p>
+            <p class="feature-desc">Capture brand, specs, financials, documents, and the memory thread with 24+ customizable fields.</p>
             <div class="chart-wrap">
               <svg viewBox="0 0 400 120">
-                <path class="animate-path" d="M20,100 Q100,80 180,90 T380,20" fill="none" stroke="var(--accent)" stroke-width="4"/>
-                <circle cx="380" cy="20" r="6" fill="var(--accent)"/>
+                <defs>
+                  <linearGradient id="grad-input-en" x1="0" y1="1" x2="1" y2="0">
+                    <stop offset="0%" stop-color="rgba(212,175,55,.1)"/>
+                    <stop offset="100%" stop-color="rgba(247,193,76,.4)"/>
+                  </linearGradient>
+                </defs>
+                <rect x="20" y="20" width="360" height="80" rx="18" fill="rgba(255,255,255,.02)" stroke="var(--line)"/>
+                <path d="M40,80 Q100,30 160,50 T360,30" fill="url(#grad-input-en)" opacity=".6"/>
+                <path class="animate-path" d="M40,80 Q100,30 160,50 T360,30" fill="none" stroke="var(--accent)" stroke-width="3"/>
+                <circle cx="200" cy="42" r="7" fill="var(--accent)"/>
+                <circle cx="320" cy="35" r="6" fill="var(--accent-secondary)"/>
               </svg>
             </div>
-            <div class="meta"><span>Fields <b class="val-count" data-target="24">0</b>+</span><span>Photos & Receipts</span><span>Memories</span></div>
+            <div class="meta"><span>Fields <b class="val-count" data-target="24">0</b>+</span><span>Photos & receipts</span><span>Story notes</span></div>
           </div>
           <div class="feature-chart reveal">
             <h3>Categories & Spaces</h3>
-            <p class="feature-desc">Build a logical map of real locations. Property → Room → Cabinet to instantly find everything.</p>
+            <p class="feature-desc">Map real-world storage with property → room → shelf trees and lightning search.</p>
             <div class="chart-wrap">
               <svg viewBox="0 0 400 120">
-                <g fill="none" stroke="var(--accent)" stroke-width="2">
-                  <circle cx="40" cy="60" r="8"/>
-                  <path class="animate-path" d="M48,60 L120,30 M48,60 L120,90"/>
-                  <circle cx="128" cy="30" r="6"/>
-                  <circle cx="128" cy="90" r="6"/>
-                  <path class="animate-path" d="M136,30 L210,15 M136,30 L210,45 M136,90 L210,75 M136,90 L210,105"/>
+                <g stroke="var(--accent)" stroke-width="2" fill="none" stroke-linecap="round">
+                  <path class="animate-path" d="M60,80 L120,50 L180,70 L240,30 L320,60"/>
                 </g>
+                <g fill="var(--accent)">
+                  <circle cx="60" cy="80" r="6"/>
+                  <circle cx="120" cy="50" r="6"/>
+                  <circle cx="180" cy="70" r="6"/>
+                  <circle cx="240" cy="30" r="6"/>
+                  <circle cx="320" cy="60" r="6"/>
+                </g>
+                <rect x="48" y="88" width="40" height="12" fill="rgba(212,175,55,.2)" rx="6"/>
+                <rect x="108" y="58" width="50" height="12" fill="rgba(247,193,76,.25)" rx="6"/>
+                <rect x="228" y="38" width="60" height="12" fill="rgba(255,255,255,.12)" rx="6"/>
               </svg>
             </div>
             <div class="meta"><span>Hierarchies</span><span>Location tree</span><span>Quick search</span></div>
           </div>
           <div class="feature-chart reveal">
             <h3>Lifecycle Management</h3>
-            <p class="feature-desc">Track maintenance logs, warranty expiration, daily holding cost, and depreciation.</p>
-            <div class="chart-wrap" style="flex-direction:column; justify-content:center; gap:15px">
-              <div class="bar-track"><div class="bar-fill" style="--target-width: 85%"></div></div>
-              <div class="bar-track"><div class="bar-fill" style="--target-width: 60%"></div></div>
-              <div class="bar-track"><div class="bar-fill" style="--target-width: 40%"></div></div>
+            <p class="feature-desc">Follow maintenance, warranties, operating cost, and depreciation in one glance.</p>
+            <div class="chart-wrap">
+              <svg viewBox="0 0 400 120">
+                <path class="animate-path" d="M60,90 A40,40 0 0 1 140,40" fill="none" stroke="var(--accent)" stroke-width="6" stroke-linecap="round"/>
+                <path class="animate-path" d="M160,90 A40,40 0 0 1 240,40" fill="none" stroke="var(--accent-secondary)" stroke-width="6" stroke-linecap="round"/>
+                <path class="animate-path" d="M260,90 A40,40 0 0 1 340,40" fill="none" stroke="#fff" stroke-opacity=".4" stroke-width="6" stroke-linecap="round"/>
+                <text x="90" y="100" fill="var(--muted)" font-size="12">Warranty</text>
+                <text x="210" y="100" fill="var(--muted)" font-size="12">Cost</text>
+                <text x="310" y="100" fill="var(--muted)" font-size="12">Depreciation</text>
+              </svg>
             </div>
             <div class="meta"><span>Warranty alerts</span><span>Daily cost</span><span>Depreciation</span></div>
           </div>
           <div class="feature-chart reveal">
             <h3>Dashboard & Efficiency</h3>
-            <p class="feature-desc">Global asset overview with total/net boards, multifilter controls, lightning search, and batch edit.</p>
+            <p class="feature-desc">Total/net boards, multi-filter controls, batch tools, and instant search for serious vaults.</p>
             <div class="chart-wrap">
               <svg viewBox="0 0 400 120">
-                <rect x="20" y="20" width="360" height="80" rx="10" fill="none" stroke="var(--line)" stroke-width="1"/>
-                <path class="animate-path" d="M40,80 L100,50 L160,70 L220,30 L280,60 L340,20" fill="none" stroke="var(--accent)" stroke-width="3"/>
+                <rect x="30" y="15" width="340" height="80" rx="18" fill="rgba(255,255,255,.02)" stroke="var(--line)"/>
+                <g fill="rgba(212,175,55,.3)">
+                  <rect x="50" y="70" width="30" height="20" rx="6"/>
+                  <rect x="100" y="55" width="30" height="35" rx="6"/>
+                  <rect x="150" y="45" width="30" height="45" rx="6"/>
+                  <rect x="200" y="35" width="30" height="55" rx="6"/>
+                  <rect x="250" y="60" width="30" height="30" rx="6"/>
+                  <rect x="300" y="40" width="30" height="50" rx="6"/>
+                </g>
+                <path class="animate-path" d="M50,65 L120,40 L190,55 L260,25 L330,45" fill="none" stroke="var(--accent-secondary)" stroke-width="3"/>
               </svg>
             </div>
             <div class="meta"><span>Asset curves</span><span>Batch actions</span><span>Instant search</span></div>
           </div>
           <div class="feature-chart reveal">
             <h3>Backup & Restore</h3>
-            <p class="feature-desc">Data sovereignty: export full ZIP with attachments, works offline and with iCloud.</p>
+            <p class="feature-desc">Own your data with ZIP exports, offline restores, and private-cloud friendly backups.</p>
             <div class="chart-wrap">
               <svg viewBox="0 0 400 120">
-                <rect class="animate-path" x="150" y="30" width="100" height="60" rx="8" fill="none" stroke="var(--accent)" stroke-width="2"/>
-                <path class="animate-path" d="M200,10 L200,30 M180,20 L200,30 L220,20" fill="none" stroke="var(--accent)" stroke-width="2"/>
+                <rect x="150" y="30" width="100" height="60" rx="18" fill="rgba(255,255,255,.02)" stroke="var(--accent)" stroke-width="2"/>
+                <path class="animate-path" d="M200,20 L200,40" stroke="var(--accent)" stroke-width="4" stroke-linecap="round"/>
+                <polyline class="animate-path" points="180,32 200,44 220,32" fill="none" stroke="var(--accent)" stroke-width="4" stroke-linecap="round"/>
+                <path d="M150,70 Q200,100 250,70" fill="none" stroke="var(--accent-secondary)" stroke-width="3" stroke-linecap="round"/>
+                <circle cx="180" cy="70" r="5" fill="var(--accent-secondary)"/>
+                <circle cx="220" cy="70" r="5" fill="var(--accent-secondary)"/>
               </svg>
             </div>
             <div class="meta"><span>ZIP export</span><span>iCloud ready</span><span>Full control</span></div>
           </div>
           <div class="feature-chart reveal">
             <h3>Privacy & Localization</h3>
-            <p class="feature-desc">Fully local storage, no ads or trackers, native EN/ZH switching for a natural, safe experience.</p>
-            <div class="chart-wrap" style="display:flex; gap:20px; align-items:center; justify-content:center">
-              <span style="font-size:48px; color:var(--accent); font-weight:900">EN</span>
-              <span style="font-size:32px; color:var(--muted)">/</span>
-              <span style="font-size:48px; color:var(--accent); font-weight:900">中</span>
+            <p class="feature-desc">Offline storage, Face ID lock, zero trackers, and native EN/ZH switching for peace of mind.</p>
+            <div class="chart-wrap">
+              <svg viewBox="0 0 400 120">
+                <path class="animate-path" d="M200,30 L320,60" stroke="var(--accent-secondary)" stroke-width="3" stroke-linecap="round"/>
+                <path class="animate-path" d="M200,30 L80,60" stroke="var(--accent)" stroke-width="3" stroke-linecap="round"/>
+                <path d="M200,20 C240,20 280,60 280,90 H120 C120,60 160,20 200,20Z" fill="rgba(212,175,55,.15)" stroke="var(--accent)"/>
+                <text x="155" y="80" fill="var(--text)" font-size="20" font-weight="700">EN</text>
+                <text x="225" y="80" fill="var(--text)" font-size="20" font-weight="700">中</text>
+                <circle cx="200" cy="30" r="10" fill="none" stroke="var(--accent)" stroke-width="2"/>
+                <circle cx="200" cy="30" r="4" fill="var(--accent-secondary)"/>
+              </svg>
             </div>
             <div class="meta"><span>Face ID lock</span><span>Zero trackers</span><span>Native i18n</span></div>
           </div>
@@ -218,61 +254,12 @@
     <section class="section reveal">
       <div class="container">
         <div class="subheading">Help & compliance</div>
-        <h2 class="section-title">Guide · Privacy · Terms · Release Notes</h2>
-        <p class="section-lead">Expanded references inspired by the MyVault README to help you onboard, stay safe, and follow updates.</p>
-        <div class="info-grid">
-          <article class="info-card">
-            <h3>User guide</h3>
-            <p>Step-by-step instructions for item intake, spatial trees, lifecycle tracking, and backups.</p>
-            <ul>
-              <li>Bulk import CSV/Markdown with automatic brand/tag/space enrichment</li>
-              <li>Camera, link parsing, manual entry, and scenario templates</li>
-              <li>Multi-select batch actions and lightning search for high-volume vaults</li>
-            </ul>
-            <div class="spacer"></div>
-            <div class="btn-row">
-              <a class="btn secondary" href="guide.html">Read guide</a>
-            </div>
-          </article>
-          <article class="info-card">
-            <h3>Privacy policy</h3>
-            <p>Local-first with zero trackers; iCloud backups are optional and fully owned by you.</p>
-            <ul>
-              <li>All data stays in encrypted on-device storage by default</li>
-              <li>Optional ZIP export and private cloud backups</li>
-              <li>No ads or third-party SDKs; diagnostics remain local</li>
-            </ul>
-            <div class="spacer"></div>
-            <div class="btn-row">
-              <a class="btn secondary" href="privacy.html">Privacy Policy</a>
-            </div>
-          </article>
-          <article class="info-card">
-            <h3>User terms</h3>
-            <p>Clarifies license scope, responsibilities, and support for both paid and free tiers.</p>
-            <ul>
-              <li>One-time purchase / free tier license language</li>
-              <li>Data sovereignty responsibilities for local storage</li>
-              <li>Support, feedback loop, and update commitments</li>
-            </ul>
-            <div class="spacer"></div>
-            <div class="btn-row">
-              <a class="btn secondary" href="terms.html">Terms of Service</a>
-            </div>
-          </article>
-          <article class="info-card">
-            <h3>Release notes</h3>
-            <p>Track discoveries, wishlist, themes, and localization updates as MyVault evolves.</p>
-            <ul>
-              <li>Highlights performance and UX improvements</li>
-              <li>Showcases Discovery tools, wishlist, and timeline features</li>
-              <li>Documents theme, currency, and scene management changes</li>
-            </ul>
-            <div class="spacer"></div>
-            <div class="btn-row">
-              <a class="btn secondary" href="https://github.com/Yanghe1941/RWVault#readme" target="_blank" rel="noopener">Release notes</a>
-            </div>
-          </article>
+        <h2 class="section-title">Fast access to docs</h2>
+        <div class="link-grid">
+          <a href="guide.html">User guide</a>
+          <a href="privacy.html">Privacy policy</a>
+          <a href="terms.html">User terms</a>
+          <a href="https://github.com/Yanghe1941/RWVault#readme" target="_blank" rel="noopener">Release notes</a>
         </div>
       </div>
     </section>

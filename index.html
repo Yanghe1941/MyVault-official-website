@@ -28,12 +28,10 @@
       <div class="container">
         <div class="hero-grid">
           <div class="hero-copy">
-            <div class="eyebrow">隐私优先 · 本地优先</div>
-            <h1 class="h-title">管理你的 RWA 现实资产<br>也留住它的故事</h1>
+            <h1 class="h-title">管理你的 RWA 现实资产</h1>
             <p class="h-sub">MyVault 是一款私密的实物资产管理工具。记录物理属性、财务细节与情感记忆，所有数据 100% 本地存储，无需账号登录，云端副本仅保留在你自己的 iCloud 账户。</p>
             <div class="trust-badges">
               <span class="badge">100% 本地存储</span>
-              <span class="badge">无云端同步</span>
               <span class="badge">无需账号注册</span>
               <span class="badge">数据导出自由</span>
             </div>
@@ -102,8 +100,17 @@
             <p class="feature-desc">深度记录资产：包括名称、品牌、日期、价格、渠道与位置。支持照片附件与背后的故事，让每一件物品都有温度。</p>
             <div class="chart-wrap">
               <svg viewBox="0 0 400 120">
-                <path class="animate-path" d="M20,100 Q100,80 180,90 T380,20" fill="none" stroke="var(--accent)" stroke-width="4"/>
-                <circle cx="380" cy="20" r="6" fill="var(--accent)"/>
+                <defs>
+                  <linearGradient id="grad-input" x1="0" y1="1" x2="1" y2="0">
+                    <stop offset="0%" stop-color="rgba(212,175,55,.1)"/>
+                    <stop offset="100%" stop-color="rgba(247,193,76,.4)"/>
+                  </linearGradient>
+                </defs>
+                <rect x="20" y="20" width="360" height="80" rx="18" fill="rgba(255,255,255,.02)" stroke="var(--line)"/>
+                <path d="M40,80 Q100,30 160,50 T360,30" fill="url(#grad-input)" opacity=".6"/>
+                <path class="animate-path" d="M40,80 Q100,30 160,50 T360,30" fill="none" stroke="var(--accent)" stroke-width="3"/>
+                <circle cx="200" cy="42" r="7" fill="var(--accent)"/>
+                <circle cx="320" cy="35" r="6" fill="var(--accent-secondary)"/>
               </svg>
             </div>
             <div class="meta"><span>字段 <b class="val-count" data-target="24">0</b>+</span><span>多图支持</span><span>情感存留</span></div>
@@ -113,13 +120,19 @@
             <p class="feature-desc">建立逻辑化的现实位置映射。通过树状结构（房产→房间→柜子），精准定位每一件资产的“归宿”。</p>
             <div class="chart-wrap">
               <svg viewBox="0 0 400 120">
-                <g fill="none" stroke="var(--accent)" stroke-width="2">
-                  <circle cx="40" cy="60" r="8"/>
-                  <path class="animate-path" d="M48,60 L120,30 M48,60 L120,90"/>
-                  <circle cx="128" cy="30" r="6"/>
-                  <circle cx="128" cy="90" r="6"/>
-                  <path class="animate-path" d="M136,30 L210,15 M136,30 L210,45 M136,90 L210,75 M136,90 L210,105"/>
+                <g stroke="var(--accent)" stroke-width="2" fill="none" stroke-linecap="round">
+                  <path class="animate-path" d="M60,80 L120,50 L180,70 L240,30 L320,60"/>
                 </g>
+                <g fill="var(--accent)">
+                  <circle cx="60" cy="80" r="6"/>
+                  <circle cx="120" cy="50" r="6"/>
+                  <circle cx="180" cy="70" r="6"/>
+                  <circle cx="240" cy="30" r="6"/>
+                  <circle cx="320" cy="60" r="6"/>
+                </g>
+                <rect x="48" y="88" width="40" height="12" fill="rgba(212,175,55,.2)" rx="6"/>
+                <rect x="108" y="58" width="50" height="12" fill="rgba(247,193,76,.25)" rx="6"/>
+                <rect x="228" y="38" width="60" height="12" fill="rgba(255,255,255,.12)" rx="6"/>
               </svg>
             </div>
             <div class="meta"><span>多级空间</span><span>位置树图</span><span>快速检索</span></div>
@@ -127,10 +140,15 @@
           <div class="feature-chart reveal">
             <h3>生命周期管理</h3>
             <p class="feature-desc">关注长期持有价值。追踪维修记录、保修到期、日均成本与折旧情况，让资产管理更理性。</p>
-            <div class="chart-wrap" style="flex-direction:column; justify-content:center; gap:15px">
-              <div class="bar-track"><div class="bar-fill" style="--target-width: 85%"></div></div>
-              <div class="bar-track"><div class="bar-fill" style="--target-width: 60%"></div></div>
-              <div class="bar-track"><div class="bar-fill" style="--target-width: 40%"></div></div>
+            <div class="chart-wrap">
+              <svg viewBox="0 0 400 120">
+                <path class="animate-path" d="M60,90 A40,40 0 0 1 140,40" fill="none" stroke="var(--accent)" stroke-width="6" stroke-linecap="round"/>
+                <path class="animate-path" d="M160,90 A40,40 0 0 1 240,40" fill="none" stroke="var(--accent-secondary)" stroke-width="6" stroke-linecap="round"/>
+                <path class="animate-path" d="M260,90 A40,40 0 0 1 340,40" fill="none" stroke="#fff" stroke-opacity=".4" stroke-width="6" stroke-linecap="round"/>
+                <text x="90" y="100" fill="var(--muted)" font-size="12">保修</text>
+                <text x="210" y="100" fill="var(--muted)" font-size="12">成本</text>
+                <text x="310" y="100" fill="var(--muted)" font-size="12">折旧</text>
+              </svg>
             </div>
             <div class="meta"><span>保修倒计时</span><span>持有成本</span><span>折旧跟踪</span></div>
           </div>
@@ -139,8 +157,16 @@
             <p class="feature-desc">全局视角管理资产。提供总资产/净资产看板，支持多维度筛选、秒级搜索与高效批量编辑。</p>
             <div class="chart-wrap">
               <svg viewBox="0 0 400 120">
-                <rect x="20" y="20" width="360" height="80" rx="10" fill="none" stroke="var(--line)" stroke-width="1"/>
-                <path class="animate-path" d="M40,80 L100,50 L160,70 L220,30 L280,60 L340,20" fill="none" stroke="var(--accent)" stroke-width="3"/>
+                <rect x="30" y="15" width="340" height="80" rx="18" fill="rgba(255,255,255,.02)" stroke="var(--line)"/>
+                <g fill="rgba(212,175,55,.3)">
+                  <rect x="50" y="70" width="30" height="20" rx="6"/>
+                  <rect x="100" y="55" width="30" height="35" rx="6"/>
+                  <rect x="150" y="45" width="30" height="45" rx="6"/>
+                  <rect x="200" y="35" width="30" height="55" rx="6"/>
+                  <rect x="250" y="60" width="30" height="30" rx="6"/>
+                  <rect x="300" y="40" width="30" height="50" rx="6"/>
+                </g>
+                <path class="animate-path" d="M50,65 L120,40 L190,55 L260,25 L330,45" fill="none" stroke="var(--accent-secondary)" stroke-width="3"/>
               </svg>
             </div>
             <div class="meta"><span>资产曲线</span><span>批量操作</span><span>毫秒搜索</span></div>
@@ -150,8 +176,12 @@
             <p class="feature-desc">数据主权归您所有。支持一键导出包含附件的完整 ZIP 备份，兼容 iCloud 同步与离线恢复。</p>
             <div class="chart-wrap">
               <svg viewBox="0 0 400 120">
-                <rect class="animate-path" x="150" y="30" width="100" height="60" rx="8" fill="none" stroke="var(--accent)" stroke-width="2"/>
-                <path class="animate-path" d="M200,10 L200,30 M180,20 L200,30 L220,20" fill="none" stroke="var(--accent)" stroke-width="2"/>
+                <rect x="150" y="30" width="100" height="60" rx="18" fill="rgba(255,255,255,.02)" stroke="var(--accent)" stroke-width="2"/>
+                <path class="animate-path" d="M200,20 L200,40" stroke="var(--accent)" stroke-width="4" stroke-linecap="round"/>
+                <polyline class="animate-path" points="180,32 200,44 220,32" fill="none" stroke="var(--accent)" stroke-width="4" stroke-linecap="round"/>
+                <path d="M150,70 Q200,100 250,70" fill="none" stroke="var(--accent-secondary)" stroke-width="3" stroke-linecap="round"/>
+                <circle cx="180" cy="70" r="5" fill="var(--accent-secondary)"/>
+                <circle cx="220" cy="70" r="5" fill="var(--accent-secondary)"/>
               </svg>
             </div>
             <div class="meta"><span>ZIP 导出</span><span>iCloud 存储</span><span>完全掌控</span></div>
@@ -159,10 +189,16 @@
           <div class="feature-chart reveal">
             <h3>隐私与多语言</h3>
             <p class="feature-desc">全本地存储，无广告与追踪。原生支持中英双语动态切换，提供自然且隐私安全的极致体验。</p>
-            <div class="chart-wrap" style="display:flex; gap:20px; align-items:center; justify-content:center">
-              <span style="font-size:48px; color:var(--accent); font-weight:900">中</span>
-              <span style="font-size:32px; color:var(--muted)">/</span>
-              <span style="font-size:48px; color:var(--accent); font-weight:900">EN</span>
+            <div class="chart-wrap">
+              <svg viewBox="0 0 400 120">
+                <path class="animate-path" d="M200,30 L320,60" stroke="var(--accent-secondary)" stroke-width="3" stroke-linecap="round"/>
+                <path class="animate-path" d="M200,30 L80,60" stroke="var(--accent)" stroke-width="3" stroke-linecap="round"/>
+                <path d="M200,20 C240,20 280,60 280,90 H120 C120,60 160,20 200,20Z" fill="rgba(212,175,55,.15)" stroke="var(--accent)"/>
+                <text x="155" y="80" fill="var(--text)" font-size="20" font-weight="700">中</text>
+                <text x="215" y="80" fill="var(--text)" font-size="20" font-weight="700">EN</text>
+                <circle cx="200" cy="30" r="10" fill="none" stroke="var(--accent)" stroke-width="2"/>
+                <circle cx="200" cy="30" r="4" fill="var(--accent-secondary)"/>
+              </svg>
             </div>
             <div class="meta"><span>FaceID 锁</span><span>零追踪</span><span>双语原生</span></div>
           </div>
@@ -218,61 +254,12 @@
     <section class="section reveal">
       <div class="container">
         <div class="subheading">帮助与合规</div>
-        <h2 class="section-title">用户指南 · 隐私 · 协议 · 更新日志</h2>
-        <p class="section-lead">基于 MyVault 产品体验与 README 文档整理，为你提供更丰富的参考内容。</p>
-        <div class="info-grid">
-          <article class="info-card">
-            <h3>用户指南</h3>
-            <p>从物品录入到空间树管理，再到生命周期与备份，每一步都有可操作流程。</p>
-            <ul>
-              <li>批量导入 CSV/Markdown，自动补全品牌、标签与空间</li>
-              <li>拍照、链接解析、多场景录入一应俱全</li>
-              <li>多选批量操作 + 智能搜索，适配大体量资产</li>
-            </ul>
-            <div class="spacer"></div>
-            <div class="btn-row">
-              <a class="btn secondary" href="./zh/guide.html">查看指南</a>
-            </div>
-          </article>
-          <article class="info-card">
-            <h3>隐私协议</h3>
-            <p>坚持本地优先与零追踪，云端仅通过 iCloud 由你自行掌控备份。</p>
-            <ul>
-              <li>应用数据默认仅存于本机加密数据库</li>
-              <li>可选择离线 ZIP 备份或私有云储存</li>
-              <li>无广告、无第三方 SDK，日志仅用于本地诊断</li>
-            </ul>
-            <div class="spacer"></div>
-            <div class="btn-row">
-              <a class="btn secondary" href="./zh/privacy.html">隐私政策</a>
-            </div>
-          </article>
-          <article class="info-card">
-            <h3>用户协议</h3>
-            <p>明确使用范围、版权、责任与售后支持，保障双方权益。</p>
-            <ul>
-              <li>买断制 / 免费版本授权条款</li>
-              <li>本地数据主权与责任界定</li>
-              <li>售后支持、反馈渠道与版本更新约定</li>
-            </ul>
-            <div class="spacer"></div>
-            <div class="btn-row">
-              <a class="btn secondary" href="./zh/terms.html">用户协议</a>
-            </div>
-          </article>
-          <article class="info-card">
-            <h3>更新日志</h3>
-            <p>追踪最新功能：空间管理、发现页效率工具、主题与多语言等持续进化。</p>
-            <ul>
-              <li>记录版本亮点与性能优化</li>
-              <li>展示发现页效率工具、心愿单、时间轴等新增模块</li>
-              <li>主题、货币、场景管理等偏好设置迭代</li>
-            </ul>
-            <div class="spacer"></div>
-            <div class="btn-row">
-              <a class="btn secondary" href="https://github.com/Yanghe1941/RWVault#readme" target="_blank" rel="noopener">查看日志</a>
-            </div>
-          </article>
+        <h2 class="section-title">核心文档快速入口</h2>
+        <div class="link-grid">
+          <a href="./zh/guide.html">用户指南</a>
+          <a href="./zh/privacy.html">隐私协议</a>
+          <a href="./zh/terms.html">用户协议</a>
+          <a href="https://github.com/Yanghe1941/RWVault#readme" target="_blank" rel="noopener">更新日志</a>
         </div>
       </div>
     </section>
