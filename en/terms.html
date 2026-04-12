@@ -5,8 +5,11 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>MyVault — Terms of Service</title>
   <meta name="description" content="MyVault terms of service." />
-  <link rel="stylesheet" href="../assets/style.css" />
+  <link rel="stylesheet" href="../assets/style.css?v=1.1" />
   <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
+  <link rel="canonical" href="https://myvault.moodex.cc/en/terms.html" />
+  <link rel="alternate" hreflang="zh" href="https://myvault.moodex.cc/zh/terms.html" />
+  <link rel="alternate" hreflang="en" href="https://myvault.moodex.cc/en/terms.html" />
 </head>
 <body>
   <nav class="nav">
@@ -27,7 +30,7 @@
 
     <article class="doc-section">
       <h2>1. Definitions</h2>
-      <p>1.1 “We / the App / Service Provider” refers to the developer and operator of MyVault (fill before release: <strong>[Company / Individual Name]</strong>).</p>
+      <p>1.1 "We / the App / Service Provider" refers to the developer and operator of MyVault (<strong>Yang He</strong>).</p>
       <p>1.2 “User” means any natural person who downloads, installs, or uses the App.</p>
       <p>1.3 “Content / Data” covers all asset information, photos, tags, categories, spaces, locations, maintenance logs, and preference settings recorded or imported by the user.</p>
     </article>
@@ -103,6 +106,7 @@
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.classList.add('active');
+          observer.unobserve(entry.target);
         }
       });
     }, { threshold: 0.1 });

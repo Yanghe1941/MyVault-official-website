@@ -5,8 +5,11 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>MyVault — 用户指南</title>
   <meta name="description" content="MyVault 用户指南：快速上手、录入、图片与附件、标签、空间、备份恢复、导入与隐私说明。" />
-  <link rel="stylesheet" href="../assets/style.css" />
+  <link rel="stylesheet" href="../assets/style.css?v=1.1" />
   <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
+  <link rel="canonical" href="https://myvault.moodex.cc/zh/guide.html" />
+  <link rel="alternate" hreflang="zh" href="https://myvault.moodex.cc/zh/guide.html" />
+  <link rel="alternate" hreflang="en" href="https://myvault.moodex.cc/en/guide.html" />
 </head>
 <body>
   <nav class="nav">
@@ -109,6 +112,7 @@
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.classList.add('active');
+          observer.unobserve(entry.target);
         }
       });
     }, { threshold: 0.1 });

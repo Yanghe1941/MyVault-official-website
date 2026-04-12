@@ -8,10 +8,14 @@
   <meta property="og:title" content="MyVault: Manage Your Real Assets & Preserve Their Stories" />
   <meta property="og:description" content="Privacy-first, local-first asset notebook. Capture physical specs, financial attributes, and emotional memories. Data never leaves your device." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://myvault.app/en" />
-  <meta property="og:image" content="https://myvault.app/assets/og-cover.png" />
+  <meta property="og:url" content="https://myvault.moodex.cc/en/" />
+  <meta property="og:image" content="https://myvault.moodex.cc/assets/og-cover.svg" />
   <link rel="stylesheet" href="../assets/style.css?v=1.1" />
   <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
+  <link rel="canonical" href="https://myvault.moodex.cc/en/" />
+  <link rel="alternate" hreflang="zh" href="https://myvault.moodex.cc/" />
+  <link rel="alternate" hreflang="en" href="https://myvault.moodex.cc/en/" />
+  <link rel="alternate" hreflang="x-default" href="https://myvault.moodex.cc/" />
 </head>
 <body>
   <nav class="nav">
@@ -209,7 +213,7 @@
     <section class="section reveal story-card">
       <div class="container">
         <div class="subheading">Story sample</div>
-        <h2 class="section-title">Narrative archive block</h2>
+        <h2 class="section-title">Story Mode · Preserve the Memory</h2>
         <div class="glass-panel">
           <div class="card-header">
             <span>Asset: Vintage Lens from Home</span>
@@ -259,7 +263,7 @@
           <a href="guide.html">User guide</a>
           <a href="privacy.html">Privacy policy</a>
           <a href="terms.html">User terms</a>
-          <a href="./en/changelog.html">Release notes</a>
+          <a href="changelog.html">Release notes</a>
         </div>
       </div>
     </section>
@@ -279,6 +283,7 @@
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.classList.add('active');
+          observer.unobserve(entry.target);
           const counts = entry.target.querySelectorAll('.val-count');
           counts.forEach(count => {
             const target = parseInt(count.getAttribute('data-target'));

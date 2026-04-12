@@ -5,8 +5,11 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>MyVault — Privacy Policy</title>
   <meta name="description" content="MyVault privacy policy." />
-  <link rel="stylesheet" href="../assets/style.css" />
+  <link rel="stylesheet" href="../assets/style.css?v=1.1" />
   <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
+  <link rel="canonical" href="https://myvault.moodex.cc/en/privacy.html" />
+  <link rel="alternate" hreflang="zh" href="https://myvault.moodex.cc/zh/privacy.html" />
+  <link rel="alternate" hreflang="en" href="https://myvault.moodex.cc/en/privacy.html" />
 </head>
 <body>
   <nav class="nav">
@@ -124,6 +127,7 @@
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.classList.add('active');
+          observer.unobserve(entry.target);
         }
       });
     }, { threshold: 0.1 });

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <url>
+    <loc>https://myvault.moodex.cc/</loc>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://myvault.moodex.cc/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://myvault.moodex.cc/en/"/>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://myvault.moodex.cc/en/</loc>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://myvault.moodex.cc/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://myvault.moodex.cc/en/"/>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://myvault.moodex.cc/zh/guide.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://myvault.moodex.cc/zh/guide.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://myvault.moodex.cc/en/guide.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://myvault.moodex.cc/en/guide.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://myvault.moodex.cc/zh/guide.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://myvault.moodex.cc/en/guide.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://myvault.moodex.cc/zh/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://myvault.moodex.cc/zh/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://myvault.moodex.cc/en/privacy.html"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://myvault.moodex.cc/en/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://myvault.moodex.cc/zh/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://myvault.moodex.cc/en/privacy.html"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://myvault.moodex.cc/zh/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://myvault.moodex.cc/zh/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://myvault.moodex.cc/en/terms.html"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://myvault.moodex.cc/en/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://myvault.moodex.cc/zh/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://myvault.moodex.cc/en/terms.html"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://myvault.moodex.cc/zh/changelog.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://myvault.moodex.cc/zh/changelog.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://myvault.moodex.cc/en/changelog.html"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://myvault.moodex.cc/en/changelog.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://myvault.moodex.cc/zh/changelog.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://myvault.moodex.cc/en/changelog.html"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+</urlset>

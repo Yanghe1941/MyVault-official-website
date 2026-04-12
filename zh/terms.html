@@ -5,8 +5,11 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>MyVault — 用户协议</title>
   <meta name="description" content="MyVault 用户协议。" />
-  <link rel="stylesheet" href="../assets/style.css" />
+  <link rel="stylesheet" href="../assets/style.css?v=1.1" />
   <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
+  <link rel="canonical" href="https://myvault.moodex.cc/zh/terms.html" />
+  <link rel="alternate" hreflang="zh" href="https://myvault.moodex.cc/zh/terms.html" />
+  <link rel="alternate" hreflang="en" href="https://myvault.moodex.cc/en/terms.html" />
 </head>
 <body>
   <nav class="nav">
@@ -27,7 +30,7 @@
 
     <article class="doc-section">
       <h2>1. 定义</h2>
-      <p>1.1 “我们 / 本应用 / 服务提供方”指 MyVault 的开发与运营主体（请在发布前补充：<strong>[公司/个人名称]</strong>）。</p>
+      <p>1.1 “我们 / 本应用 / 服务提供方”指 MyVault 的开发与运营主体（<strong>杨鹤</strong>）。</p>
       <p>1.2 “用户”指下载、安装或使用本应用的自然人。</p>
       <p>1.3 “内容 / 数据”指用户在本应用中录入或导入的资产信息、照片、标签、分类、空间、位置、维护记录、偏好设置等。</p>
     </article>
@@ -103,6 +106,7 @@
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.classList.add('active');
+          observer.unobserve(entry.target);
         }
       });
     }, { threshold: 0.1 });

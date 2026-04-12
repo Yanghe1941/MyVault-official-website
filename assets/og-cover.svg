@@ -1,0 +1,172 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <radialGradient id="bg1" cx="78%" cy="12%" r="52%">
+      <stop offset="0%" stop-color="#d4af37" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#d4af37" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="bg2" cx="8%" cy="88%" r="50%">
+      <stop offset="0%" stop-color="#f9e2af" stop-opacity="0.13"/>
+      <stop offset="100%" stop-color="#f9e2af" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f9e2af"/>
+      <stop offset="100%" stop-color="#d4af37"/>
+    </linearGradient>
+    <linearGradient id="chartFill" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#d4af37" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#f7c14c" stop-opacity="0.32"/>
+    </linearGradient>
+    <clipPath id="cardClip">
+      <rect x="648" y="68" width="464" height="494" rx="32"/>
+    </clipPath>
+  </defs>
+
+  <!-- Base -->
+  <rect width="1200" height="630" fill="#050505"/>
+  <rect width="1200" height="630" fill="url(#bg1)"/>
+  <rect width="1200" height="630" fill="url(#bg2)"/>
+
+  <!-- Dot texture -->
+  <g opacity="0.6">
+    <rect x="0"   y="0"   width="2" height="2" fill="rgba(255,255,255,0.03)"/>
+    <rect x="40"  y="0"   width="2" height="2" fill="rgba(255,255,255,0.03)"/>
+    <rect x="80"  y="0"   width="2" height="2" fill="rgba(255,255,255,0.03)"/>
+    <rect x="120" y="0"   width="2" height="2" fill="rgba(255,255,255,0.03)"/>
+    <rect x="160" y="0"   width="2" height="2" fill="rgba(255,255,255,0.03)"/>
+    <rect x="200" y="0"   width="2" height="2" fill="rgba(255,255,255,0.03)"/>
+    <rect x="0"   y="40"  width="2" height="2" fill="rgba(255,255,255,0.03)"/>
+    <rect x="40"  y="40"  width="2" height="2" fill="rgba(255,255,255,0.03)"/>
+    <rect x="80"  y="40"  width="2" height="2" fill="rgba(255,255,255,0.03)"/>
+    <rect x="120" y="40"  width="2" height="2" fill="rgba(255,255,255,0.03)"/>
+    <rect x="160" y="40"  width="2" height="2" fill="rgba(255,255,255,0.03)"/>
+    <rect x="0"   y="80"  width="2" height="2" fill="rgba(255,255,255,0.03)"/>
+    <rect x="40"  y="80"  width="2" height="2" fill="rgba(255,255,255,0.03)"/>
+    <rect x="80"  y="80"  width="2" height="2" fill="rgba(255,255,255,0.03)"/>
+  </g>
+
+  <!-- ═══ LEFT COLUMN ═══ -->
+
+  <!-- Logo diamond -->
+  <polygon points="88,82 106,62 124,82 106,102" fill="none" stroke="#d4af37" stroke-width="1.5"/>
+  <polygon points="97,82 106,71 115,82 106,93"  fill="#d4af37"/>
+
+  <!-- Brand wordmark -->
+  <text x="140" y="97"
+        font-family="-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif"
+        font-size="54" font-weight="900" letter-spacing="-2"
+        fill="url(#titleGrad)">MyVault</text>
+
+  <!-- Thin separator -->
+  <line x1="88" y1="124" x2="560" y2="124" stroke="rgba(212,175,55,0.18)" stroke-width="1"/>
+
+  <!-- Headline ZH -->
+  <text x="88" y="202"
+        font-family="-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif"
+        font-size="46" font-weight="800" letter-spacing="-1" fill="#ffffff">管理你的现实资产</text>
+  <text x="88" y="258"
+        font-family="-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif"
+        font-size="46" font-weight="800" letter-spacing="-1" fill="#ffffff">也留住它的故事</text>
+
+  <!-- Subtitle EN -->
+  <text x="88" y="308"
+        font-family="-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif"
+        font-size="20" fill="rgba(255,255,255,0.48)">Manage real-world assets. Preserve every memory.</text>
+
+  <!-- Trust badges -->
+  <rect x="88"  y="344" width="152" height="34" rx="17" fill="rgba(212,175,55,0.09)" stroke="rgba(212,175,55,0.28)" stroke-width="1"/>
+  <text x="164" y="366"
+        font-family="-apple-system,BlinkMacSystemFont,'PingFang SC',sans-serif"
+        font-size="13" fill="rgba(255,255,255,0.72)" text-anchor="middle">100% 本地存储</text>
+
+  <rect x="252" y="344" width="128" height="34" rx="17" fill="rgba(212,175,55,0.09)" stroke="rgba(212,175,55,0.28)" stroke-width="1"/>
+  <text x="316" y="366"
+        font-family="-apple-system,BlinkMacSystemFont,'PingFang SC',sans-serif"
+        font-size="13" fill="rgba(255,255,255,0.72)" text-anchor="middle">无需账号注册</text>
+
+  <rect x="392" y="344" width="128" height="34" rx="17" fill="rgba(212,175,55,0.09)" stroke="rgba(212,175,55,0.28)" stroke-width="1"/>
+  <text x="456" y="366"
+        font-family="-apple-system,BlinkMacSystemFont,'PingFang SC',sans-serif"
+        font-size="13" fill="rgba(255,255,255,0.72)" text-anchor="middle">数据导出自由</text>
+
+  <!-- Platform tag -->
+  <text x="88" y="430"
+        font-family="-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif"
+        font-size="14" fill="rgba(255,255,255,0.32)" letter-spacing="0.25em">iOS · PRIVACY-FIRST · LOCAL-FIRST</text>
+
+  <!-- Mini chart decoration -->
+  <rect x="88" y="460" width="510" height="90" rx="20" fill="rgba(255,255,255,0.02)" stroke="rgba(212,175,55,0.1)" stroke-width="1"/>
+  <path d="M112,530 Q180,490 250,505 T390,475 T530,460 T580,478"
+        fill="url(#chartFill)" stroke="#d4af37" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="390" cy="475" r="5" fill="#f7c14c"/>
+  <circle cx="530" cy="460" r="5" fill="#d4af37"/>
+
+  <!-- Domain -->
+  <text x="88" y="590"
+        font-family="-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif"
+        font-size="17" fill="rgba(212,175,55,0.65)" letter-spacing="0.04em">myvault.moodex.cc</text>
+
+  <!-- Vertical accent line -->
+  <line x1="630" y1="80" x2="630" y2="550" stroke="rgba(212,175,55,0.12)" stroke-width="1"/>
+
+  <!-- ═══ RIGHT COLUMN — Glass Card ═══ -->
+
+  <!-- Card drop shadow -->
+  <rect x="658" y="82" width="462" height="492" rx="32" fill="rgba(0,0,0,0.55)"/>
+
+  <!-- Card body -->
+  <rect x="648" y="68" width="462" height="492" rx="32"
+        fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+
+  <!-- Card header row -->
+  <text x="688" y="122"
+        font-family="-apple-system,BlinkMacSystemFont,'PingFang SC',sans-serif"
+        font-size="14" fill="rgba(255,255,255,0.48)">资产档案 · 预览</text>
+
+  <!-- Chip -->
+  <rect x="1018" y="104" width="68" height="26" rx="13"
+        fill="rgba(103,167,255,0.1)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="1052" y="122"
+        font-family="-apple-system,BlinkMacSystemFont,'PingFang SC',sans-serif"
+        font-size="12" fill="#f7c14c" text-anchor="middle" font-weight="600">离线草稿</text>
+
+  <!-- Header divider -->
+  <line x1="688" y1="142" x2="1090" y2="142" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+
+  <!-- Asset name -->
+  <text x="688" y="188"
+        font-family="-apple-system,BlinkMacSystemFont,'PingFang SC','Hiragino Sans GB',sans-serif"
+        font-size="26" font-weight="700" fill="#ffffff">老家旧相机镜头</text>
+
+  <!-- Meta rows -->
+  <text x="688" y="230" font-family="-apple-system,BlinkMacSystemFont,'PingFang SC',sans-serif" font-size="14" fill="rgba(255,255,255,0.45)">购入</text>
+  <text x="1090" y="230" font-family="-apple-system,BlinkMacSystemFont,'PingFang SC',sans-serif" font-size="14" fill="#ffffff" font-weight="600" text-anchor="end">2018 年秋</text>
+  <line x1="688" y1="242" x2="1090" y2="242" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+
+  <text x="688" y="268" font-family="-apple-system,BlinkMacSystemFont,'PingFang SC',sans-serif" font-size="14" fill="rgba(255,255,255,0.45)">价值</text>
+  <text x="1090" y="268" font-family="-apple-system,BlinkMacSystemFont,'PingFang SC',sans-serif" font-size="14" fill="#d4af37" font-weight="600" text-anchor="end">¥3,200</text>
+  <line x1="688" y1="280" x2="1090" y2="280" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+
+  <text x="688" y="306" font-family="-apple-system,BlinkMacSystemFont,'PingFang SC',sans-serif" font-size="14" fill="rgba(255,255,255,0.45)">位置</text>
+  <text x="1090" y="306" font-family="-apple-system,BlinkMacSystemFont,'PingFang SC',sans-serif" font-size="14" fill="#ffffff" font-weight="600" text-anchor="end">书房 · 玻璃柜</text>
+  <line x1="688" y1="318" x2="1090" y2="318" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+
+  <!-- Story text -->
+  <rect x="688" y="334" width="400" height="96" rx="16" fill="rgba(255,255,255,0.04)"/>
+  <text x="708" y="360" font-family="-apple-system,BlinkMacSystemFont,'PingFang SC',sans-serif" font-size="13.5" fill="rgba(255,255,255,0.72)">大学毕业旅行时父亲送的礼物。第一次</text>
+  <text x="708" y="382" font-family="-apple-system,BlinkMacSystemFont,'PingFang SC',sans-serif" font-size="13.5" fill="rgba(255,255,255,0.72)">用它拍下职业作品，也记录下家人的笑</text>
+  <text x="708" y="404" font-family="-apple-system,BlinkMacSystemFont,'PingFang SC',sans-serif" font-size="13.5" fill="rgba(255,255,255,0.72)">脸。</text>
+
+  <!-- Mini chart in card -->
+  <rect x="688" y="448" width="400" height="72" rx="16" fill="rgba(0,0,0,0.3)" stroke="rgba(212,175,55,0.12)" stroke-width="1"/>
+  <path d="M708,502 Q760,472 812,485 T912,458 T1070,445"
+        fill="none" stroke="#d4af37" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M708,502 Q760,472 812,485 T912,458 T1070,445 L1070,520 L708,520 Z"
+        fill="url(#chartFill)"/>
+  <circle cx="812" cy="485" r="4.5" fill="#f7c14c"/>
+  <circle cx="912" cy="458" r="4.5" fill="#d4af37"/>
+
+  <!-- Story tag -->
+  <text x="688" y="546"
+        font-family="-apple-system,BlinkMacSystemFont,'PingFang SC',sans-serif"
+        font-size="11" fill="#f7c14c" letter-spacing="0.22em">只存于你的设备</text>
+</svg>
