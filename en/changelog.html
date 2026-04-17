@@ -26,6 +26,40 @@
     <p class="section-lead">All releases are archived here. Current version: <strong>v1.0</strong> (2026-03-24).</p>
 
     <article class="doc-section">
+      <h2>Ongoing improvements · Mar 24, 2026 – present</h2>
+      <h3>1. Item input & editing</h3>
+      <ul>
+        <li>Added a brand-search modal to Add / Edit Item with curated brand library filtering, auto category suggestions, and themed icons.</li>
+        <li>Purchase info UI refresh: channel / city now support picker + custom input, city history auto-completes, and price fields gain thousands separators.</li>
+        <li>Photo block moved to the top row with unified thumbnail chips and delete controls.</li>
+        <li>“Additional notes” renamed to “Asset Story Log” with full EN/ZH localization.</li>
+        <li>Tag and space fields are governed by Settings toggles; disabling them clears bound data automatically.</li>
+      </ul>
+      <h3>2. Batch Edit</h3>
+      <ul>
+        <li>Batch views reuse the brand-search modal, show tag / space fields dynamically via toggles, and drop the legacy “batch location” input.</li>
+        <li>BatchEditPayload / Service now center on SpaceNode & TagSet data, auto-writing back to the brand library when saved.</li>
+        <li>Introduced city-history logging plus custom city chips, aligned with the single-item form experience.</li>
+      </ul>
+      <h3>3. Brand system</h3>
+      <ul>
+        <li>Brand library schema expanded so BrandItem / BrandType store English, Chinese, pinyin, and logo metadata with normalized search across the app.</li>
+        <li>CSV import normalizes brand names via library metadata and prioritizes logo matches.</li>
+        <li>Brand manager overhaul: denser rows with Chinese labels, new “My Brands / Disabled brands” tabs, multilingual search, and full metadata propagation for new / suggested brands.</li>
+      </ul>
+      <h3>4. Settings & preferences</h3>
+      <ul>
+        <li>Settings adds a space-management toggle with empty states, tighter layout, and selectors (language / theme / currency) that collapse after choosing.</li>
+        <li>Currency display gains a thousands-separator toggle that applies globally to cards and pickers.</li>
+      </ul>
+      <h3>5. Other UX polish</h3>
+      <ul>
+        <li>ImagePicker and Maintenance views inside Edit Item now open as sheets for parity with Add Item.</li>
+        <li>FileImportView dedupe logic upgraded and automatically backfills brand / category / location corrections during import.</li>
+      </ul>
+    </article>
+
+    <article class="doc-section">
       <h2>v1.0 · 2026-03-24</h2>
       <ul>
         <li>Asset management: create, edit, and delete full asset records.</li>
