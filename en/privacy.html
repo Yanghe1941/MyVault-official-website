@@ -23,120 +23,78 @@
 
   <main class="container doc reveal active">
     <h1>MyVault Privacy Policy</h1>
-    <p class="section-lead">Effective date: 2026-03-24 · Last updated: 2026-03-24</p>
+    <p class="section-lead">Effective date: April 17, 2026 · Applies to: MyVault</p>
     <div class="doc-back">
       <a href="index.html">← Back to homepage</a>
     </div>
 
     <article class="doc-section">
-      <h2>1. Information We Collect</h2>
-      <h3>1.1 Data you provide</h3>
+      <h2>1. Information We Collect & Why</h2>
+      <p>All information is provided by you or generated locally. Unless you manually enable iCloud or export files, nothing is uploaded to any server.</p>
       <ul>
-        <li>Asset info: name, price, purchase date, channel, city, description, status, warranty period, etc.</li>
-        <li>Structured data such as categories, tags, brands, spaces, and locations.</li>
-        <li>Maintenance records: type, date, cost, vendor, notes.</li>
-        <li>Asset photos and images.</li>
-        <li>Scenes / lists and preference settings (theme, language, currency, etc.).</li>
-      </ul>
-      <h3>1.2 Device permissions</h3>
-      <ul>
-        <li>Camera: capture photos for assets.</li>
-        <li>Photo library: pick existing photos.</li>
-        <li>Face ID / Touch ID: optional local unlock.</li>
-        <li>File access: import / export, backup / restore (including iCloud Drive).</li>
-      </ul>
-      <h3>1.3 We do not require</h3>
-      <ul>
-        <li>Account registration (current version).</li>
-        <li>Contacts, SMS, call logs, or other data unrelated to asset management.</li>
+        <li><strong>Asset data:</strong> names, brands, categories, prices, currencies, cities, channels, story notes, photos, maintenance logs—used to power asset management.</li>
+        <li><strong>Preferences:</strong> language, theme, currency unit, thousands separators, brand/space/tag toggles—used for personalization.</li>
+        <li><strong>Usage traces:</strong> import/export history, batch selections, search keywords—kept locally to improve your workflow.</li>
+        <li><strong>Diagnostic logs:</strong> crash stacks or anonymous usage stats collected only if you grant permission, so we can troubleshoot issues.</li>
       </ul>
     </article>
 
     <article class="doc-section">
-      <h2>2. How We Use Information</h2>
-      <p>2.1 Local storage and display of your asset records.</p>
-      <p>2.2 Generating analytics, summaries, and visualizations.</p>
-      <p>2.3 Handling local files for import / export, backup, and restore.</p>
-      <p>2.4 Remembering language, theme, currency, and other preferences.</p>
-    </article>
-
-    <article class="doc-section">
-      <h2>3. Storage & Processing</h2>
-      <p>3.1 Asset data stays on-device by default (Core Data + local files).</p>
-      <p>3.2 Backup files are <code>.zip</code> archives you choose where to store (e.g., iCloud Drive).</p>
-      <p>3.3 Exports are generated locally; the final location depends on the file picker or system share sheet.</p>
-      <p>3.4 We do not maintain proprietary cloud servers for your asset data (as of this version).</p>
-    </article>
-
-    <article class="doc-section">
-      <h2>4. Third-Party Services & Sharing</h2>
-      <p>4.1 We do not sell or share asset data with third parties.</p>
-      <p>4.2 Backup / restore or import / export may invoke system file services (e.g., iCloud Drive) governed by Apple’s terms.</p>
-      <p>4.3 The photo recognition screen shows “Powered by DeepSeek”. If future versions call external AI services, we will request permission beforehand.</p>
-      <h3>4.4 Analytics & Instrumentation</h3>
-      <p>We embed Firebase Analytics to understand feature usage and improve the experience. Where legally permitted, the service automatically or programmatically reports:</p>
-      <p><strong>Baseline signals (automatically collected)</strong></p>
+      <h2>2. Device Permissions & Use Cases</h2>
       <ul>
-        <li>App launches, session length, crash and performance metrics;</li>
-        <li>Device info (model, OS version, locale / language) plus an anonymized instance ID;</li>
-        <li>Environment details such as network state (Wi-Fi / cellular) for aggregate stats.</li>
-      </ul>
-      <p><strong>Feature events (custom instrumentation)</strong></p>
-      <ul>
-        <li>Interactions like tab switches, opening the add-new flow, finishing onboarding;</li>
-        <li>Pro paywall events (paywall shown, purchase attempts, purchase results);</li>
-        <li>Entry source when a Pro gate is reached, strictly to evaluate upgrade funnels.</li>
-      </ul>
-      <p><strong>Usage</strong></p>
-      <ul>
-        <li>Measure how often each feature is used to guide UX and performance tuning;</li>
-        <li>Review purchase funnels to improve subscription plans and paywall UX;</li>
-        <li>Troubleshoot crashes / anomalies to keep the App stable.</li>
-      </ul>
-      <p><strong>Data handling & storage</strong></p>
-      <ul>
-        <li>Analytics data is stored on Firebase (Google) infrastructure; we do not link event data to personally identifiable info;</li>
-        <li>We do not ingest contacts, photos, documents, or other personal content via Firebase Analytics;</li>
-        <li>Analytics data is not shared with third-party ad networks and is used solely for in-product operations.</li>
-      </ul>
-      <p><strong>User control</strong></p>
-      <ul>
-        <li>You can disable “Allow Apps to Request to Track” at the system level or uninstall the App to stop analytics;</li>
-        <li>You may also email support (hi@moodex.cc) to request deletion of specific analytics data, and we will coordinate with Firebase.</li>
+        <li><strong>Photo Library:</strong> import/save asset photos, attach images to exports.</li>
+        <li><strong>Camera:</strong> capture photos directly during asset edits.</li>
+        <li><strong>Location:</strong> auto-fill city fields on dashboards or forms (optional).</li>
+        <li><strong>Files (e.g., iOS Files app):</strong> import CSV/spreadsheets and export backups.</li>
+        <li><strong>Notifications:</strong> remind you of maintenance or warranty deadlines (only if allowed).</li>
+        <li><strong>iCloud:</strong> sync or back up data under your Apple ID when you enable it.</li>
       </ul>
     </article>
 
     <article class="doc-section">
-      <h2>5. Data Security</h2>
-      <p>5.1 Data remains on your device; protect the device and unlock credentials.</p>
-      <p>5.2 Face ID / Touch ID can be enabled as an extra layer of protection.</p>
-      <p>5.3 If you store backups in the cloud, safety depends on both you and the storage provider.</p>
+      <h2>3. Third-Party Services</h2>
+      <p><strong>Apple iCloud:</strong> opt-in sync/backup stored in your iCloud account and governed by Apple’s privacy policy.</p>
+      <p><strong>Apple App Store / StoreKit:</strong> handles Pro purchases, subscriptions, and restore flows.</p>
+      <p><strong>Crash or analytics services (if enabled):</strong> collect anonymous device info and crash stacks solely to improve stability. They never receive asset content, and MyVault does not mirror the data to proprietary servers.</p>
     </article>
 
     <article class="doc-section">
-      <h2>6. Retention & Deletion</h2>
-      <p>6.1 You may delete individual assets or clear all data inside the App.</p>
-      <p>6.2 Deleted items leave the local database; exported files remain under your control.</p>
-      <p>6.3 Uninstalling the App removes local data per system behavior and your settings.</p>
+      <h2>4. Storage & Security</h2>
+      <p>4.1 By default, everything lives inside the Core Data container on your device.</p>
+      <p>4.2 When iCloud sync is on, data is encrypted and stored in your iCloud account; MyVault cannot access it.</p>
+      <p>4.3 We rely on system-level encryption and access control, and recommend keeping regular backups.</p>
     </article>
 
     <article class="doc-section">
-      <h2>7. Children’s Privacy</h2>
-      <p>7.1 The App targets general users and does not knowingly collect information from children under 14.</p>
-      <p>7.2 If you believe such data was collected, contact us for removal.</p>
+      <h2>5. Sharing & Disclosure</h2>
+      <p>5.1 We never sell or rent your data.</p>
+      <p>5.2 Data may be shared only with your explicit consent, to enable chosen third-party features (e.g., iCloud), or when required by law/regulators.</p>
+      <p>5.3 If you export files and share them, you assume responsibility for the shared content.</p>
+    </article>
+
+    <article class="doc-section">
+      <h2>6. Your Rights</h2>
+      <ul>
+        <li><strong>Access & correction:</strong> view or edit all data directly inside the App.</li>
+        <li><strong>Deletion:</strong> remove single entries or use “Clear Data”; delete the iCloud copy manually if needed.</li>
+        <li><strong>Export:</strong> create backups for archiving or migration.</li>
+        <li><strong>Withdraw consent:</strong> revoke photo, camera, location, iCloud, or other permissions anytime in system settings.</li>
+      </ul>
+    </article>
+
+    <article class="doc-section">
+      <h2>7. Minors</h2>
+      <p>If you are a minor, use the App with guardian supervision and obtain consent before sharing information.</p>
     </article>
 
     <article class="doc-section">
       <h2>8. Policy Updates</h2>
-      <p>8.1 We may revise this policy when features change.</p>
-      <p>8.2 Significant updates will be communicated via in-app notices or release notes.</p>
+      <p>We may update this policy to reflect feature changes or legal requirements. Significant updates will be announced in-app or via other channels and may require renewed consent.</p>
     </article>
 
     <article class="doc-section">
-      <h2>9. Contact Us</h2>
-      <p>Primary Contact: <strong>Yang He</strong></p>
-      <p>Email: <strong>hi@moodex.cc</strong></p>
-      <p>Offices: <strong>China — Nanshan District, Shenzhen; Indonesia — Jakarta PIK</strong></p>
+      <h2>9. Contact</h2>
+      <p>For privacy questions or complaints, use the contact methods listed under “Settings → About”. We’ll respond within a reasonable timeframe.</p>
     </article>
   </main>
 
