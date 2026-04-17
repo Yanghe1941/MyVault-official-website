@@ -23,67 +23,85 @@
 
   <main class="container doc reveal active">
     <h1>MyVault Release Notes</h1>
-    <p class="section-lead">All releases are archived here. Current version: <strong>v1.0</strong> (2026-03-24).</p>
+    <p class="section-lead">All releases are archived here. Current version: <strong>v1.5</strong> (2026-04-17).</p>
 
-    <article class="doc-section">
-      <h2>2026-04-17 · v1.5</h2>
-      <h3>1. Item input & editing</h3>
-      <ul>
-        <li>Added a brand-search modal to Add / Edit Item with curated brand library filtering, auto category suggestions, and themed icons.</li>
-        <li>Purchase info UI refresh: channel / city now support picker + custom input, city history auto-completes, and price fields gain thousands separators.</li>
-        <li>Photo block moved to the top row with unified thumbnail chips and delete controls.</li>
-        <li>“Additional notes” renamed to “Asset Story Log” with full EN/ZH localization.</li>
-        <li>Tag and space fields are governed by Settings toggles; disabling them clears bound data automatically.</li>
-      </ul>
-      <h3>2. Batch Edit</h3>
-      <ul>
-        <li>Batch views reuse the brand-search modal, show tag / space fields dynamically via toggles, and drop the legacy “batch location” input.</li>
-        <li>BatchEditPayload / Service now center on SpaceNode & TagSet data, auto-writing back to the brand library when saved.</li>
-        <li>Introduced city-history logging plus custom city chips, aligned with the single-item form experience.</li>
-      </ul>
-      <h3>3. Brand system</h3>
-      <ul>
-        <li>Brand library schema expanded so BrandItem / BrandType store English, Chinese, pinyin, and logo metadata with normalized search across the app.</li>
-        <li>CSV import normalizes brand names via library metadata and prioritizes logo matches.</li>
-        <li>Brand manager overhaul: denser rows with Chinese labels, new “My Brands / Disabled brands” tabs, multilingual search, and full metadata propagation for new / suggested brands.</li>
-      </ul>
-      <h3>4. Settings & preferences</h3>
-      <ul>
-        <li>Settings adds a space-management toggle with empty states, tighter layout, and selectors (language / theme / currency) that collapse after choosing.</li>
-        <li>Currency display gains a thousands-separator toggle that applies globally to cards and pickers.</li>
-      </ul>
-      <h3>5. Other UX polish</h3>
-      <ul>
-        <li>ImagePicker and Maintenance views inside Edit Item now open as sheets for parity with Add Item.</li>
-        <li>FileImportView dedupe logic upgraded and automatically backfills brand / category / location corrections during import.</li>
-      </ul>
-    </article>
+    <div class="timeline">
+      <details class="timeline-item current" open>
+        <summary>
+          <div class="timeline-heading">
+            <span class="version">v1.5</span>
+            <span class="date">2026-04-17</span>
+          </div>
+        </summary>
+        <div class="timeline-body">
+          <h3>1. Item input & editing</h3>
+          <ul>
+            <li>Added a brand-search modal with curated filtering, auto category suggestion, and themed icons.</li>
+            <li>Purchase info refresh: channel / city pickers + custom input, city history suggestions, and formatted price fields.</li>
+            <li>Photo block moved to row one with unified thumbnail chips and delete control.</li>
+            <li>“Additional notes” renamed to “Asset Story Log” (EN / ZH localized).</li>
+            <li>Tag / space fields now respect Settings toggles and auto-clear data when disabled.</li>
+          </ul>
+          <h3>2. Batch Edit</h3>
+          <ul>
+            <li>Batch views reuse the brand-search modal, dynamically show tag / space sections, and drop the legacy batch-location field.</li>
+            <li>BatchEditPayload / Service now pivot on SpaceNode & TagSet data, writing back to the brand library.</li>
+            <li>City history + custom chips added for parity with the single-item form.</li>
+          </ul>
+          <h3>3. Brand system</h3>
+          <ul>
+            <li>Brand schema expanded with English, Chinese, pinyin, and logo metadata for normalized search.</li>
+            <li>CSV import normalizes brand names and prioritizes logo matches.</li>
+            <li>Brand manager redesigned with tighter rows, multilingual search, “My / Disabled” tabs, and full metadata propagation.</li>
+          </ul>
+          <h3>4. Settings & preferences</h3>
+          <ul>
+            <li>Added a space-management toggle, tighter layout, and selectors (language / theme / currency) that collapse after selection.</li>
+            <li>Global thousands-separator toggle for currency display across cards and pickers.</li>
+          </ul>
+          <h3>5. Other UX polish</h3>
+          <ul>
+            <li>ImagePicker and Maintenance sheets now match Add Item behavior.</li>
+            <li>FileImportView dedupe + auto backfill for brands, categories, and locations.</li>
+          </ul>
+        </div>
+      </details>
 
-    <article class="doc-section">
-      <h2>v1.0 · 2026-03-24</h2>
-      <ul>
-        <li>Asset management: create, edit, and delete full asset records.</li>
-        <li>Classification system: categories, tags, brand library, spaces, and locations.</li>
-        <li>Asset photos: capture via camera or import from the photo library.</li>
-        <li>Maintenance logs: record maintenance, repair, cleaning, and upgrade events.</li>
-        <li>Analytics: total value, average value, daily holding cost, category stats, and more.</li>
-        <li>Purchase calendar: review historical purchases by date.</li>
-        <li>Global search: find items by name, brand, or tags.</li>
-        <li>Bulk operations: batch edit and delete.</li>
-        <li>Data import: Excel / Markdown (CSV template supported).</li>
-        <li>E-commerce link capture: parse major marketplace URLs into structured fields.</li>
-        <li>Photo recognition capture: AI-assisted prefill for item data.</li>
-        <li>Backup & restore: generate <code>.zip</code> archives and restore from them.</li>
-        <li>Data export: export asset datasets for archiving or sharing.</li>
-      </ul>
-    </article>
+      <details class="timeline-item">
+        <summary>
+          <div class="timeline-heading">
+            <span class="version">v1.0</span>
+            <span class="date">2026-03-24</span>
+          </div>
+        </summary>
+        <div class="timeline-body">
+          <ul>
+            <li>Asset management: create, edit, and delete records.</li>
+            <li>Classification system: categories, tags, brand library, spaces, and locations.</li>
+            <li>Asset photos: capture via camera or import from photo library.</li>
+            <li>Maintenance logs for repairs, cleaning, upgrades, etc.</li>
+            <li>Analytics: total value, averages, daily cost, category stats.</li>
+            <li>Purchase calendar, global search, batch operations.</li>
+            <li>CSV import, e-commerce link parsing, AI photo capture.</li>
+            <li>Backup / restore via <code>.zip</code>, plus data export.</li>
+          </ul>
+        </div>
+      </details>
 
-    <article class="doc-section">
-      <h2>2026-02-27 · v0.1</h2>
-      <ul>
-        <li>MyVault project initiated, locking core information architecture, asset model, and Local-First principles.</li>
-      </ul>
-    </article>
+      <details class="timeline-item">
+        <summary>
+          <div class="timeline-heading">
+            <span class="version">v0.1</span>
+            <span class="date">2026-02-27</span>
+          </div>
+        </summary>
+        <div class="timeline-body">
+          <ul>
+            <li>Project kickoff: core information architecture, asset model, and Local-First principles defined.</li>
+          </ul>
+        </div>
+      </details>
+    </div>
   </main>
 
   <footer class="footer">
