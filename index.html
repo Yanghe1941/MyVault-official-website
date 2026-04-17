@@ -38,7 +38,10 @@
       <div class="container">
         <div class="hero-grid">
           <div class="hero-copy">
-            <h1 class="h-title">构建你的私人 RWA 库，捍卫 100% 数据主权</h1>
+            <h1 class="h-title">
+              <span class="typing" data-typing-speed="55">构建你的私人 RWA 库，捍卫 100% 数据主权</span>
+              <span class="typing-caret" aria-hidden="true"></span>
+            </h1>
             <p class="h-sub">MyVault 是一款本地优先（Local-First）的实物资产管理工具。从财务台账到情感记忆，全景映射物品的生命周期。免注册、零服务器依赖，数据与备份仅在你的设备与私人 iCloud 中流转。</p>
             <div class="trust-badges">
               <span class="badge">100% 本地存储</span>
@@ -311,6 +314,28 @@
 
   <script src="./assets/lang.js"></script>
   <script>
+    const typingTargets = document.querySelectorAll('.hero .typing');
+    typingTargets.forEach(target => {
+      const text = target.textContent.trim();
+      const speed = parseInt(target.dataset.typingSpeed || '55', 10);
+      const container = target.closest('.h-title');
+      if (!container) return;
+      container.classList.add('is-typing');
+      target.textContent = '';
+      target.style.setProperty('--typing-steps', text.length);
+      target.style.setProperty('--typing-duration', `${Math.min(text.length * speed, 6000)}ms`);
+      let index = 0;
+      const interval = setInterval(() => {
+        target.textContent = text.slice(0, index + 1);
+        index++;
+        if (index >= text.length) {
+          clearInterval(interval);
+          container.classList.remove('is-typing');
+          container.classList.add('typing-complete');
+        }
+      }, speed);
+    });
+
     document.getElementById('y').textContent = new Date().getFullYear();
 
     const observer = new IntersectionObserver((entries) => {

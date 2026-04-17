@@ -27,7 +27,12 @@ a{color:inherit;text-decoration:none;transition:all .3s}
 .hero-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:48px;align-items:center}
 .hero .container{position:relative;z-index:1}
 .hero-copy .eyebrow{font-size:15px;letter-spacing:.4em;text-transform:uppercase;color:var(--muted);margin-bottom:18px}
-.h-title{font-size:clamp(36px,5vw,48px);line-height:1.04;margin-bottom:20px;font-weight:900;letter-spacing:-1px;background:linear-gradient(120deg,#f9e2af,#d4af37);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;white-space:normal;display:inline-block;max-width:100%}
+.h-title{font-size:clamp(36px,5vw,48px);line-height:1.04;margin-bottom:20px;font-weight:900;letter-spacing:-1px;background:linear-gradient(120deg,#f9e2af,#d4af37);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;white-space:normal;display:inline-block;max-width:100%;position:relative}
+.typing{display:inline-block;white-space:nowrap;border-right:none}
+.typing-caret{display:inline-block;width:2px;height:1.2em;background:#f9e2af;margin-left:6px;animation:caretBlink 1s steps(1) infinite}
+.is-typing .typing{animation:typingSteps var(--typing-duration,3s) steps(var(--typing-steps,40)) forwards;overflow:hidden;border-right:none}
+.is-typing .typing-caret{animation:caretBlink 1s steps(1) infinite}
+.is-typing .typing.paused{animation-play-state:paused}
 .hero .h-sub{font-size:21px;color:var(--muted);margin-bottom:32px;max-width:560px}
 .glass-panel{background:var(--glass);border:1px solid var(--glass-border);border-radius:var(--radius-xl);padding:40px;box-shadow:var(--shadow);backdrop-filter:blur(22px);-webkit-backdrop-filter:blur(22px);transition:transform .5s ease,background .5s ease,box-shadow .5s ease}
 .glass-panel:hover{background:var(--glass-hover);transform:translateY(-6px);box-shadow:0 40px 90px rgba(0,0,0,.65)}
@@ -197,6 +202,15 @@ a{color:inherit;text-decoration:none;transition:all .3s}
 @keyframes sheen{
   0%{transform:skewX(-20deg) translateX(-120%);opacity:.2}
   100%{transform:skewX(-20deg) translateX(220%);opacity:.6}
+}
+@keyframes caretBlink{
+  0%{opacity:1}
+  50%{opacity:0}
+  100%{opacity:1}
+}
+@keyframes typingSteps{
+  from{width:0}
+  to{width:100%}
 }
 .reveal{opacity:0;transform:translateY(50px);transition:all 1s cubic-bezier(.16,1,.3,1)}
 .reveal.active{opacity:1;transform:translateY(0)}
