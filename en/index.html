@@ -316,24 +316,28 @@
   <script>
     const typingTargets = document.querySelectorAll('.hero .typing');
     typingTargets.forEach(target => {
-      const text = target.textContent.trim();
+      const fullText = target.textContent.trim();
       const speed = parseInt(target.dataset.typingSpeed || '55', 10);
+      const delay = Math.max(1600, fullText.length * speed * 0.6);
       const container = target.closest('.h-title');
       if (!container) return;
-      container.classList.add('is-typing');
-      target.textContent = '';
-      target.style.setProperty('--typing-steps', text.length);
-      target.style.setProperty('--typing-duration', `${Math.min(text.length * speed, 6000)}ms`);
-      let index = 0;
-      const interval = setInterval(() => {
-        target.textContent = text.slice(0, index + 1);
-        index++;
-        if (index >= text.length) {
-          clearInterval(interval);
-          container.classList.remove('is-typing');
-          container.classList.add('typing-complete');
-        }
-      }, speed);
+
+      const runTyping = () => {
+        container.classList.remove('typing-complete');
+        target.textContent = '';
+        let index = 0;
+        const timer = setInterval(() => {
+          target.textContent = fullText.slice(0, index + 1);
+          index++;
+          if (index >= fullText.length) {
+            clearInterval(timer);
+            container.classList.add('typing-complete');
+            setTimeout(runTyping, delay);
+          }
+        }, speed);
+      };
+
+      runTyping();
     });
 
     document.getElementById('y').textContent = new Date().getFullYear();

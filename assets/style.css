@@ -28,11 +28,9 @@ a{color:inherit;text-decoration:none;transition:all .3s}
 .hero .container{position:relative;z-index:1}
 .hero-copy .eyebrow{font-size:15px;letter-spacing:.4em;text-transform:uppercase;color:var(--muted);margin-bottom:18px}
 .h-title{font-size:clamp(36px,5vw,48px);line-height:1.04;margin-bottom:20px;font-weight:900;letter-spacing:-1px;background:linear-gradient(120deg,#f9e2af,#d4af37);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;white-space:normal;display:inline-block;max-width:100%;position:relative}
-.typing{display:inline-block;white-space:nowrap;border-right:none}
+.typing{display:inline-block;white-space:nowrap;min-height:1.2em}
 .typing-caret{display:inline-block;width:2px;height:1.2em;background:#f9e2af;margin-left:6px;animation:caretBlink 1s steps(1) infinite}
-.is-typing .typing{animation:typingSteps var(--typing-duration,3s) steps(var(--typing-steps,40)) forwards;overflow:hidden;border-right:none}
-.is-typing .typing-caret{animation:caretBlink 1s steps(1) infinite}
-.is-typing .typing.paused{animation-play-state:paused}
+.typing-complete .typing-caret{opacity:0}
 .hero .h-sub{font-size:21px;color:var(--muted);margin-bottom:32px;max-width:560px}
 .glass-panel{background:var(--glass);border:1px solid var(--glass-border);border-radius:var(--radius-xl);padding:40px;box-shadow:var(--shadow);backdrop-filter:blur(22px);-webkit-backdrop-filter:blur(22px);transition:transform .5s ease,background .5s ease,box-shadow .5s ease}
 .glass-panel:hover{background:var(--glass-hover);transform:translateY(-6px);box-shadow:0 40px 90px rgba(0,0,0,.65)}
@@ -151,6 +149,12 @@ a{color:inherit;text-decoration:none;transition:all .3s}
 .doc{padding:60px 0 120px}
 .doc h1{font-size:48px;margin-bottom:30px;letter-spacing:-1.5px}
 .doc-section{margin-top:40px}
+.doc-section h2{font-size:26px;margin-bottom:14px}
+.doc-section h3{font-size:18px;margin:18px 0 8px}
+.doc-section p{color:var(--muted);line-height:1.8;margin-bottom:12px}
+.doc-section ul,.doc-section ol{margin:12px 0 20px;padding-left:20px;color:var(--muted);line-height:1.8}
+.doc-section li+li{margin-top:6px}
+.doc-section code{background:rgba(255,255,255,.04);padding:2px 6px;border-radius:6px;font-size:.9em}
 .doc-back{margin:20px 0 30px}
 .doc-back a{display:inline-flex;align-items:center;gap:8px;padding:10px 20px;border-radius:999px;border:1px solid var(--glass-border);color:var(--accent);font-weight:600;font-size:14px;text-transform:none}
 .doc-back a:hover{border-color:var(--accent);color:var(--text)}
@@ -227,6 +231,12 @@ a{color:inherit;text-decoration:none;transition:all .3s}
   .hero-copy .eyebrow{letter-spacing:.3em}
   .section{padding:64px 0}
   .feature-card{padding:24px}
+  .container{padding:0 20px}
+  .doc{padding:36px 0 80px}
+  .doc h1{font-size:34px;line-height:1.25}
+  .doc-section{margin-top:28px}
+  .doc-section p,.doc-section li{font-size:15px}
+  .doc-back a{width:100%;justify-content:center}
   .footer-inner{flex-direction:column;align-items:flex-start}
   .footer-links{justify-content:flex-start}
 }
