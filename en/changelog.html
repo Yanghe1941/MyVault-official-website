@@ -23,10 +23,56 @@
 
   <main class="container doc reveal active">
     <h1>MyVault Release Notes</h1>
-    <p class="section-lead">All releases are archived here. Current version: <strong>v1.5</strong> (2026-04-17).</p>
+    <p class="section-lead">All releases are archived here. Current version: <strong>v1.6</strong> (2026-04-21).</p>
 
     <div class="timeline">
       <details class="timeline-item current" open>
+        <summary>
+          <div class="timeline-heading">
+            <span class="version">v1.6</span>
+            <span class="date">2026-04-21</span>
+          </div>
+        </summary>
+        <div class="timeline-body">
+          <h3>1. Cloud Sync & Settings</h3>
+          <ul>
+            <li>New Cloud Sync sub-page consolidates sync status, account state, recent success/failure logs, plus backup & restore entry points.</li>
+            <li>Sync toggle is smoother with fewer UI hitches and a timeout fallback.</li>
+            <li>Settings copy refresh: “Asset display” → “Asset views”, “Card/Grid mode” renamed, visuals now align with the Cloud Sync page.</li>
+          </ul>
+          <h3>2. File Import flow</h3>
+          <ul>
+            <li>Slimmer layout with centered CTAs, bilingual template download text, and paginated import history.</li>
+            <li>After import you can jump straight back to Home to review results.</li>
+            <li>Purchase-date parsing handles more formats for better compatibility.</li>
+          </ul>
+          <h3>3. Asset view modes</h3>
+          <ul>
+            <li>Introduced Card, Grid, and Minimal views with automatic preference memory.</li>
+            <li>Status icons unified across card/grid; “In Use” gains a subtle breathing animation, Minimal view spacing tightened.</li>
+          </ul>
+          <h3>4. Analytics</h3>
+          <ul>
+            <li>Asset curve switches to a single-line filter mode.</li>
+            <li>Card order and status readouts tweaked for clearer trends.</li>
+          </ul>
+          <h3>5. Asset editing</h3>
+          <ul>
+            <li>Added the missing Status field and standardized the page title to “Edit Asset”.</li>
+          </ul>
+          <h3>6. Stability & localization</h3>
+          <ul>
+            <li>Lower crash risk on launch, stronger persistence handling, more resilient import + sync flows.</li>
+            <li>More complete EN / ZH localization plus visual alignment between Settings and Cloud Sync.</li>
+          </ul>
+          <h3>7. Notes</h3>
+          <ul>
+            <li>Cloud Sync still depends on the device’s iCloud / CloudKit environment; extremely unusual date formats may still require manual fixes.</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="timeline-item">
         <summary>
           <div class="timeline-heading">
             <span class="version">v1.5</span>
