@@ -23,10 +23,41 @@
 
   <main class="container doc reveal active">
     <h1>MyVault Release Notes</h1>
-    <p class="section-lead">All releases are archived here. Current version: <strong>v1.6</strong> (2026-04-21).</p>
+    <p class="section-lead">All releases are archived here. Current version: <strong>v1.7</strong> (2026-04-27).</p>
 
     <div class="timeline">
       <details class="timeline-item current" open>
+        <summary>
+          <div class="timeline-heading">
+            <span class="version">v1.7</span>
+            <span class="date">2026-04-27</span>
+          </div>
+        </summary>
+        <div class="timeline-body">
+          <h3>1. Feature polish</h3>
+          <ul>
+            <li>Asset overview card: Net Worth now mirrors the value of assets currently in use, quantity shows “Total / In Use”, and the Net Worth copy is left-aligned with Total Assets.</li>
+            <li>Asset detail page: the date range renders once instead of per section, and brand logos/info/maintenance cards auto-switch palettes in dark / black-gold themes to avoid white-on-white.</li>
+            <li>Asset Storyline: redesigned as an expandable / collapsible timeline list, every item carries an automatic timestamp, and the empty state adds helper text plus a “+” shortcut to add stories.</li>
+            <li>Maintenance record card: includes a “+” entry button for quick creation and shows a “No maintenance records yet” hint when empty.</li>
+          </ul>
+          <h3>2. New capabilities</h3>
+          <ul>
+            <li>Import failure breakdown: after an import, highlight rows missing names, invalid prices, duplicated within the file, or already existing in the library so issues can be fixed faster.</li>
+            <li>Storyline entry composer: introduced <code>StorylineEntryComposer</code> so multiple story records can be written and saved directly from the detail view.</li>
+          </ul>
+          <h3>3. Bug fixes</h3>
+          <ul>
+            <li>Asset card / grid status restore: list and grid views once again display badges, now backed by <code>normalizedStatus</code> to work with legacy data.</li>
+            <li>Asset detail & edit status: initialization and display logic now share the same source to keep both pages consistent.</li>
+            <li>Import format conflict: renamed the duplicated <code>FormatCard</code> component to <code>ImportFormatCard</code> to resolve compile errors.</li>
+            <li>App icon bundle: removed duplicate “xxx 2.png” assets inside the AppIcon set to clear the “unassigned children” warnings.</li>
+            <li>Brand logo backgrounds: force brand logos with white backgrounds to stay neutral in the black-gold theme for visual consistency.</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="timeline-item">
         <summary>
           <div class="timeline-heading">
             <span class="version">v1.6</span>

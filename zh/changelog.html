@@ -23,13 +23,44 @@
 
   <main class="container doc reveal active">
     <h1>MyVault 更新日志</h1>
-    <p class="section-lead">版本号与发布日期将持续在此归档。当前版本：<strong>v1.6</strong>（2026-04-21）。</p>
+    <p class="section-lead">版本号与发布日期将持续在此归档。当前版本：<strong>v1.7</strong>（2026-04-27）。</p>
     <div class="doc-back">
       <a href="../index.html">← 返回首页</a>
     </div>
 
     <div class="timeline">
       <details class="timeline-item current" open>
+        <summary>
+          <div class="timeline-heading">
+            <span class="version">v1.7</span>
+            <span class="date">2026-04-27</span>
+          </div>
+        </summary>
+        <div class="timeline-body">
+          <h3>1. 功能优化</h3>
+          <ul>
+            <li>资产概览卡片：净资产改为等同「使用中资产价值」，资产数量显示为「总数 / 使用中」，并让净资产文字与总资产左对齐。</li>
+            <li>资产详情页：日期区间只显示一次，品牌 Logo / 信息卡 / 维护卡在黑金或系统深色模式下自动切换配色，避免白底白字。</li>
+            <li>资产故事线：改为可展开 / 折叠的时间线列表，每条记录自动带时间戳，空态增加提示文案与右上角「+」快速新增入口。</li>
+            <li>维护记录卡片：增加「+」按钮快速进入新增维护，空列表时提示「暂无维护记录」。</li>
+          </ul>
+          <h3>2. 新增功能</h3>
+          <ul>
+            <li>导入失败明细：导入完成后展示缺名称、价格无效、文件内重复、库内已存在等具体原因与行数，帮助快速定位问题。</li>
+            <li>故事线录入弹窗：新增 <code>StorylineEntryComposer</code>，可在详情页内一次编写并保存多条故事记录。</li>
+          </ul>
+          <h3>3. Bug 修复</h3>
+          <ul>
+            <li>资产卡 / 网格状态缺失：列表与网格视图的状态徽章恢复显示，并使用 <code>normalizedStatus</code> 兼容旧数据。</li>
+            <li>资产详情状态 / 编辑页面：状态字段初始化与详情展示逻辑统一，确保编辑页与详情页读取一致。</li>
+            <li>导入格式冲突：<code>FormatCard</code> 重复定义导致编译报错，已更名为 <code>ImportFormatCard</code>。</li>
+            <li>App Icon 资源：移除 AppIcon 集合内多余的 “xxx 2.png” 文件，解决 “unassigned children” 报错。</li>
+            <li>Brand Logo 白底：在黑金主题下强制白底的品牌 Logo 恢复纯白背景，保持视觉一致性。</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="timeline-item">
         <summary>
           <div class="timeline-heading">
             <span class="version">v1.6</span>
