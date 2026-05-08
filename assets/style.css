@@ -46,6 +46,13 @@ a{color:inherit;text-decoration:none;transition:all .3s}
 .app-store-badge strong{font-size:22px;line-height:1;font-weight:700}
 .app-store-badge svg{width:26px;height:26px}
 .app-store-badge:hover{transform:translateY(-4px);box-shadow:0 30px 60px rgba(0,0,0,.55)}
+.testflight-badge{display:inline-flex;align-items:center;gap:18px;padding:14px 24px;border-radius:18px;background:linear-gradient(135deg,#0c111c,#111f33);color:#f5f7ff;border:1px solid rgba(110,137,255,.4);box-shadow:0 18px 36px rgba(5,16,44,.55);min-width:260px}
+.testflight-badge small{display:block;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:rgba(245,247,255,.75)}
+.testflight-badge strong{font-size:20px;line-height:1.2;font-weight:700}
+.testflight-badge .badge-icons{display:flex;gap:10px}
+.testflight-badge .badge-icons .icon{width:40px;height:40px;border-radius:14px;display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);box-shadow:inset 0 0 10px rgba(0,0,0,.35)}
+.testflight-badge .badge-icons svg{width:20px;height:20px}
+.testflight-badge:hover{transform:translateY(-4px);box-shadow:0 30px 60px rgba(5,16,44,.65)}
 .ghost-link{font-weight:600;color:var(--accent);position:relative;padding-right:26px}
 .ghost-link:after{content:"→";position:absolute;right:0;top:50%;transform:translateY(-50%);transition:transform .3s}
 .ghost-link:hover:after{transform:translate(6px,-50%)}
@@ -218,7 +225,7 @@ a{color:inherit;text-decoration:none;transition:all .3s}
 @media(max-width:900px){
   .hero{padding-top:120px}
   .cta-row{flex-direction:column;align-items:flex-start}
-  .app-store-badge{width:100%;justify-content:center}
+  .app-store-badge,.testflight-badge{width:100%;justify-content:center}
   .h-title{font-size:32px}
 }
 
