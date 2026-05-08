@@ -23,13 +23,46 @@
 
   <main class="container doc reveal active">
     <h1>MyVault 更新日志</h1>
-    <p class="section-lead">版本号与发布日期将持续在此归档。当前版本：<strong>v1.7</strong>（2026-04-27）。</p>
+    <p class="section-lead">版本号与发布日期将持续在此归档。当前版本：<strong>v1.8</strong>（2026-05-08）。</p>
     <div class="doc-back">
       <a href="../index.html">← 返回首页</a>
     </div>
 
     <div class="timeline">
       <details class="timeline-item current" open>
+        <summary>
+          <div class="timeline-heading">
+            <span class="version">v1.8</span>
+            <span class="date">2026-05-08</span>
+          </div>
+        </summary>
+        <div class="timeline-body">
+          <h3>1. 功能优化</h3>
+          <ul>
+            <li>仪表盘体验：时间过滤条固定吸顶，卡片重新编排，并将资产指标计算迁至后台线程，切换时间范围或年份时界面保持流畅。</li>
+            <li>全局搜索性能：为资产列表建立索引与字典映射，新增范围/时间筛选与 250&nbsp;ms 防抖，避免输入过程频繁重算导致卡顿。</li>
+            <li>文件导入流程：提供模板下载、导入历史分页、实时进度日志与 Pro 权限提示，让导入步骤和错误反馈更直观。</li>
+            <li>存储空间面板：新增 PDF、证书、数据库、缓存、照片等分类统计及一键清理，结合后台扫描工具实时计算占用。</li>
+            <li>Pro 升级入口：展示现有会员状态（免费 / 月度 / 年度 / 终身），在商品查询异常时逐个回退请求，确保购买按钮始终可用。</li>
+            <li>资产详情布局：资产 ID 与状态标签同行显示，复制反馈动画更醒目，删除按钮移至底部全宽警示区，提升操作一致性。</li>
+          </ul>
+          <h3>2. 新增功能</h3>
+          <ul>
+            <li>资产曲线模式：支持线性与对数趋势切换（设置 > 个性化），图表随偏好实时更新。</li>
+            <li>安全设置模块：Face ID、Touch ID、数字口令与“无密码”模式独立管理，并包含身份验证及口令设置流程。</li>
+            <li>资产身份叠层与故事线工具：可弹出资产证书、预览并分享 PDF，故事线编辑器支持在独立弹窗内撰写与保存。</li>
+            <li>本地图片与导出清理：新增图片管理器统一存储/去重资产照片，并引入周度调度自动回收导出文件，防止存储膨胀。</li>
+          </ul>
+          <h3>3. Bug 修复</h3>
+          <ul>
+            <li>设置组件引用：将 <code>SettingsRow</code> 等基础组件就地保留，解决编译阶段 “Cannot find SettingsRow” 错误。</li>
+            <li>导入字段校验：CSV/Markdown 表头归一化，缺失名称或价格即停止导入并提示，避免静默失败。</li>
+            <li>订阅状态刷新：批量请求 StoreKit 商品失败时逐一回退，并监听交易更新自动刷新会员状态，避免订阅列表空白。</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="timeline-item">
         <summary>
           <div class="timeline-heading">
             <span class="version">v1.7</span>

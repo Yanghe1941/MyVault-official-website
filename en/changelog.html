@@ -23,10 +23,43 @@
 
   <main class="container doc reveal active">
     <h1>MyVault Release Notes</h1>
-    <p class="section-lead">All releases are archived here. Current version: <strong>v1.7</strong> (2026-04-27).</p>
+    <p class="section-lead">All releases are archived here. Current version: <strong>v1.8</strong> (2026-05-08).</p>
 
     <div class="timeline">
       <details class="timeline-item current" open>
+        <summary>
+          <div class="timeline-heading">
+            <span class="version">v1.8</span>
+            <span class="date">2026-05-08</span>
+          </div>
+        </summary>
+        <div class="timeline-body">
+          <h3>1. Experience polish</h3>
+          <ul>
+            <li>Dashboard experience: the time filter bar now sticks to the top, cards were rearranged, and asset-metric math moved onto background threads so switching time ranges or fiscal years remains smooth.</li>
+            <li>Global search performance: asset lists gained index + dictionary maps, new range / time filters, and a 250&nbsp;ms debounce to avoid heavy recompute while typing.</li>
+            <li>File import flow: template download, paginated history, live progress logs, and Pro entitlement reminders make every import step and error state transparent.</li>
+            <li>Storage space panel: added breakdowns for PDF, certificates, database, cache, and photos with one-tap cleanup plus a background scanner to tally usage in real time.</li>
+            <li>Pro upgrade entry: surfaces your status (Free / Monthly / Annual / Lifetime) and falls back through product lookups when StoreKit hiccups to keep the purchase button active.</li>
+            <li>Asset detail layout: asset ID and status chips now share one row, copy confirmation animates more clearly, and the delete action sits inside a full-width danger zone at the bottom for consistency.</li>
+          </ul>
+          <h3>2. New capabilities</h3>
+          <ul>
+            <li>Asset curve modes: toggle linear vs. logarithmic trends under Settings → Personalization and see charts respond instantly.</li>
+            <li>Security settings module: manage Face ID, Touch ID, numeric passcodes, or the “no passcode” mode independently with guided verification + setup flows.</li>
+            <li>Asset identity overlay & Storyline tools: pop open certificates, preview/share PDFs, and write stories inside a dedicated modal editor.</li>
+            <li>Local image & export cleanup: the new image manager stores / deduplicates asset photos, while a weekly scheduler reclaims exported files to prevent bloat.</li>
+          </ul>
+          <h3>3. Bug fixes</h3>
+          <ul>
+            <li>Settings component references: co-located <code>SettingsRow</code> and friends to resolve “Cannot find SettingsRow” compile errors.</li>
+            <li>Import field validation: normalized CSV / Markdown headers and halt imports when name or price is missing, avoiding silent failures.</li>
+            <li>Subscription status refresh: when StoreKit product batches fail we retry per item and listen for transaction updates to keep membership states current.</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="timeline-item">
         <summary>
           <div class="timeline-heading">
             <span class="version">v1.7</span>
