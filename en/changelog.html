@@ -23,10 +23,42 @@
 
   <main class="container doc reveal active">
     <h1>MyVault Release Notes</h1>
-    <p class="section-lead">All releases are archived here. Current version: <strong>v1.8</strong> (2026-05-08).</p>
+    <p class="section-lead">All releases are archived here. Current version: <strong>v1.8.1</strong> (2026-05-09).</p>
 
     <div class="timeline">
       <details class="timeline-item current" open>
+        <summary>
+          <div class="timeline-heading">
+            <span class="version">v1.8.1</span>
+            <span class="date">2026-05-09</span>
+          </div>
+        </summary>
+        <div class="timeline-body">
+          <h3>1. New features</h3>
+          <ul>
+            <li>DailyCostCurveCard: a brand-new chart that visualizes daily asset or expense changes with instant linear/log toggles.</li>
+          </ul>
+          <h3>2. Feature optimizations</h3>
+          <ul>
+            <li><strong>Dashboard:</strong> rebuilt layout for higher FPS, sticky time filters, smarter card order, better AllocationChartCard grouping (by category/city, etc.), upgraded AssetCurveSummaryCard visuals, smoother AnalysisMetricToggle interactions, and faster Overview / Status / Cycle analysis cards.</li>
+            <li><strong>ViewModels:</strong> DashboardViewModel processing is now far richer (+103 LOC) and ItemListViewModel manages list data with improved caching + transforms.</li>
+            <li><strong>Lists:</strong> ItemListFilterComponents were redesigned, AssetOverviewCard expanded with new display modes (+621 LOC), and ItemListView + ItemRowComponents received cleaner layouts.</li>
+          </ul>
+          <h3>3. Bug fixes</h3>
+          <ul>
+            <li>Resolved AppPreferences issues plus ContentView layout regressions.</li>
+            <li>Localization pass added/fixed 18 EN strings and 46 Simplified Chinese strings.</li>
+          </ul>
+          <h3>4. Technical improvements</h3>
+          <ul>
+            <li>Net code growth of +540 lines across 21 files (+952 / -412).</li>
+            <li>Theme engine now swaps seamlessly between light/dark.</li>
+            <li>Localization now unifies on the <code>.l()</code> helper.</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="timeline-item">
         <summary>
           <div class="timeline-heading">
             <span class="version">v1.8</span>

@@ -23,13 +23,45 @@
 
   <main class="container doc reveal active">
     <h1>MyVault 更新日志</h1>
-    <p class="section-lead">版本号与发布日期将持续在此归档。当前版本：<strong>v1.8</strong>（2026-05-08）。</p>
+    <p class="section-lead">版本号与发布日期将持续在此归档。当前版本：<strong>v1.8.1</strong>（2026-05-09）。</p>
     <div class="doc-back">
       <a href="../index.html">← 返回首页</a>
     </div>
 
     <div class="timeline">
       <details class="timeline-item current" open>
+        <summary>
+          <div class="timeline-heading">
+            <span class="version">v1.8.1</span>
+            <span class="date">2026-05-09</span>
+          </div>
+        </summary>
+        <div class="timeline-body">
+          <h3>1. 🆕 新增功能</h3>
+          <ul>
+            <li><strong>DailyCostCurveCard 每日费用曲线卡片：</strong>全新图表组件，支持线性/对数模式切换，可视化展示资产或费用的日变化趋势。</li>
+          </ul>
+          <h3>2. ⚡ 功能优化</h3>
+          <ul>
+            <li><strong>Dashboard 仪表盘：</strong>整体结构重构、时间过滤条吸顶、卡片重新编排；AllocationChartCard 支持按分类/城市等多维分组，AssetCurveSummaryCard 展示更清晰，AnalysisMetricToggle 交互更顺滑，OverviewCard / StatusAnalysisCard / CycleAnalysisCard 渲染效率全面提升。</li>
+            <li><strong>ViewModel 层：</strong>DashboardViewModel 数据处理逻辑大幅增强（+103 行），ItemListViewModel 列表管理机制同步升级。</li>
+            <li><strong>列表视图：</strong>ItemListFilterComponents 重构，界面更简洁；AssetOverviewCard 迭代 600+ 行带来更多展示样式；ItemListView 与 ItemRowComponents 结构与样式整体优化。</li>
+          </ul>
+          <h3>3. 🔧 问题修复</h3>
+          <ul>
+            <li>修复 AppPreferences 偏好设置与 ContentView 布局问题。</li>
+            <li>多语言完善：新增/修正英文翻译 18 处、中文简体翻译 46 处。</li>
+          </ul>
+          <h3>4. 📊 技术改进</h3>
+          <ul>
+            <li>代码净增 +540 行，覆盖 21 个文件（+952 / -412）。</li>
+            <li>主题适配逻辑优化，日间/夜间模式切换更顺滑。</li>
+            <li>本地化统一使用 <code>.l()</code> 扩展方法，管理更一致。</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="timeline-item">
         <summary>
           <div class="timeline-heading">
             <span class="version">v1.8</span>
