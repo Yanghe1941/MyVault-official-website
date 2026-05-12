@@ -23,13 +23,52 @@
 
   <main class="container doc reveal active">
     <h1>MyVault 更新日志</h1>
-    <p class="section-lead">版本号与发布日期将持续在此归档。当前版本：<strong>v1.8.1</strong>（2026-05-09）。</p>
+    <p class="section-lead">版本号与发布日期将持续在此归档。当前版本：<strong>v1.8.2</strong>（2026-05-12）。</p>
     <div class="doc-back">
       <a href="../index.html">← 返回首页</a>
     </div>
 
     <div class="timeline">
       <details class="timeline-item current" open>
+        <summary>
+          <div class="timeline-heading">
+            <span class="version">v1.8.2</span>
+            <span class="date">2026-05-12</span>
+          </div>
+        </summary>
+        <div class="timeline-body">
+          <h3>1. 新增功能</h3>
+          <ul>
+            <li><strong>本地通知系统</strong>：新增 <code>LocalNotificationService</code>，支持每周日志提醒、持有时长里程碑通知（1周/1月/6月/周年）、云端备份成功/异常推送。</li>
+            <li><strong>折旧价值字段</strong>：新增 <code>depreciatedValue</code> 贯穿全链路——添加/编辑物品界面、CSV 导入导出、数据模型。</li>
+            <li><strong>资产生命周期状态扩展</strong>：新增送出日期(<code>giftedDate</code>)、丢失日期(<code>lostDate</code>)、折旧日期(<code>depreciatedDate</code>) 支持，导入时自动推断状态。</li>
+            <li><strong>分类模板库</strong>：新增 <code>CategoryTemplateLibrary</code>，内置 17 个推荐分类（摄影器材、音频设备、奢侈品、包袋、金银首饰、名表、车辆、家居、家电、运动装备、户外露营、收藏品、贵金属、艺术品等），含中英文名、图标、配色、别名和拼音。</li>
+            <li><strong>Pro 会员页四大维度价值主张</strong>：<code>pro.compare.why.dim1~dim4</code> 卡片，分「无界限高效管理」「深度数据洞察与导出」「云端无缝同步与数字身份」「尊享特权与未来成长」。</li>
+            <li><strong>订阅信息披露与法律链接</strong>：Pro 升级页新增订阅信息说明卡片（自动续订条款）、隐私政策/使用条款按钮（中英双语链接）。</li>
+            <li><strong>分享 App</strong>：设置页新增分享按钮，通过系统分享面板分享 App Store 链接。</li>
+            <li><strong>批量操作开关</strong>：设置页新增批量操作开关，长按进入多选模式。</li>
+          </ul>
+          <h3>2. 优化</h3>
+          <ul>
+            <li><strong>Pro 升级页面重构</strong>：提取 <code>purchaseSection</code> 独立视图，处理 idle/loading/loaded/empty/failed 五种状态；添加 <code>legalDisclosure</code> 视图。</li>
+            <li><strong>认证管理器优化</strong>：新增 <code>isAuthenticating</code> 防重复认证；用户取消生物识别时不再错误跳转密码输入；新增设备认证重置密码方法。</li>
+            <li><strong>编辑物品界面简化</strong>：状态选择从弹窗确认改为 Menu 直接下拉选择。</li>
+            <li><strong>CSV 导入导出增强</strong>：导入 Header 支持折旧价值/状态日期等多别名映射；导出 Header 完全多语言化（20+ key）；导入完成自动触发 iCloud 同步。</li>
+            <li><strong>UI 细节打磨</strong>：购买渠道设置页添加 ZStack 背景层；分类页英文名仅在与本地化名不同时才显示；Dashboard 卡片统一 API；文本自适应缩放；数据清除按依赖关系排序。</li>
+            <li><strong>多语言本地化</strong>：新增中英文文案 100+ 条，覆盖 Pro 维度描述、通知设置、CSV 表头、折旧字段标签等。</li>
+          </ul>
+          <h3>3. Bug 修复</h3>
+          <ul>
+            <li><strong>认证流程修复</strong>：Face ID/Touch ID 被用户主动取消时不再跳转到密码输入界面；新增 <code>isAuthenticating</code> 防抖。</li>
+            <li><strong>LocationManager 线程安全</strong>：completion 回调通过 <code>deliverCompletion</code> 在 <code>callbackQueue</code> 派发。</li>
+            <li><strong>holdingDays 计算修复</strong>：统一使用 <code>item.resolvedHoldingDays()</code> 替代手动计算。</li>
+            <li><strong>死代码清理</strong>：移除 EditItemView 未使用的 <code>pendingStatusSelection</code> 等变量；移除 SettingsView 旧 <code>proFeatureNavigationRow</code> 方法；移除 BrandManagementView 未使用的 <code>submitEdit</code>。</li>
+            <li><strong>Paywall 参数修复</strong>：云同步锁定弹窗 source 从硬编码改为动态变量。</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="timeline-item">
         <summary>
           <div class="timeline-heading">
             <span class="version">v1.8.1</span>

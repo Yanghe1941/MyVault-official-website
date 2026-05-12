@@ -23,10 +23,49 @@
 
   <main class="container doc reveal active">
     <h1>MyVault Release Notes</h1>
-    <p class="section-lead">All releases are archived here. Current version: <strong>v1.8.1</strong> (2026-05-09).</p>
+    <p class="section-lead">All releases are archived here. Current version: <strong>v1.8.2</strong> (2026-05-12).</p>
 
     <div class="timeline">
       <details class="timeline-item current" open>
+        <summary>
+          <div class="timeline-heading">
+            <span class="version">v1.8.2</span>
+            <span class="date">2026-05-12</span>
+          </div>
+        </summary>
+        <div class="timeline-body">
+          <h3>1. New features</h3>
+          <ul>
+            <li>Local Notification System: Introduced <code>LocalNotificationService</code> supporting weekly log reminders, holding duration milestones (1 week/month/6 months/anniversary), and iCloud backup success/error push notifications.</li>
+            <li>Depreciated Value Field: Added <code>depreciatedValue</code> throughout the app—Add/Edit interface, CSV import/export, and data models.</li>
+            <li>Lifecycle Status Expansion: Added support for gifted date, lost date, and depreciated date; status is automatically inferred during import.</li>
+            <li>Category Template Library: Introduced <code>CategoryTemplateLibrary</code> with 17 built-in categories (Photography, Audio, Luxury, Bags, Jewelry, Watches, Vehicles, Home, Appliances, Sports, Outdoor, Collectibles, Precious Metals, Art, etc.), including icons, colors, aliases, and Pinyin.</li>
+            <li>Pro Membership Value Propositions: Added four-dimensional value cards covering Limitless Management, Deep Insights, Seamless Sync, and Exclusive Perks.</li>
+            <li>Subscription Disclosure & Legal Links: Added subscription disclosure card (auto-renewal terms) and Privacy Policy/Terms of Use buttons to the Pro upgrade page.</li>
+            <li>Share App: Added a share button in Settings to share the App Store link via the system share sheet.</li>
+            <li>Batch Action Toggle: Added a toggle in Settings to enable batch operations; long-press to enter multi-select mode.</li>
+          </ul>
+          <h3>2. Optimizations</h3>
+          <ul>
+            <li>Pro Upgrade Page Refactor: Extracted <code>purchaseSection</code> into an independent view handling five loading states; added <code>legalDisclosure</code> view.</li>
+            <li>Authentication Manager: Added <code>isAuthenticating</code> to prevent duplicate prompts; fixed biometric cancellation behavior; added device-auth-based passcode reset.</li>
+            <li>Simplified Edit Interface: Changed status selection from a popup confirmation to a direct dropdown Menu.</li>
+            <li>Enhanced CSV Import/Export: Import headers now support multi-alias mapping for depreciated value/status dates; Export headers are fully localized (20+ keys); automatic iCloud sync trigger after import.</li>
+            <li>UI Refinement: Added ZStack background to purchase channel settings; English category names only show if different from localized names; unified Dashboard card APIs; adaptive text scaling; data clearing sorted by dependency.</li>
+            <li>Localization: Added 100+ EN/ZH strings covering Pro descriptions, notification settings, CSV headers, depreciation labels, etc.</li>
+          </ul>
+          <h3>3. Bug fixes</h3>
+          <ul>
+            <li>Auth Flow: Prevent redirect to passcode entry when Face ID/Touch ID is cancelled; added <code>isAuthenticating</code> debounce.</li>
+            <li>LocationManager: Thread-safe completion callbacks via <code>deliverCompletion</code>.</li>
+            <li>holdingDays Calculation: Unified usage of <code>item.resolvedHoldingDays()</code> instead of manual calculation.</li>
+            <li>Dead Code Cleanup: Removed unused variables/methods in <code>EditItemView</code>, <code>SettingsView</code>, and <code>BrandManagementView</code>.</li>
+            <li>Paywall Parameter Fix: Dynamic variable for cloud sync lock source instead of hardcoded string.</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="timeline-item">
         <summary>
           <div class="timeline-heading">
             <span class="version">v1.8.1</span>
