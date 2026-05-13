@@ -23,10 +23,48 @@
 
   <main class="container doc reveal active">
     <h1>MyVault Release Notes</h1>
-    <p class="section-lead">All releases are archived here. Current version: <strong>v1.8.2</strong> (2026-05-12).</p>
+    <p class="section-lead">All releases are archived here. Current version: <strong>v1.8.3</strong> (2026-05-13).</p>
 
     <div class="timeline">
       <details class="timeline-item current" open>
+        <summary>
+          <div class="timeline-heading">
+            <span class="version">v1.8.3</span>
+            <span class="date">2026-05-13</span>
+          </div>
+        </summary>
+        <div class="timeline-body">
+          <h3>1. New features</h3>
+          <ul>
+            <li><strong>Batch Action Mode</strong>: Added a new batch operation settings page; Pro users can now enable long-press multi-select mode to manage multiple assets at once.</li>
+            <li><strong>Brand Library Expansion</strong>: Added logos for Oral-B, Laifen, Braun, Beizi, Chanel, Gucci, JD.com, and more; the brand selector now fully utilizes native iOS list components.</li>
+            <li><strong>Purchase Channel Expansion</strong>: Added icons for JD.com and Pang Dong Lai; unified Pinduoduo channel naming.</li>
+            <li><strong>Record Management Enhancement</strong>: Added individual deletion for asset storylines and maintenance records, including confirmation dialogs to prevent accidental deletions.</li>
+            <li><strong>iCloud Device Sync</strong>: Added a cross-device sync list to view and manage authorized sync devices.</li>
+            <li><strong>Tag Management Optimization</strong>: Tag addition is now handled via a top-right button popup for a more intuitive experience.</li>
+            <li><strong>Share App</strong>: Added a share button in Settings for one-tap sharing of the App Store link.</li>
+            <li><strong>Multilingual Permission Prompts</strong>: Added localized EN/ZH copy for app permission requests.</li>
+          </ul>
+          <h3>2. Bug fixes</h3>
+          <ul>
+            <li>Fixed missing title and prompt text in the tag addition popup.</li>
+            <li>Cleaned up deprecated brand resource files to eliminate potential loading issues.</li>
+            <li>Synchronized CoreData data model updates to ensure database structure consistency with code.</li>
+          </ul>
+          <h3>3. Optimizations</h3>
+          <ul>
+            <li><strong>Brand Selector Refactor</strong>: Fully migrated from a custom layout to native iOS list components for improved fluidity and system consistency.</li>
+            <li><strong>Import Result Page Visual Upgrade</strong>: Statistics now use large monospaced fonts, failure details are highlighted in red, and buttons feature rounded shadows.</li>
+            <li><strong>Category Editing Improvement</strong>: Moved to a standalone editing page that supports separate EN/ZH names and icon selection.</li>
+            <li><strong>Multilingual Copy Expansion</strong>: Added over 60 localized strings covering scenarios such as batch actions, record deletion, and category editing.</li>
+            <li><strong>iCloud Device Management Enhancement</strong>: Supports swipe-to-delete for non-current devices, with real-time deletion sync to the cloud.</li>
+            <li><strong>Asset Depreciation Icon Update</strong>: Replaced the depreciation status icon with a more intuitive downward trend icon.</li>
+            <li><strong>App Launch Stability</strong>: Optimized the view refresh mechanism during persistent container reconstruction.</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="timeline-item">
         <summary>
           <div class="timeline-heading">
             <span class="version">v1.8.2</span>

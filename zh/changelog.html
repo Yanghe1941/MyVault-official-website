@@ -23,13 +23,51 @@
 
   <main class="container doc reveal active">
     <h1>MyVault 更新日志</h1>
-    <p class="section-lead">版本号与发布日期将持续在此归档。当前版本：<strong>v1.8.2</strong>（2026-05-12）。</p>
+    <p class="section-lead">版本号与发布日期将持续在此归档。当前版本：<strong>v1.8.3</strong>（2026-05-13）。</p>
     <div class="doc-back">
       <a href="../index.html">← 返回首页</a>
     </div>
 
     <div class="timeline">
       <details class="timeline-item current" open>
+        <summary>
+          <div class="timeline-heading">
+            <span class="version">v1.8.3</span>
+            <span class="date">2026-05-13</span>
+          </div>
+        </summary>
+        <div class="timeline-body">
+          <h3>1. 新增功能</h3>
+          <ul>
+            <li><strong>批量操作模式</strong>：新增批量操作设置页面，Pro 用户可开启长按多选模式，同时管理多个资产。</li>
+            <li><strong>品牌资源库扩展</strong>：新增 Oral-B、徕芬、博朗、备至、香奈儿、古驰、京东等品牌 Logo，品牌选择器全面采用 iOS 原生列表组件。</li>
+            <li><strong>购买渠道扩展</strong>：新增京东、胖东来购买渠道图标，拼多多渠道名称统一更新。</li>
+            <li><strong>记录管理增强</strong>：资产故事线和维护记录新增逐条删除功能，带确认弹窗防止误操作。</li>
+            <li><strong>iCloud 设备同步</strong>：新增跨设备同步列表，可查看和管理已授权的同步设备。</li>
+            <li><strong>标签管理优化</strong>：标签添加改为右上角按钮弹窗方式，操作更直观。</li>
+            <li><strong>应用分享</strong>：设置页新增分享按钮，一键分享 App Store 链接。</li>
+            <li><strong>多语言权限提示</strong>：新增应用权限请求的中英文本地化文案。</li>
+          </ul>
+          <h3>2. Bug 修复</h3>
+          <ul>
+            <li>修复标签添加弹窗缺失标题和提示文案的问题。</li>
+            <li>清理废弃的品牌资源文件，消除潜在加载异常。</li>
+            <li>同步更新 CoreData 数据模型，确保数据库结构与代码一致。</li>
+          </ul>
+          <h3>3. 功能优化</h3>
+          <ul>
+            <li><strong>品牌选择器重构</strong>：从自定义布局全面迁移至 iOS 原生列表组件，提升操作流畅度和系统一致性。</li>
+            <li><strong>导入结果页视觉升级</strong>：数据统计使用大号等宽字体，失败明细采用红色标识，按钮增加圆角阴影效果。</li>
+            <li><strong>分类编辑改进</strong>：改为独立编辑页面，支持中英文名称分别填写和图标选择。</li>
+            <li><strong>多语言文案扩充</strong>：新增 60 余条本地化文案，覆盖批量操作、记录删除、分类编辑等场景。</li>
+            <li><strong>iCloud 设备管理增强</strong>：支持滑动删除非本设备，删除结果实时同步至云端。</li>
+            <li><strong>资产折旧图标更新</strong>：折旧状态图标更换为更直观的下行趋势图标。</li>
+            <li><strong>应用启动稳定性</strong>：优化持久化容器重建时的视图刷新机制。</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="timeline-item">
         <summary>
           <div class="timeline-heading">
             <span class="version">v1.8.2</span>
