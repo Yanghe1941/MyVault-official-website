@@ -23,13 +23,45 @@
 
   <main class="container doc reveal active">
     <h1>MyVault 更新日志</h1>
-    <p class="section-lead">版本号与发布日期将持续在此归档。当前版本：<strong>v1.8.3</strong>（2026-05-13）。</p>
+    <p class="section-lead">版本号与发布日期将持续在此归档。当前版本：<strong>v1.8.4</strong>（2026-05-16）。</p>
     <div class="doc-back">
       <a href="../index.html">← 返回首页</a>
     </div>
 
     <div class="timeline">
       <details class="timeline-item current" open>
+        <summary>
+          <div class="timeline-heading">
+            <span class="version">v1.8.4</span>
+            <span class="date">2026-05-16</span>
+          </div>
+        </summary>
+        <div class="timeline-body">
+          <h3>1. 新增功能</h3>
+          <ul>
+            <li><strong>自定义日期选择器</strong>：采用年月日三列滚轮设计，支持独立滚动，并可根据月份自动适配天数。</li>
+            <li><strong>分析模块智能显隐</strong>：当数据为空时，分析模块将自动隐藏，保持界面整洁。</li>
+            <li><strong>云同步切换确认</strong>：为云同步开关新增二次确认机制，有效避免误操作。</li>
+            <li><strong>图表分享功能</strong>：分析页面的图表现在支持直接分享为图片。</li>
+          </ul>
+          <h3>2. Bug 修复</h3>
+          <ul>
+            <li>修复了云同步开关在特定情况下导致的偶发闪退问题。</li>
+            <li>解决了品牌和分类选择器中搜索框偶尔缺失的问题。</li>
+            <li>消除了 CoreData 相关的潜在线程安全隐患。</li>
+            <li>修复了 iCloud 备份页面内容被系统组件遮挡的问题。</li>
+            <li>解决了 dSYM 和 AudioSession 相关的编译告警。</li>
+          </ul>
+          <h3>3. 体验优化</h3>
+          <ul>
+            <li><strong>品牌选择器升级</strong>：引入分段控制与搜索优化，找品牌更快速。</li>
+            <li><strong>样式统一</strong>：统一了批量操作模式下的状态文字样式。</li>
+            <li><strong>搜索与视觉优化</strong>：优化了购买渠道管理的搜索体验，并对 PDF 导出页面进行了视觉打磨。</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="timeline-item">
         <summary>
           <div class="timeline-heading">
             <span class="version">v1.8.3</span>
