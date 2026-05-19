@@ -15,6 +15,22 @@ a{color:inherit;text-decoration:none;transition:all .3s}
 .links a.lang-toggle{display:inline-flex;padding:8px 20px;border-radius:999px;border:1.5px solid var(--accent);color:var(--accent);font-size:14px;font-weight:700;letter-spacing:.5px}
 .links a.lang-toggle:hover{background:var(--accent);color:#050505;transform:translateY(-1px);box-shadow:0 5px 18px rgba(212,175,55,.35)}
 
+.links a.ph-badge {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 16px;
+}
+.links a.ph-badge img {
+  height: 40px;
+  width: auto;
+}
+
+@media (max-width: 768px) {
+  .ph-badge {
+    display: none;
+  }
+}
+
 .hero{padding:140px 0 110px;position:relative;overflow:hidden;background:radial-gradient(circle at 20% 20%,rgba(249,226,175,.08),transparent 45%),radial-gradient(circle at 80% 0,rgba(127,224,199,.08),transparent 50%);border-bottom:1px solid rgba(255,255,255,.08);box-shadow:0 60px 140px rgba(0,0,0,.55)}
 .hero:before,.hero:after{content:"";position:absolute;inset:-30% -10%;background:radial-gradient(circle,rgba(249,226,175,.12),transparent 60%);filter:blur(30px);z-index:0;animation:heroGlow 18s ease-in-out infinite}
 .hero:after{animation-duration:22s;animation-direction:reverse;background:radial-gradient(circle,rgba(103,167,255,.15),transparent 55%)}
