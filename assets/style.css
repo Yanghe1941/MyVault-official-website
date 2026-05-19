@@ -35,9 +35,9 @@ a{color:inherit;text-decoration:none;transition:all .3s}
 .hero-orb-three{width:180px;height:180px;top:30%;right:25%;background:linear-gradient(120deg,rgba(127,224,199,.55),rgba(249,226,175,.4));animation-duration:24s}
 .hero-gridlines{position:absolute;inset:-5% 0;background-image:linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px),linear-gradient(0deg,rgba(255,255,255,.04) 1px,transparent 1px);background-size:120px 120px,120px 120px;opacity:.15;animation:gridShift 16s linear infinite;mix-blend-mode:screen}
 .hero-gridlines:after{content:"";position:absolute;inset:0;background:linear-gradient(120deg,transparent,rgba(255,255,255,.12),transparent);opacity:.6;animation:scan 8s linear infinite}
-.hero-grid{display:block}
+.hero-grid{display:flex;align-items:center;justify-content:space-between;gap:60px}
 .hero .container{position:relative;z-index:1}
-.hero-copy{max-width:980px;margin:0;text-align:left;display:flex;flex-direction:column;gap:20px}
+.hero-copy{flex:1;margin:0;text-align:left;display:flex;flex-direction:column;gap:20px}
 .hero-copy .eyebrow{font-size:15px;letter-spacing:.32em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
 .h-title{font-size:clamp(24px,2.8vw,36px);line-height:1.05;margin-bottom:12px;font-weight:900;letter-spacing:-.8px;background:linear-gradient(120deg,#f9e2af,#d4af37);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;white-space:nowrap;display:flex;align-items:center;max-width:100%;position:relative;min-height:1.3em;overflow:visible}
 .typing{display:inline-flex;white-space:nowrap;min-height:1.2em}
@@ -68,7 +68,7 @@ a{color:inherit;text-decoration:none;transition:all .3s}
 .ghost-link:hover:after{transform:translate(6px,-50%)}
 
 /* Product Hunt Card */
-.ph-card{margin-top:24px;max-width:480px;background:rgba(255,255,255,.03);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid var(--line);border-radius:18px;padding:20px;box-shadow:0 20px 40px rgba(0,0,0,.35);transition:all .3s ease}
+.ph-card{max-width:480px;background:rgba(255,255,255,.03);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid var(--line);border-radius:18px;padding:24px;box-shadow:0 20px 40px rgba(0,0,0,.35);transition:all .3s ease;flex-shrink:0}
 .ph-card:hover{transform:translateY(-4px);border-color:var(--accent);box-shadow:0 30px 60px rgba(0,0,0,.45)}
 .ph-card-inner{display:flex;align-items:center;gap:16px;margin-bottom:16px}
 .ph-card-img{width:64px;height:64px;border-radius:12px;object-fit:cover;border:1px solid rgba(255,255,255,.1)}
@@ -238,7 +238,9 @@ a{color:inherit;text-decoration:none;transition:all .3s}
 .reveal.active{opacity:1;transform:translateY(0)}
 
 @media(max-width:1100px){
+  .hero-grid{flex-direction:column;align-items:flex-start;gap:40px}
   .hero-copy{max-width:100%}
+  .ph-card{width:100%;max-width:100%}
   .h-title{white-space:normal;display:block;font-size:34px}
   .typing{white-space:normal}
 }
