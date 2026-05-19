@@ -11,22 +11,16 @@ a{color:inherit;text-decoration:none;transition:all .3s}
 .nav-inner{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
 .brand{font-weight:800;font-size:24px;letter-spacing:-1px;background:linear-gradient(135deg,var(--accent),var(--accent-strong));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;display:inline-flex;align-items:center;gap:10px}
 .brand:after{content:"";display:inline-block;width:22px;height:22px;background:url("./logo-icon.svg") center/contain no-repeat}
+.links{display:flex;align-items:center;gap:16px}
 .links a{display:none}
+.links a.ph-badge{display:inline-flex;align-items:center}
+.links a.ph-badge img{height:32px;width:auto;transition:transform .3s}
+.links a.ph-badge:hover img{transform:scale(1.05)}
 .links a.lang-toggle{display:inline-flex;padding:8px 20px;border-radius:999px;border:1.5px solid var(--accent);color:var(--accent);font-size:14px;font-weight:700;letter-spacing:.5px}
 .links a.lang-toggle:hover{background:var(--accent);color:#050505;transform:translateY(-1px);box-shadow:0 5px 18px rgba(212,175,55,.35)}
 
-.links a.ph-badge {
-  display: inline-flex;
-  align-items: center;
-  margin-right: 16px;
-}
-.links a.ph-badge img {
-  height: 40px;
-  width: auto;
-}
-
 @media (max-width: 768px) {
-  .ph-badge {
+  .links a.ph-badge {
     display: none;
   }
 }
@@ -72,6 +66,17 @@ a{color:inherit;text-decoration:none;transition:all .3s}
 .ghost-link{font-weight:600;color:var(--accent);position:relative;padding-right:26px}
 .ghost-link:after{content:"→";position:absolute;right:0;top:50%;transform:translateY(-50%);transition:transform .3s}
 .ghost-link:hover:after{transform:translate(6px,-50%)}
+
+/* Product Hunt Card */
+.ph-card{margin-top:24px;max-width:480px;background:rgba(255,255,255,.03);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid var(--line);border-radius:18px;padding:20px;box-shadow:0 20px 40px rgba(0,0,0,.35);transition:all .3s ease}
+.ph-card:hover{transform:translateY(-4px);border-color:var(--accent);box-shadow:0 30px 60px rgba(0,0,0,.45)}
+.ph-card-inner{display:flex;align-items:center;gap:16px;margin-bottom:16px}
+.ph-card-img{width:64px;height:64px;border-radius:12px;object-fit:cover;border:1px solid rgba(255,255,255,.1)}
+.ph-card-content{flex:1;min-width:0}
+.ph-card-title{margin:0;font-size:18px;font-weight:700;color:#fff;line-height:1.3}
+.ph-card-desc{margin:4px 0 0;font-size:14px;color:var(--muted);line-height:1.4;display:-webkit-box;-webkit-line-clamp:2;line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.ph-card-btn{display:inline-flex;align-items:center;gap:8px;padding:10px 20px;background:#ff6154;color:#fff;font-size:14px;font-weight:700;border-radius:10px;transition:all .3s}
+.ph-card-btn:hover{background:#ff4d3d;transform:scale(1.02);box-shadow:0 8px 20px rgba(255,97,84,.3)}
 
 .section{padding:80px 0}
 .section-title{font-size:38px;font-weight:900;text-align:center;letter-spacing:-.8px;margin-bottom:16px}
