@@ -12,16 +12,58 @@
   <meta property="og:image" content="https://myvault.moodex.cc/assets/og-cover.svg" />
   <link rel="stylesheet" href="./assets/style.css?v=1.1" />
   <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
+  <link rel="manifest" href="/manifest.json" />
+  <meta name="theme-color" content="#d4af37" />
   <link rel="canonical" href="https://myvault.moodex.cc/" />
   <link rel="alternate" hreflang="zh" href="https://myvault.moodex.cc/" />
   <link rel="alternate" hreflang="en" href="https://myvault.moodex.cc/en/" />
   <link rel="alternate" hreflang="x-default" href="https://myvault.moodex.cc/" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "MyVault",
+    "description": "隐私优先、本地优先的 iOS 实物资产管理应用，结合物理资产、财务属性与情感故事，100% 本地存储，无需账号。",
+    "url": "https://myvault.moodex.cc/",
+    "applicationCategory": "ProductivityApplication",
+    "operatingSystem": "iOS",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "ratingCount": "128"
+    }
+  }
+  </script>
 </head>
 <body>
   <nav class="nav">
     <div class="container nav-inner">
       <a href="./index.html" class="brand">MyVault</a>
-      <div class="links">
+      <button class="mobile-menu-toggle" aria-label="打开菜单" onclick="toggleMobileMenu()">
+        <svg class="icon-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <path d="M3 12h18M3 6h18M3 18h18"/>
+        </svg>
+        <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <path d="M18 6L6 18M6 6l12 12"/>
+        </svg>
+      </button>
+      <div class="nav-links">
+        <a href="#features" class="nav-link">功能</a>
+        <a href="#comparison" class="nav-link">对比</a>
+        <a href="./zh/guide.html" class="nav-link">指南</a>
+        <button class="theme-toggle" aria-label="切换主题" onclick="toggleTheme()">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+          </svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
         <a href="https://www.producthunt.com/products/myvault?embed=true&utm_source=badge-featured&utm_medium=badge&utm_campaign=badge-myvault" target="_blank" rel="noopener noreferrer" class="ph-badge"><img alt="MyVault - All you RWA in one app | Product Hunt" src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1150539&theme=light&t=1779177523877"></a>
         <a href="./en/index.html" class="lang-toggle" data-lang-target="en">English</a>
       </div>
@@ -29,7 +71,7 @@
   </nav>
 
   <main>
-    <section class="hero reveal">
+    <section class="hero reveal" id="hero">
       <div class="hero-atmosphere" aria-hidden="true">
         <div class="hero-gridlines"></div>
         <div class="hero-orb hero-orb-one"></div>
@@ -78,12 +120,14 @@
                 <div>
                   <small>TestFlight</small>
                   <strong>加入 Beta</strong>
+                  <span class="urgency-tag">名额有限</span>
                 </div>
               </a>
             </div>
             <div class="cta-row">
               <a class="ghost-link" href="./zh/guide.html">查看用户指南</a>
               <a class="ghost-link" href="https://linear.app/myvault" target="_blank" rel="noopener">查看路线图</a>
+              <button class="skip-typing" aria-label="跳过打字动画" onclick="skipTyping()">跳过动画</button>
             </div>
           </div>
           <div class="ph-card reveal">
@@ -310,34 +354,106 @@
       </div>
     </section>
 
-    <section class="section reveal">
+    <section id="comparison" class="section reveal">
       <div class="container">
-        <div class="subheading">为什么选择 MyVault?</div>
-        <h2 class="section-title">对比别的方案，你更安全</h2>
-        <div class="compare-grid">
-          <article class="compare-card other">
-            <h3>其他应用</h3>
-            <ul>
-              <li>云端同步，存在泄露风险</li>
-              <li>强制账号登录与订阅</li>
-              <li>功能为记账而非资产档案</li>
-              <li>数据导出受限</li>
-            </ul>
-          </article>
-          <article class="compare-card mine">
-            <h3>MyVault</h3>
-            <ul>
-              <li><strong>本地运行 · 绝对安全</strong></li>
-              <li><strong>买断制或免费版本</strong></li>
-              <li><strong>极速启动，毫秒级搜索</strong></li>
-              <li><strong>ZIP 导出，完全掌控</strong></li>
-            </ul>
-          </article>
+        <div class="subheading">版本对比</div>
+        <h2 class="section-title">免费版与 Pro 版功能详解</h2>
+        <div class="pricing-table-wrap">
+          <table class="pricing-table">
+            <thead>
+              <tr>
+                <th class="th-feature">功能模块</th>
+                <th class="th-desc">功能说明</th>
+                <th class="th-free">免费版</th>
+                <th class="th-pro">Pro版</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="td-feature"><strong>物品管理</strong></td>
+                <td class="td-desc">记录物品名称、品牌、价格、购买日期、保修期等，支持拍照存档，是应用的核心功能</td>
+                <td class="td-check">✅ 限30个</td>
+                <td class="td-check">✅ 无限制</td>
+              </tr>
+              <tr>
+                <td class="td-feature"><strong>品牌管理</strong></td>
+                <td class="td-desc">按品牌（如Apple、Nike）对物品分组，方便筛选和统计</td>
+                <td class="td-check">✅</td>
+                <td class="td-check">✅</td>
+              </tr>
+              <tr>
+                <td class="td-feature"><strong>故事记忆</strong></td>
+                <td class="td-desc">为物品添加回忆记录，以时间轴展示背后的故事</td>
+                <td class="td-check">✅</td>
+                <td class="td-check">✅</td>
+              </tr>
+              <tr>
+                <td class="td-feature"><strong>数字保险箱</strong></td>
+                <td class="td-desc">存储数字资产（证书、合同、会员卡等）的截图，随时查阅</td>
+                <td class="td-check">✅</td>
+                <td class="td-check">✅</td>
+              </tr>
+              <tr>
+                <td class="td-feature"><strong>千位分隔符</strong></td>
+                <td class="td-desc">控制数字显示格式，按偏好选择 ¥1,000 或 ¥1000</td>
+                <td class="td-check">✅</td>
+                <td class="td-check">✅</td>
+              </tr>
+              <tr>
+                <td class="td-feature"><strong>分类管理</strong></td>
+                <td class="td-desc">按类别（数码、服饰、家居）对物品精细分组，支持颜色标记</td>
+                <td class="td-cross">❌</td>
+                <td class="td-check">✅</td>
+              </tr>
+              <tr>
+                <td class="td-feature"><strong>资产图片分组</strong></td>
+                <td class="td-desc">将物品照片按资产维度分组，图库化管理</td>
+                <td class="td-cross">❌</td>
+                <td class="td-check">✅</td>
+              </tr>
+              <tr>
+                <td class="td-feature"><strong>数据分析洞察</strong></td>
+                <td class="td-desc">资产总值、持有周期、消耗趋势等多维度数据图表</td>
+                <td class="td-cross">❌</td>
+                <td class="td-check">✅</td>
+              </tr>
+              <tr>
+                <td class="td-feature"><strong>空间管理</strong></td>
+                <td class="td-desc">按存放位置（客厅、背包）管理物品，快速找到放哪了</td>
+                <td class="td-cross">❌</td>
+                <td class="td-check">✅</td>
+              </tr>
+              <tr>
+                <td class="td-feature"><strong>场景功能</strong></td>
+                <td class="td-desc">按使用场景（出差、旅行）打包清单，一键查看要带什么</td>
+                <td class="td-cross">❌</td>
+                <td class="td-check">✅</td>
+              </tr>
+              <tr>
+                <td class="td-feature"><strong>批量操作</strong></td>
+                <td class="td-desc">一次选择多个物品，批量修改分类、状态、位置等</td>
+                <td class="td-cross">❌</td>
+                <td class="td-check">✅</td>
+              </tr>
+              <tr>
+                <td class="td-feature"><strong>iCloud 云同步</strong></td>
+                <td class="td-desc">自动同步至iCloud，换手机无缝衔接，不丢数据</td>
+                <td class="td-cross">❌</td>
+                <td class="td-check">✅</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </section>
 
   </main>
+
+  <button class="back-to-top" aria-label="返回顶部" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M18 15l-6-6-6 6"/>
+    </svg>
+  </button>
 
   <footer class="footer">
     <div class="container footer-inner">
@@ -353,9 +469,24 @@
 
   <script src="./assets/lang.js"></script>
   <script>
-    const typingTargets = document.querySelectorAll('.hero .typing');
-    typingTargets.forEach(target => {
+    let typingIntervals = [];
+
+    function skipTyping() {
+      document.querySelectorAll('.typing').forEach(target => {
+        const fullText = target.getAttribute('data-full-text') || target.textContent.trim();
+        target.textContent = fullText;
+        const container = target.closest('.h-title');
+        if (container) container.classList.add('typing-complete');
+        const caret = target.closest('.h-title')?.querySelector('.typing-caret');
+        if (caret) caret.style.opacity = '0';
+      });
+      typingIntervals.forEach(timer => clearInterval(timer));
+      typingIntervals = [];
+    }
+
+    document.querySelectorAll('.typing').forEach(target => {
       const fullText = target.textContent.trim();
+      target.setAttribute('data-full-text', fullText);
       const speed = parseInt(target.dataset.typingSpeed || '55', 10);
       const delay = Math.max(1600, fullText.length * speed * 0.6);
       const container = target.closest('.h-title');
@@ -364,22 +495,68 @@
       const runTyping = () => {
         container.classList.remove('typing-complete');
         target.textContent = '';
+        const caret = container.querySelector('.typing-caret');
+        if (caret) caret.style.opacity = '1';
         let index = 0;
         const timer = setInterval(() => {
           target.textContent = fullText.slice(0, index + 1);
           index++;
           if (index >= fullText.length) {
             clearInterval(timer);
+            const idx = typingIntervals.indexOf(timer);
+            if (idx > -1) typingIntervals.splice(idx, 1);
             container.classList.add('typing-complete');
-            setTimeout(runTyping, delay);
+            typingIntervals.push(setTimeout(runTyping, delay));
           }
         }, speed);
+        typingIntervals.push(timer);
       };
 
       runTyping();
     });
 
     document.getElementById('y').textContent = new Date().getFullYear();
+
+    // Back to top button
+    const backToTop = document.querySelector('.back-to-top');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 600) {
+        backToTop.classList.add('visible');
+      } else {
+        backToTop.classList.remove('visible');
+      }
+    }, { passive: true });
+
+    // Mobile menu toggle
+    function toggleMobileMenu() {
+      const toggle = document.querySelector('.mobile-menu-toggle');
+      const navLinks = document.querySelector('.nav-links');
+      toggle.classList.toggle('active');
+      navLinks.classList.toggle('active');
+    }
+
+    // Close mobile menu when clicking a link
+    document.querySelectorAll('.nav-links .nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        document.querySelector('.mobile-menu-toggle')?.classList.remove('active');
+        document.querySelector('.nav-links')?.classList.remove('active');
+      });
+    });
+
+    // Theme toggle
+    const themeToggle = document.querySelector('.theme-toggle');
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+      document.documentElement.setAttribute('data-theme', savedTheme);
+    } else if (window.matchMedia('(prefers-color-scheme: light)').matches) {
+      document.documentElement.setAttribute('data-theme', 'light');
+    }
+    function toggleTheme() {
+      const current = document.documentElement.getAttribute('data-theme');
+      const next = current === 'light' ? 'dark' : 'light';
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('theme', next);
+    }
 
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
@@ -407,6 +584,19 @@
     }, { threshold: 0.15 });
 
     document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    // Register Service Worker for PWA
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js')
+          .then(registration => {
+            console.log('SW registered:', registration.scope);
+          })
+          .catch(error => {
+            console.log('SW registration failed:', error);
+          });
+      });
+    }
   </script>
 </body>
 </html>

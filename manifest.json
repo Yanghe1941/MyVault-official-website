@@ -1,0 +1,20 @@
+{
+  "name": "MyVault",
+  "short_name": "MyVault",
+  "description": "Manage real-world assets and preserve their stories",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#050505",
+  "theme_color": "#d4af37",
+  "icons": [
+    {
+      "src": "/assets/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["productivity", "utilities"],
+  "lang": "en",
+  "categories": ["productivity"]
+}
