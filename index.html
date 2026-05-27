@@ -477,91 +477,91 @@
       <div class="container">
         <div class="subheading">版本对比</div>
         <h2 class="section-title">免费版与 Pro 版功能详解</h2>
-        <div class="pricing-table-wrap">
-          <table class="pricing-table">
-            <thead>
-              <tr>
-                <th class="th-feature">功能模块</th>
-                <th class="th-desc">功能说明</th>
-                <th class="th-free">免费版</th>
-                <th class="th-pro">Pro版</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="td-feature"><strong>物品管理</strong></td>
-                <td class="td-desc">记录物品名称、品牌、价格、购买日期、保修期等，支持拍照存档，是应用的核心功能</td>
-                <td class="td-check">✅ 限30个</td>
-                <td class="td-check">✅ 无限制</td>
-              </tr>
-              <tr>
-                <td class="td-feature"><strong>品牌管理</strong></td>
-                <td class="td-desc">按品牌（如Apple、Nike）对物品分组，方便筛选和统计</td>
-                <td class="td-check">✅</td>
-                <td class="td-check">✅</td>
-              </tr>
-              <tr>
-                <td class="td-feature"><strong>故事记忆</strong></td>
-                <td class="td-desc">为物品添加回忆记录，以时间轴展示背后的故事</td>
-                <td class="td-check">✅</td>
-                <td class="td-check">✅</td>
-              </tr>
-              <tr>
-                <td class="td-feature"><strong>数字保险箱</strong></td>
-                <td class="td-desc">存储数字资产（证书、合同、会员卡等）的截图，随时查阅</td>
-                <td class="td-check">✅</td>
-                <td class="td-check">✅</td>
-              </tr>
-              <tr>
-                <td class="td-feature"><strong>千位分隔符</strong></td>
-                <td class="td-desc">控制数字显示格式，按偏好选择 ¥1,000 或 ¥1000</td>
-                <td class="td-check">✅</td>
-                <td class="td-check">✅</td>
-              </tr>
-              <tr>
-                <td class="td-feature"><strong>分类管理</strong></td>
-                <td class="td-desc">按类别（数码、服饰、家居）对物品精细分组，支持颜色标记</td>
-                <td class="td-cross">❌</td>
-                <td class="td-check">✅</td>
-              </tr>
-              <tr>
-                <td class="td-feature"><strong>资产图片分组</strong></td>
-                <td class="td-desc">将物品照片按资产维度分组，图库化管理</td>
-                <td class="td-cross">❌</td>
-                <td class="td-check">✅</td>
-              </tr>
-              <tr>
-                <td class="td-feature"><strong>数据分析洞察</strong></td>
-                <td class="td-desc">资产总值、持有周期、消耗趋势等多维度数据图表</td>
-                <td class="td-cross">❌</td>
-                <td class="td-check">✅</td>
-              </tr>
-              <tr>
-                <td class="td-feature"><strong>空间管理</strong></td>
-                <td class="td-desc">按存放位置（客厅、背包）管理物品，快速找到放哪了</td>
-                <td class="td-cross">❌</td>
-                <td class="td-check">✅</td>
-              </tr>
-              <tr>
-                <td class="td-feature"><strong>场景功能</strong></td>
-                <td class="td-desc">按使用场景（出差、旅行）打包清单，一键查看要带什么</td>
-                <td class="td-cross">❌</td>
-                <td class="td-check">✅</td>
-              </tr>
-              <tr>
-                <td class="td-feature"><strong>批量操作</strong></td>
-                <td class="td-desc">一次选择多个物品，批量修改分类、状态、位置等</td>
-                <td class="td-cross">❌</td>
-                <td class="td-check">✅</td>
-              </tr>
-              <tr>
-                <td class="td-feature"><strong>iCloud 云同步</strong></td>
-                <td class="td-desc">自动同步至iCloud，换手机无缝衔接，不丢数据</td>
-                <td class="td-cross">❌</td>
-                <td class="td-check">✅</td>
-              </tr>
-            </tbody>
-          </table>
+        <div class="feat-scroll">
+          <button class="feat-scroll-btn feat-scroll-left" aria-label="向左滚动" onclick="const t=this.nextElementSibling;t.scrollBy({left:-230,behavior:'smooth'})">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+          </button>
+          <div class="feat-scroll-track">
+            <div class="feat-card feat-free">
+              <span class="feat-card-index">01/12</span>
+              <h4 class="feat-card-name">物品管理</h4>
+              <p class="feat-card-desc">记录物品名称、品牌、价格、购买日期、保修期等，支持拍照存档，是应用的核心功能</p>
+              <span class="feat-card-badge both">Free & Pro</span>
+            </div>
+            <div class="feat-card feat-free">
+              <span class="feat-card-index">02/12</span>
+              <h4 class="feat-card-name">品牌管理</h4>
+              <p class="feat-card-desc">按品牌（如Apple、Nike）对物品分组，方便筛选和统计</p>
+              <span class="feat-card-badge both">Free & Pro</span>
+            </div>
+            <div class="feat-card feat-free">
+              <span class="feat-card-index">03/12</span>
+              <h4 class="feat-card-name">故事记忆</h4>
+              <p class="feat-card-desc">为物品添加回忆记录，以时间轴展示背后的故事</p>
+              <span class="feat-card-badge both">Free & Pro</span>
+            </div>
+            <div class="feat-card feat-free">
+              <span class="feat-card-index">04/12</span>
+              <h4 class="feat-card-name">数字保险箱</h4>
+              <p class="feat-card-desc">存储数字资产（证书、合同、会员卡等）的截图，随时查阅</p>
+              <span class="feat-card-badge both">Free & Pro</span>
+            </div>
+            <div class="feat-card feat-free">
+              <span class="feat-card-index">05/12</span>
+              <h4 class="feat-card-name">千位分隔符</h4>
+              <p class="feat-card-desc">控制数字显示格式，按偏好选择带分隔符或纯数字</p>
+              <span class="feat-card-badge both">Free & Pro</span>
+            </div>
+            <div class="feat-card feat-pro">
+              <span class="feat-card-index">06/12</span>
+              <h4 class="feat-card-name">分类管理</h4>
+              <p class="feat-card-desc">按类别（数码、服饰、家居）对物品精细分组，支持颜色标记</p>
+              <span class="feat-card-badge pro">Pro</span>
+            </div>
+            <div class="feat-card feat-pro">
+              <span class="feat-card-index">07/12</span>
+              <h4 class="feat-card-name">资产图片分组</h4>
+              <p class="feat-card-desc">将物品照片按资产维度分组，图库化管理</p>
+              <span class="feat-card-badge pro">Pro</span>
+            </div>
+            <div class="feat-card feat-pro">
+              <span class="feat-card-index">08/12</span>
+              <h4 class="feat-card-name">数据分析洞察</h4>
+              <p class="feat-card-desc">资产总值、持有周期、消耗趋势等多维度数据图表</p>
+              <span class="feat-card-badge pro">Pro</span>
+            </div>
+            <div class="feat-card feat-pro">
+              <span class="feat-card-index">09/12</span>
+              <h4 class="feat-card-name">空间管理</h4>
+              <p class="feat-card-desc">按存放位置（客厅、背包）管理物品，快速找到放哪了</p>
+              <span class="feat-card-badge pro">Pro</span>
+            </div>
+            <div class="feat-card feat-pro">
+              <span class="feat-card-index">10/12</span>
+              <h4 class="feat-card-name">场景功能</h4>
+              <p class="feat-card-desc">按使用场景（出差、旅行）打包清单，一键查看要带什么</p>
+              <span class="feat-card-badge pro">Pro</span>
+            </div>
+            <div class="feat-card feat-pro">
+              <span class="feat-card-index">11/12</span>
+              <h4 class="feat-card-name">批量操作</h4>
+              <p class="feat-card-desc">一次选择多个物品，批量修改分类、状态、位置等</p>
+              <span class="feat-card-badge pro">Pro</span>
+            </div>
+            <div class="feat-card feat-pro">
+              <span class="feat-card-index">12/12</span>
+              <h4 class="feat-card-name">iCloud 云同步</h4>
+              <p class="feat-card-desc">自动同步至iCloud，换手机无缝衔接，不丢数据</p>
+              <span class="feat-card-badge pro">Pro</span>
+            </div>
+          </div>
+          <button class="feat-scroll-btn feat-scroll-right" aria-label="向右滚动" onclick="const t=this.previousElementSibling;t.scrollBy({left:230,behavior:'smooth'})">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+          </button>
+        </div>
+        <div class="feat-scroll-legend">
+          <span><span class="legend-dot legend-dot-free"></span> 免费版 & Pro 均可用（5项）</span>
+          <span><span class="legend-dot legend-dot-pro"></span> 仅 Pro 可用（7项）</span>
         </div>
       </div>
     </section>
@@ -716,6 +716,24 @@
           });
       });
     }
+
+    // Feature scroll — arrow button boundary state
+    (function(){
+      var track = document.querySelector('.feat-scroll-track');
+      var leftBtn = document.querySelector('.feat-scroll-left');
+      var rightBtn = document.querySelector('.feat-scroll-right');
+      if (!track || !leftBtn || !rightBtn) return;
+      function update() {
+        var atStart = track.scrollLeft <= 2;
+        var atEnd = track.scrollLeft + track.clientWidth >= track.scrollWidth - 2;
+        leftBtn.style.opacity = atStart ? '0.2' : '1';
+        leftBtn.style.pointerEvents = atStart ? 'none' : 'auto';
+        rightBtn.style.opacity = atEnd ? '0.2' : '1';
+        rightBtn.style.pointerEvents = atEnd ? 'none' : 'auto';
+      }
+      track.addEventListener('scroll', update, {passive: true});
+      update();
+    })();
   </script>
 </body>
 </html>
