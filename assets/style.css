@@ -129,10 +129,13 @@ a{color:inherit;text-decoration:none;transition:all .3s}
 .mini-chart svg{width:100%;height:100%}
 
 /* ---- Feature charts ---- */
-.feature-chart-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:28px}
-@media(max-width:900px){.feature-chart-grid{grid-template-columns:repeat(2,1fr);gap:24px}}
-@media(max-width:560px){.feature-chart-grid{grid-template-columns:1fr;gap:20px}}
-.feature-chart{display:flex;flex-direction:column;gap:12px;background:var(--card);border:1px solid var(--glass-border);padding:22px;border-radius:32px;transition:all .5s cubic-bezier(.16,1,.3,1);position:relative;overflow:hidden}
+.feature-chart-grid{display:flex;overflow-x:auto;gap:28px;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding-bottom:4px}
+.feature-chart-grid::-webkit-scrollbar{display:none}
+@media(max-width:900px){.feature-chart-grid{gap:24px}}
+@media(max-width:560px){.feature-chart-grid{gap:16px}}
+.feature-chart{flex:0 0 calc(25% - 21px);min-width:280px;scroll-snap-align:start;display:flex;flex-direction:column;gap:12px;background:var(--card);border:1px solid var(--glass-border);padding:22px;border-radius:32px;transition:all .5s cubic-bezier(.16,1,.3,1);position:relative;overflow:hidden}
+@media(max-width:900px){.feature-chart{flex:0 0 calc(50% - 12px);min-width:260px}}
+@media(max-width:560px){.feature-chart{flex:0 0 82%;min-width:260px}}
 .feature-chart:hover{transform:translateY(-10px);box-shadow:var(--shadow)}
 .feature-chart h3{font-size:22px;color:var(--accent);font-weight:800;margin:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .feature-chart .feature-desc{font-size:16px;color:var(--muted);line-height:1.55;margin:0}
