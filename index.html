@@ -54,7 +54,6 @@
       </button>
       <div class="nav-links">
         <a href="#features" class="nav-link">功能</a>
-        <a href="#comparison" class="nav-link">对比</a>
         <a href="./zh/guide.html" class="nav-link">指南</a>
         <button class="theme-toggle" aria-label="切换主题" onclick="toggleTheme()">
           <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
@@ -208,411 +207,184 @@
         <h2 class="section-title reveal">核心功能</h2>
         <div class="feature-chart-grid">
 
-          <!-- 1. 资产录入与完整档案管理 -->
           <div class="feature-chart reveal">
             <h3>资产录入与完整档案管理</h3>
             <p class="feature-desc">支持新增和编辑资产的核心信息，包括名称、品牌、价格、购买信息、分类、状态、保修、预计使用年限、图片、描述等，构成整个 App 的基础数据入口。</p>
             <div class="chart-wrap">
-              <svg viewBox="0 0 400 120">
-                <defs>
-                  <marker id="ar-entry" markerWidth="5" markerHeight="5" refX="4" refY="2.5" orient="auto"><path d="M0,0 L5,2.5 L0,5 Z" fill="#d4af37"/></marker>
-                </defs>
-                <!-- 表单卡片 -->
-                <rect x="16" y="10" width="110" height="100" rx="12" fill="rgba(0,0,0,.025)" stroke="rgba(0,0,0,.07)"/>
-                <!-- 图片占位 -->
-                <rect x="26" y="20" width="34" height="28" rx="5" fill="rgba(212,175,55,.12)" stroke="#d4af37" stroke-width="0.8"/>
-                <circle cx="43" cy="33" r="5" fill="none" stroke="#d4af37" stroke-width="1"/>
-                <circle cx="43" cy="33" r="1.5" fill="#d4af37"/>
-                <!-- 字段行 -->
-                <rect x="66" y="22" width="50" height="6" rx="3" fill="rgba(0,0,0,.12)"/>
-                <text x="66" y="19" fill="var(--muted)" font-size="5.5">名称</text>
-                <rect x="66" y="34" width="38" height="6" rx="3" fill="rgba(0,0,0,.08)"/>
-                <text x="66" y="31" fill="var(--muted)" font-size="5.5">品牌</text>
-                <rect x="26" y="56" width="35" height="6" rx="3" fill="rgba(212,175,55,.2)"/>
-                <text x="26" y="53" fill="var(--muted)" font-size="5.5">价格</text>
-                <rect x="68" y="56" width="48" height="6" rx="3" fill="rgba(0,0,0,.08)"/>
-                <text x="68" y="53" fill="var(--muted)" font-size="5.5">购买日期</text>
-                <rect x="26" y="72" width="30" height="6" rx="3" fill="rgba(0,0,0,.07)"/>
-                <text x="26" y="69" fill="var(--muted)" font-size="5.5">分类</text>
-                <rect x="62" y="72" width="30" height="6" rx="3" fill="rgba(0,0,0,.07)"/>
-                <text x="62" y="69" fill="var(--muted)" font-size="5.5">状态</text>
-                <rect x="98" y="72" width="20" height="6" rx="3" fill="rgba(0,0,0,.07)"/>
-                <text x="98" y="69" fill="var(--muted)" font-size="5.5">保修</text>
-                <rect x="26" y="88" width="90" height="6" rx="3" fill="rgba(0,0,0,.05)"/>
-                <text x="26" y="85" fill="var(--muted)" font-size="5.5">描述 / 备注</text>
-                <!-- 字段数徽章 -->
-                <text x="200" y="16" fill="var(--muted)" font-size="6.5" text-anchor="middle">24+ 字段 · 完整档案</text>
-                <!-- 右侧字段组 -->
-                <rect x="144" y="14" width="108" height="92" rx="12" fill="rgba(0,0,0,.02)" stroke="rgba(0,0,0,.06)"/>
-                <text x="198" y="27" fill="var(--muted)" font-size="6" text-anchor="middle">核心信息</text>
-                <rect x="154" y="32" width="88" height="7" rx="3.5" fill="rgba(212,175,55,.18)"/>
-                <text x="198" y="38" fill="#d4af37" font-size="6" font-weight="700" text-anchor="middle">名称 · 品牌 · 价格</text>
-                <rect x="154" y="44" width="88" height="7" rx="3.5" fill="rgba(0,0,0,.06)"/>
-                <text x="198" y="50" fill="var(--text)" font-size="6" text-anchor="middle">购买渠道 · 购买日期</text>
-                <rect x="154" y="56" width="88" height="7" rx="3.5" fill="rgba(0,0,0,.06)"/>
-                <text x="198" y="62" fill="var(--text)" font-size="6" text-anchor="middle">分类 · 状态 · 保修</text>
-                <rect x="154" y="68" width="88" height="7" rx="3.5" fill="rgba(0,0,0,.06)"/>
-                <text x="198" y="74" fill="var(--text)" font-size="6" text-anchor="middle">预计使用年限 · 序列号</text>
-                <rect x="154" y="80" width="88" height="7" rx="3.5" fill="rgba(0,0,0,.05)"/>
-                <text x="198" y="86" fill="var(--text)" font-size="6" text-anchor="middle">图片 · 描述 · 自定义</text>
-                <!-- 连接箭头 -->
-                <path d="M126 60 L142 60" fill="none" stroke="#d4af37" stroke-width="1.2" marker-end="url(#ar-entry)"/>
-                <!-- 存入底座 -->
-                <rect x="268" y="20" width="116" height="80" rx="12" fill="rgba(0,0,0,.025)" stroke="rgba(0,0,0,.06)"/>
-                <text x="326" y="36" fill="var(--muted)" font-size="6" text-anchor="middle">资产档案</text>
-                <rect x="278" y="42" width="96" height="14" rx="5" fill="rgba(212,175,55,.1)" stroke="#d4af37" stroke-width="0.8"/>
-                <text x="326" y="52" fill="#d4af37" font-size="7" font-weight="700" text-anchor="middle">完整物品档案</text>
-                <rect x="278" y="62" width="44" height="28" rx="5" fill="rgba(0,0,0,.05)"/>
-                <text x="300" y="76" fill="var(--muted)" font-size="6" text-anchor="middle">照片</text>
-                <rect x="328" y="62" width="46" height="28" rx="5" fill="rgba(0,0,0,.05)"/>
-                <text x="351" y="76" fill="var(--muted)" font-size="6" text-anchor="middle">附件</text>
-                <path d="M254 60 L266 60" fill="none" stroke="#d4af37" stroke-width="1.2" marker-end="url(#ar-entry)"/>
+              <svg viewBox="0 0 400 100">
+                <defs><marker id="ar1" markerWidth="5" markerHeight="5" refX="4" refY="2.5" orient="auto"><path d="M0,0 L5,2.5 L0,5 Z" fill="#d4af37"/></marker></defs>
+                <rect x="16" y="8" width="150" height="84" rx="12" fill="rgba(0,0,0,.02)" stroke="rgba(0,0,0,.08)"/>
+                <rect x="28" y="18" width="50" height="7" rx="3.5" fill="rgba(212,175,55,.25)"/>
+                <rect x="28" y="30" width="40" height="7" rx="3.5" fill="rgba(0,0,0,.06)"/>
+                <rect x="28" y="42" width="35" height="7" rx="3.5" fill="rgba(0,0,0,.06)"/>
+                <rect x="28" y="54" width="55" height="7" rx="3.5" fill="rgba(0,0,0,.06)"/>
+                <rect x="28" y="66" width="42" height="7" rx="3.5" fill="rgba(0,0,0,.05)"/>
+                <rect x="28" y="78" width="65" height="7" rx="3.5" fill="rgba(0,0,0,.04)"/>
+                <text x="88" y="24" fill="var(--muted)" font-size="6.5">名称</text>
+                <text x="78" y="36" fill="var(--muted)" font-size="6.5">品牌</text>
+                <text x="73" y="48" fill="var(--muted)" font-size="6.5">价格</text>
+                <path d="M172 50 L204 50" fill="none" stroke="#d4af37" stroke-width="1.8" marker-end="url(#ar1)"/>
+                <rect x="210" y="18" width="174" height="64" rx="14" fill="rgba(212,175,55,.06)" stroke="rgba(212,175,55,.25)"/>
+                <rect x="226" y="30" width="142" height="12" rx="6" fill="rgba(212,175,55,.15)"/>
+                <text x="297" y="39" fill="#d4af37" font-size="7" font-weight="700" text-anchor="middle">完整物品档案</text>
+                <rect x="232" y="52" width="62" height="20" rx="6" fill="rgba(0,0,0,.05)"/>
+                <text x="263" y="65" fill="var(--muted)" font-size="6" text-anchor="middle">照片附件</text>
+                <rect x="304" y="52" width="62" height="20" rx="6" fill="rgba(0,0,0,.05)"/>
+                <text x="335" y="65" fill="var(--muted)" font-size="6" text-anchor="middle">24+ 字段</text>
               </svg>
             </div>
             <div class="meta"><span>24+ 字段</span><span>图片存档</span><span>完整档案</span></div>
           </div>
 
-          <!-- 2. 资产列表、搜索与筛选 -->
           <div class="feature-chart reveal">
             <h3>资产列表、搜索与筛选</h3>
             <p class="feature-desc">用户可以在首页统一查看全部资产，并通过搜索、排序、状态筛选、分类筛选快速找到目标资产，这是日常使用频率最高的主工作台。</p>
             <div class="chart-wrap">
-              <svg viewBox="0 0 400 120">
-                <!-- 搜索栏 -->
-                <rect x="16" y="10" width="368" height="18" rx="9" fill="rgba(0,0,0,.04)" stroke="rgba(0,0,0,.08)"/>
-                <circle cx="30" cy="19" r="4" fill="none" stroke="#d4af37" stroke-width="1.2"/>
-                <line x1="33" y1="22" x2="37" y2="26" stroke="#d4af37" stroke-width="1.2"/>
-                <text x="46" y="23" fill="var(--muted)" font-size="7">搜索资产名称、品牌、描述…</text>
-                <!-- 筛选条 -->
-                <rect x="16" y="34" width="54" height="13" rx="6.5" fill="rgba(212,175,55,.15)" stroke="#d4af37" stroke-width="0.8"/>
-                <text x="43" y="43" fill="#d4af37" font-size="6.5" font-weight="700" text-anchor="middle">全部状态</text>
-                <rect x="76" y="34" width="46" height="13" rx="6.5" fill="rgba(0,0,0,.05)"/>
-                <text x="99" y="43" fill="var(--muted)" font-size="6.5" text-anchor="middle">使用中</text>
-                <rect x="128" y="34" width="46" height="13" rx="6.5" fill="rgba(0,0,0,.05)"/>
-                <text x="151" y="43" fill="var(--muted)" font-size="6.5" text-anchor="middle">闲置</text>
-                <rect x="180" y="34" width="46" height="13" rx="6.5" fill="rgba(0,0,0,.05)"/>
-                <text x="203" y="43" fill="var(--muted)" font-size="6.5" text-anchor="middle">出售</text>
-                <rect x="232" y="34" width="54" height="13" rx="6.5" fill="rgba(0,0,0,.05)"/>
-                <text x="259" y="43" fill="var(--muted)" font-size="6.5" text-anchor="middle">按分类 ▾</text>
-                <rect x="292" y="34" width="54" height="13" rx="6.5" fill="rgba(0,0,0,.05)"/>
-                <text x="319" y="43" fill="var(--muted)" font-size="6.5" text-anchor="middle">排序 ▾</text>
-                <!-- 资产列表行 -->
-                <rect x="16" y="53" width="368" height="17" rx="5" fill="rgba(212,175,55,.06)" stroke="rgba(212,175,55,.2)" stroke-width="0.8"/>
-                <rect x="22" y="57" width="8" height="8" rx="2" fill="rgba(212,175,55,.25)"/>
-                <text x="36" y="65" fill="var(--text)" font-size="7" font-weight="600">MacBook Pro 14</text>
-                <text x="130" y="65" fill="var(--muted)" font-size="6.5">数码</text>
-                <text x="280" y="65" fill="#d4af37" font-size="7" font-weight="700" text-anchor="end">¥ 14,999</text>
-                <rect x="290" y="57" width="36" height="8" rx="4" fill="rgba(212,175,55,.15)"/>
-                <text x="308" y="64" fill="#d4af37" font-size="5.5" text-anchor="middle">使用中</text>
-                <rect x="16" y="74" width="368" height="17" rx="5" fill="rgba(0,0,0,.025)"/>
-                <rect x="22" y="78" width="8" height="8" rx="2" fill="rgba(0,0,0,.08)"/>
-                <text x="36" y="86" fill="var(--text)" font-size="7">Sony WH-1000XM5</text>
-                <text x="148" y="86" fill="var(--muted)" font-size="6.5">数码</text>
-                <text x="280" y="86" fill="var(--muted)" font-size="7" text-anchor="end">¥ 2,299</text>
-                <rect x="290" y="78" width="36" height="8" rx="4" fill="rgba(0,0,0,.06)"/>
-                <text x="308" y="85" fill="var(--muted)" font-size="5.5" text-anchor="middle">闲置</text>
-                <rect x="16" y="95" width="368" height="17" rx="5" fill="rgba(0,0,0,.02)"/>
-                <rect x="22" y="99" width="8" height="8" rx="2" fill="rgba(0,0,0,.06)"/>
-                <text x="36" y="107" fill="var(--text)" font-size="7">Acne Studios 西装外套</text>
-                <text x="152" y="107" fill="var(--muted)" font-size="6.5">服饰</text>
-                <text x="280" y="107" fill="var(--muted)" font-size="7" text-anchor="end">¥ 4,500</text>
-                <rect x="290" y="99" width="36" height="8" rx="4" fill="rgba(0,0,0,.05)"/>
-                <text x="308" y="106" fill="var(--muted)" font-size="5.5" text-anchor="middle">使用中</text>
+              <svg viewBox="0 0 400 100">
+                <rect x="16" y="6" width="368" height="16" rx="8" fill="rgba(0,0,0,.03)" stroke="rgba(0,0,0,.08)"/>
+                <circle cx="28" cy="14" r="3.5" fill="none" stroke="#d4af37" stroke-width="1.2"/>
+                <text x="38" y="17" fill="var(--muted)" font-size="6.5">搜索资产…</text>
+                <rect x="16" y="28" width="52" height="12" rx="6" fill="rgba(212,175,55,.15)" stroke="#d4af37" stroke-width="0.7"/>
+                <text x="42" y="36" fill="#d4af37" font-size="6" font-weight="700" text-anchor="middle">全部</text>
+                <rect x="74" y="28" width="46" height="12" rx="6" fill="rgba(0,0,0,.04)"/>
+                <text x="97" y="36" fill="var(--muted)" font-size="6" text-anchor="middle">使用中</text>
+                <rect x="126" y="28" width="46" height="12" rx="6" fill="rgba(0,0,0,.04)"/>
+                <text x="149" y="36" fill="var(--muted)" font-size="6" text-anchor="middle">按分类</text>
+                <rect x="16" y="46" width="368" height="14" rx="5" fill="rgba(212,175,55,.05)" stroke="rgba(212,175,55,.15)"/>
+                <rect x="22" y="50" width="6" height="6" rx="1.5" fill="rgba(212,175,55,.25)"/>
+                <text x="34" y="56" fill="var(--text)" font-size="6.5" font-weight="600">MacBook Pro 14"</text>
+                <text x="136" y="56" fill="var(--muted)" font-size="6">数码</text>
+                <text x="290" y="56" fill="#d4af37" font-size="6.5" font-weight="700" text-anchor="end">¥14,999</text>
+                <rect x="16" y="64" width="368" height="14" rx="5" fill="rgba(0,0,0,.02)"/>
+                <rect x="22" y="68" width="6" height="6" rx="1.5" fill="rgba(0,0,0,.08)"/>
+                <text x="34" y="74" fill="var(--text)" font-size="6.5">Sony WH-1000XM5</text>
+                <text x="140" y="74" fill="var(--muted)" font-size="6">数码</text>
+                <text x="290" y="74" fill="var(--muted)" font-size="6.5" text-anchor="end">¥2,299</text>
+                <rect x="16" y="82" width="368" height="14" rx="5" fill="rgba(0,0,0,.015)"/>
+                <rect x="22" y="86" width="6" height="6" rx="1.5" fill="rgba(0,0,0,.06)"/>
+                <text x="34" y="92" fill="var(--text)" font-size="6.5">Acne Studios 外套</text>
+                <text x="130" y="92" fill="var(--muted)" font-size="6">服饰</text>
+                <text x="290" y="92" fill="var(--muted)" font-size="6.5" text-anchor="end">¥4,500</text>
               </svg>
             </div>
-            <div class="meta"><span>全局搜索</span><span>状态筛选</span><span>分类 / 排序</span></div>
+            <div class="meta"><span>全局搜索</span><span>状态筛选</span><span>分类排序</span></div>
           </div>
 
-          <!-- 3. 资产详情与生命周期追踪 -->
           <div class="feature-chart reveal">
             <h3>资产详情与生命周期追踪</h3>
             <p class="feature-desc">每件资产都有独立详情页，可持续记录状态变化、维修记录、故事内容和生命周期信息，让资产从「静态记录」变成「动态追踪」。</p>
             <div class="chart-wrap">
-              <svg viewBox="0 0 400 120">
-                <!-- 时间线主轴 -->
-                <line x1="40" y1="16" x2="40" y2="104" stroke="rgba(212,175,55,.3)" stroke-width="1.5"/>
-                <!-- 节点1: 购入 -->
-                <circle cx="40" cy="22" r="5" fill="#d4af37"/>
-                <rect x="52" y="15" width="100" height="15" rx="4" fill="rgba(212,175,55,.1)" stroke="#d4af37" stroke-width="0.8"/>
-                <text x="102" y="25" fill="#d4af37" font-size="6.5" font-weight="700" text-anchor="middle">购入 · 2023-03-12</text>
-                <text x="162" y="21" fill="var(--muted)" font-size="5.5">¥14,999</text>
-                <!-- 节点2: 状态变更 -->
-                <circle cx="40" cy="44" r="4" fill="rgba(212,175,55,.5)"/>
-                <rect x="52" y="37" width="80" height="14" rx="4" fill="rgba(0,0,0,.04)"/>
-                <text x="92" y="46" fill="var(--muted)" font-size="6" text-anchor="middle">状态变更：使用中</text>
-                <!-- 节点3: 维修记录 -->
-                <circle cx="40" cy="63" r="4.5" fill="none" stroke="#d4af37" stroke-width="1.5"/>
-                <rect x="52" y="56" width="120" height="15" rx="4" fill="rgba(0,0,0,.04)"/>
-                <text x="112" y="66" fill="var(--text)" font-size="6.5" text-anchor="middle">维修 · 换屏 · ¥ 350</text>
-                <text x="178" y="62" fill="var(--muted)" font-size="5.5">2024-08</text>
-                <!-- 节点4: 故事 -->
-                <circle cx="40" cy="83" r="4" fill="rgba(212,175,55,.3)"/>
-                <rect x="52" y="76" width="160" height="14" rx="4" fill="rgba(0,0,0,.03)"/>
-                <text x="132" y="85" fill="var(--muted)" font-size="6" text-anchor="middle">故事：第一台属于自己的工作机</text>
-                <!-- 节点5: 当前 -->
-                <circle cx="40" cy="101" r="3" fill="none" stroke="#d4af37" stroke-width="1" stroke-dasharray="2 1.5"/>
-                <text x="52" y="105" fill="var(--muted)" font-size="6">持续追踪中…</text>
-                <!-- 右侧状态卡 -->
-                <rect x="250" y="12" width="134" height="96" rx="12" fill="rgba(0,0,0,.025)" stroke="rgba(0,0,0,.06)"/>
-                <text x="317" y="26" fill="var(--muted)" font-size="6" text-anchor="middle">当前状态</text>
-                <rect x="262" y="30" width="110" height="22" rx="6" fill="rgba(212,175,55,.08)" stroke="#d4af37" stroke-width="0.8"/>
-                <text x="317" y="44" fill="#d4af37" font-size="8" font-weight="700" text-anchor="middle">使用中 · 保修内</text>
-                <line x1="262" y1="60" x2="372" y2="60" stroke="rgba(0,0,0,.06)" stroke-width="1"/>
-                <text x="270" y="73" fill="var(--muted)" font-size="6">已持有</text>
-                <text x="370" y="73" fill="var(--text)" font-size="7" font-weight="600" text-anchor="end">2年 3个月</text>
-                <text x="270" y="87" fill="var(--muted)" font-size="6">维修次数</text>
-                <text x="370" y="87" fill="var(--text)" font-size="7" font-weight="600" text-anchor="end">1 次</text>
-                <text x="270" y="101" fill="var(--muted)" font-size="6">保修到期</text>
-                <text x="370" y="101" fill="#d4af37" font-size="7" font-weight="600" text-anchor="end">2025-03</text>
+              <svg viewBox="0 0 400 100">
+                <line x1="56" y1="18" x2="56" y2="92" stroke="rgba(212,175,55,.25)" stroke-width="1.5"/>
+                <circle cx="56" cy="22" r="5" fill="#d4af37"/>
+                <rect x="72" y="14" width="100" height="16" rx="5" fill="rgba(212,175,55,.1)" stroke="#d4af37" stroke-width="0.7"/>
+                <text x="122" y="25" fill="#d4af37" font-size="6.5" font-weight="700" text-anchor="middle">购入 · ¥14,999</text>
+                <circle cx="56" cy="40" r="4" fill="rgba(212,175,55,.4)"/>
+                <text x="72" y="44" fill="var(--muted)" font-size="6">状态变更 · 使用中</text>
+                <circle cx="56" cy="58" r="4" fill="none" stroke="#d4af37" stroke-width="1.5"/>
+                <rect x="72" y="51" width="90" height="14" rx="4" fill="rgba(0,0,0,.03)"/>
+                <text x="117" y="61" fill="var(--text)" font-size="6" text-anchor="middle">维修 · 换屏 ¥350</text>
+                <circle cx="56" cy="76" r="3.5" fill="rgba(212,175,55,.2)"/>
+                <text x="72" y="80" fill="var(--muted)" font-size="6">故事 · 纪念记忆</text>
+                <circle cx="56" cy="92" r="3" fill="none" stroke="#d4af37" stroke-width="1" stroke-dasharray="2 1.5"/>
+                <rect x="250" y="20" width="130" height="64" rx="12" fill="rgba(212,175,55,.05)" stroke="rgba(212,175,55,.15)"/>
+                <text x="315" y="42" fill="#d4af37" font-size="14" font-weight="800" text-anchor="middle">2.3 年</text>
+                <text x="315" y="58" fill="var(--muted)" font-size="7" text-anchor="middle">已持有时间</text>
+                <text x="315" y="74" fill="var(--muted)" font-size="6" text-anchor="middle">1 次维修 · 保修内</text>
               </svg>
             </div>
             <div class="meta"><span>时间线记录</span><span>维修记录</span><span>故事内容</span></div>
           </div>
 
-          <!-- 4. 分类化组织管理 -->
           <div class="feature-chart reveal">
             <h3>分类化组织管理</h3>
             <p class="feature-desc">围绕分类、品牌、购买渠道、标签、空间、场景等维度组织资产，让用户不只是「记下来」，而是能真正把资产体系整理清楚。</p>
             <div class="chart-wrap">
-              <svg viewBox="0 0 400 120">
-                <!-- 中心资产节点 -->
-                <circle cx="200" cy="60" r="18" fill="rgba(212,175,55,.1)" stroke="#d4af37" stroke-width="1.5"/>
-                <text x="200" y="57" fill="#d4af37" font-size="7" font-weight="700" text-anchor="middle">资产</text>
-                <text x="200" y="66" fill="#d4af37" font-size="6" text-anchor="middle">体系</text>
-                <!-- 分类 -->
-                <circle cx="90" cy="28" r="13" fill="rgba(0,0,0,.04)" stroke="rgba(0,0,0,.1)" stroke-width="1"/>
-                <text x="90" y="31" fill="var(--text)" font-size="6.5" font-weight="600" text-anchor="middle">分类</text>
-                <line x1="103" y1="35" x2="183" y2="50" stroke="rgba(212,175,55,.25)" stroke-width="1"/>
-                <text x="90" y="46" fill="var(--muted)" font-size="5.5" text-anchor="middle">数码 / 服饰</text>
-                <text x="90" y="53" fill="var(--muted)" font-size="5.5" text-anchor="middle">家居 / 运动…</text>
-                <!-- 品牌 -->
-                <circle cx="52" cy="74" r="13" fill="rgba(0,0,0,.04)" stroke="rgba(0,0,0,.1)" stroke-width="1"/>
-                <text x="52" y="77" fill="var(--text)" font-size="6.5" font-weight="600" text-anchor="middle">品牌</text>
-                <line x1="65" y1="68" x2="182" y2="61" stroke="rgba(212,175,55,.2)" stroke-width="1"/>
-                <text x="52" y="92" fill="var(--muted)" font-size="5.5" text-anchor="middle">Apple / Nike…</text>
-                <!-- 空间 -->
-                <circle cx="100" cy="103" r="13" fill="rgba(0,0,0,.04)" stroke="rgba(0,0,0,.1)" stroke-width="1"/>
-                <text x="100" y="106" fill="var(--text)" font-size="6.5" font-weight="600" text-anchor="middle">空间</text>
-                <line x1="111" y1="96" x2="185" y2="70" stroke="rgba(212,175,55,.2)" stroke-width="1"/>
-                <!-- 场景 -->
-                <circle cx="300" cy="103" r="13" fill="rgba(0,0,0,.04)" stroke="rgba(0,0,0,.1)" stroke-width="1"/>
-                <text x="300" y="106" fill="var(--text)" font-size="6.5" font-weight="600" text-anchor="middle">场景</text>
-                <line x1="289" y1="96" x2="215" y2="70" stroke="rgba(212,175,55,.2)" stroke-width="1"/>
-                <text x="300" y="91" fill="var(--muted)" font-size="5.5" text-anchor="middle">出差 / 旅行…</text>
-                <!-- 标签 -->
-                <circle cx="348" cy="74" r="13" fill="rgba(0,0,0,.04)" stroke="rgba(0,0,0,.1)" stroke-width="1"/>
-                <text x="348" y="77" fill="var(--text)" font-size="6.5" font-weight="600" text-anchor="middle">标签</text>
-                <line x1="335" y1="68" x2="218" y2="61" stroke="rgba(212,175,55,.2)" stroke-width="1"/>
-                <!-- 渠道 -->
-                <circle cx="310" cy="28" r="13" fill="rgba(0,0,0,.04)" stroke="rgba(0,0,0,.1)" stroke-width="1"/>
-                <text x="310" y="31" fill="var(--text)" font-size="6.5" font-weight="600" text-anchor="middle">渠道</text>
-                <line x1="297" y1="35" x2="217" y2="50" stroke="rgba(212,175,55,.2)" stroke-width="1"/>
-                <text x="310" y="46" fill="var(--muted)" font-size="5.5" text-anchor="middle">电商 / 实体店</text>
-                <!-- 维度标注 -->
+              <svg viewBox="0 0 400 100">
+                <circle cx="200" cy="48" r="16" fill="rgba(212,175,55,.1)" stroke="#d4af37" stroke-width="1.5"/>
+                <text x="200" y="45" fill="#d4af37" font-size="7" font-weight="700" text-anchor="middle">资产</text>
+                <text x="200" y="54" fill="#d4af37" font-size="5.5" text-anchor="middle">体系</text>
+                <circle cx="86" cy="20" r="11" fill="rgba(0,0,0,.03)" stroke="rgba(0,0,0,.1)"/>
+                <text x="86" y="23" fill="var(--text)" font-size="6" font-weight="600" text-anchor="middle">分类</text>
+                <line x1="97" y1="26" x2="184" y2="40" stroke="rgba(212,175,55,.2)" stroke-width="0.8"/>
+                <circle cx="60" cy="56" r="11" fill="rgba(0,0,0,.03)" stroke="rgba(0,0,0,.1)"/>
+                <text x="60" y="59" fill="var(--text)" font-size="6" font-weight="600" text-anchor="middle">品牌</text>
+                <line x1="71" y1="52" x2="184" y2="48" stroke="rgba(212,175,55,.2)" stroke-width="0.8"/>
+                <circle cx="86" cy="86" r="11" fill="rgba(0,0,0,.03)" stroke="rgba(0,0,0,.1)"/>
+                <text x="86" y="89" fill="var(--text)" font-size="6" font-weight="600" text-anchor="middle">空间</text>
+                <line x1="95" y1="80" x2="185" y2="56" stroke="rgba(212,175,55,.2)" stroke-width="0.8"/>
+                <circle cx="314" cy="86" r="11" fill="rgba(0,0,0,.03)" stroke="rgba(0,0,0,.1)"/>
+                <text x="314" y="89" fill="var(--text)" font-size="6" font-weight="600" text-anchor="middle">场景</text>
+                <line x1="305" y1="80" x2="215" y2="56" stroke="rgba(212,175,55,.2)" stroke-width="0.8"/>
+                <circle cx="340" cy="56" r="11" fill="rgba(0,0,0,.03)" stroke="rgba(0,0,0,.1)"/>
+                <text x="340" y="59" fill="var(--text)" font-size="6" font-weight="600" text-anchor="middle">标签</text>
+                <line x1="329" y1="52" x2="216" y2="48" stroke="rgba(212,175,55,.2)" stroke-width="0.8"/>
+                <circle cx="314" cy="20" r="11" fill="rgba(0,0,0,.03)" stroke="rgba(0,0,0,.1)"/>
+                <text x="314" y="23" fill="var(--text)" font-size="6" font-weight="600" text-anchor="middle">渠道</text>
+                <line x1="303" y1="26" x2="216" y2="40" stroke="rgba(212,175,55,.2)" stroke-width="0.8"/>
                 <text x="200" y="10" fill="var(--muted)" font-size="6" text-anchor="middle">6 个维度 · 系统化整理</text>
               </svg>
             </div>
-            <div class="meta"><span>分类 / 品牌</span><span>空间 / 场景</span><span>标签 / 渠道</span></div>
+            <div class="meta"><span>分类品牌</span><span>空间场景</span><span>标签渠道</span></div>
           </div>
 
-          <!-- 5. 资产分析与数据洞察 -->
           <div class="feature-chart reveal">
             <h3>资产分析与数据洞察</h3>
             <p class="feature-desc">独立分析页提供趋势、分布、状态、保修等多维分析能力，帮助用户理解自己的资产结构、使用成本和变化情况。</p>
             <div class="chart-wrap">
-              <svg viewBox="0 0 400 120">
-                <!-- 总值看板 -->
-                <rect x="16" y="10" width="88" height="46" rx="10" fill="rgba(212,175,55,.06)" stroke="rgba(212,175,55,.2)" stroke-width="0.8"/>
-                <text x="28" y="26" fill="var(--muted)" font-size="6">总资产价值</text>
-                <text x="28" y="42" fill="#d4af37" font-size="13" font-weight="700">¥ 38k</text>
-                <rect x="16" y="62" width="88" height="46" rx="10" fill="rgba(0,0,0,.03)" stroke="rgba(0,0,0,.07)" stroke-width="0.8"/>
-                <text x="28" y="78" fill="var(--muted)" font-size="6">资产件数</text>
-                <text x="28" y="94" fill="var(--text)" font-size="13" font-weight="700">47</text>
-                <text x="88" y="94" fill="var(--muted)" font-size="6" text-anchor="end">件</text>
-                <!-- 趋势折线图 -->
-                <rect x="116" y="10" width="132" height="46" rx="10" fill="rgba(0,0,0,.02)" stroke="rgba(0,0,0,.06)"/>
-                <text x="124" y="22" fill="var(--muted)" font-size="6">资产总值趋势</text>
-                <polyline points="126,42 140,38 154,34 168,36 182,30 196,26 210,22 224,20 236,18" fill="none" stroke="#d4af37" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M126,42 140,38 154,34 168,36 182,30 196,26 210,22 224,20 236,18 236,50 126,50 Z" fill="rgba(212,175,55,.07)"/>
-                <line x1="126" y1="50" x2="236" y2="50" stroke="rgba(0,0,0,.08)" stroke-width="1"/>
-                <!-- 分布饼图 -->
-                <rect x="116" y="62" width="132" height="46" rx="10" fill="rgba(0,0,0,.02)" stroke="rgba(0,0,0,.06)"/>
-                <text x="124" y="74" fill="var(--muted)" font-size="6">分类分布</text>
-                <circle cx="158" cy="90" r="16" fill="none" stroke="rgba(0,0,0,.06)" stroke-width="12"/>
-                <circle cx="158" cy="90" r="16" fill="none" stroke="#d4af37" stroke-width="12" stroke-dasharray="40 61" stroke-dashoffset="0"/>
-                <circle cx="158" cy="90" r="16" fill="none" stroke="rgba(212,175,55,.35)" stroke-width="12" stroke-dasharray="22 79" stroke-dashoffset="-40"/>
-                <circle cx="158" cy="90" r="16" fill="none" stroke="rgba(212,175,55,.15)" stroke-width="12" stroke-dasharray="15 86" stroke-dashoffset="-62"/>
-                <rect x="184" y="78" width="7" height="5" rx="1" fill="#d4af37"/>
-                <text x="194" y="83" fill="var(--muted)" font-size="5.5">数码 40%</text>
-                <rect x="184" y="86" width="7" height="5" rx="1" fill="rgba(212,175,55,.35)"/>
-                <text x="194" y="91" fill="var(--muted)" font-size="5.5">服饰 22%</text>
-                <rect x="184" y="94" width="7" height="5" rx="1" fill="rgba(212,175,55,.15)"/>
-                <text x="194" y="99" fill="var(--muted)" font-size="5.5">其他 38%</text>
-                <!-- 保修状态条 -->
-                <rect x="260" y="10" width="124" height="46" rx="10" fill="rgba(0,0,0,.02)" stroke="rgba(0,0,0,.06)"/>
-                <text x="270" y="22" fill="var(--muted)" font-size="6">保修状态</text>
-                <text x="270" y="34" fill="var(--text)" font-size="6">保修内</text>
-                <rect x="306" y="27" width="68" height="7" rx="3.5" fill="rgba(0,0,0,.06)"/>
-                <rect x="306" y="27" width="45" height="7" rx="3.5" fill="#d4af37"/>
-                <text x="376" y="33" fill="var(--muted)" font-size="5.5" text-anchor="end">66%</text>
-                <text x="270" y="46" fill="var(--text)" font-size="6">已过保</text>
-                <rect x="306" y="39" width="68" height="7" rx="3.5" fill="rgba(0,0,0,.06)"/>
-                <rect x="306" y="39" width="23" height="7" rx="3.5" fill="rgba(212,175,55,.3)"/>
-                <text x="376" y="45" fill="var(--muted)" font-size="5.5" text-anchor="end">34%</text>
-                <!-- 状态对比柱状 -->
-                <rect x="260" y="62" width="124" height="46" rx="10" fill="rgba(0,0,0,.02)" stroke="rgba(0,0,0,.06)"/>
-                <text x="270" y="74" fill="var(--muted)" font-size="6">状态分布</text>
-                <rect x="272" y="80" width="12" height="22" rx="3" fill="#d4af37"/>
-                <text x="278" y="108" fill="var(--muted)" font-size="5" text-anchor="middle">用</text>
-                <rect x="292" y="88" width="12" height="14" rx="3" fill="rgba(212,175,55,.4)"/>
-                <text x="298" y="108" fill="var(--muted)" font-size="5" text-anchor="middle">闲</text>
-                <rect x="312" y="92" width="12" height="10" rx="3" fill="rgba(212,175,55,.2)"/>
-                <text x="318" y="108" fill="var(--muted)" font-size="5" text-anchor="middle">售</text>
-                <rect x="332" y="95" width="12" height="7" rx="3" fill="rgba(0,0,0,.08)"/>
-                <text x="338" y="108" fill="var(--muted)" font-size="5" text-anchor="middle">废</text>
-                <text x="322" y="74" fill="var(--muted)" font-size="5.5" text-anchor="middle">使用成本 · 持有周期</text>
+              <svg viewBox="0 0 400 100">
+                <rect x="16" y="8" width="110" height="38" rx="10" fill="rgba(212,175,55,.06)" stroke="rgba(212,175,55,.15)"/>
+                <text x="28" y="24" fill="var(--muted)" font-size="6">总资产价值</text>
+                <text x="28" y="38" fill="#d4af37" font-size="13" font-weight="800">¥ 38,500</text>
+                <rect x="16" y="54" width="110" height="38" rx="10" fill="rgba(0,0,0,.02)" stroke="rgba(0,0,0,.06)"/>
+                <text x="28" y="70" fill="var(--muted)" font-size="6">资产件数</text>
+                <text x="28" y="84" fill="var(--text)" font-size="13" font-weight="800">47 件</text>
+                <rect x="144" y="8" width="116" height="84" rx="10" fill="rgba(0,0,0,.015)" stroke="rgba(0,0,0,.05)"/>
+                <text x="154" y="22" fill="var(--muted)" font-size="6">资产总值趋势</text>
+                <polyline points="152,36 160,32 168,28 176,30 184,24 192,20 200,18 208,16 216,14 224,12 232,10 240,8" fill="none" stroke="#d4af37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M152,36 160,32 168,28 176,30 184,24 192,20 200,18 208,16 216,14 224,12 232,10 240,8 240,42 152,42 Z" fill="rgba(212,175,55,.06)"/>
+                <line x1="152" y1="42" x2="240" y2="42" stroke="rgba(0,0,0,.08)" stroke-width="1"/>
+                <rect x="278" y="8" width="106" height="84" rx="10" fill="rgba(0,0,0,.015)" stroke="rgba(0,0,0,.05)"/>
+                <text x="288" y="22" fill="var(--muted)" font-size="6">分类分布</text>
+                <rect x="288" y="30" width="8" height="22" rx="3" fill="#d4af37"/>
+                <rect x="304" y="36" width="8" height="16" rx="3" fill="rgba(212,175,55,.4)"/>
+                <rect x="320" y="42" width="8" height="10" rx="3" fill="rgba(212,175,55,.2)"/>
+                <rect x="336" y="46" width="8" height="6" rx="3" fill="rgba(0,0,0,.08)"/>
+                <text x="292" y="62" fill="var(--muted)" font-size="5.5">数码</text>
+                <text x="308" y="62" fill="var(--muted)" font-size="5.5">服饰</text>
+                <text x="324" y="62" fill="var(--muted)" font-size="5.5">家居</text>
+                <text x="340" y="62" fill="var(--muted)" font-size="5.5">其他</text>
+                <rect x="286" y="72" width="90" height="16" rx="4" fill="rgba(0,0,0,.04)"/>
+                <rect x="286" y="72" width="60" height="16" rx="4" fill="rgba(212,175,55,.15)"/>
+                <text x="331" y="83" fill="var(--muted)" font-size="6" text-anchor="middle">保修 66%</text>
               </svg>
             </div>
-            <div class="meta"><span>趋势分析</span><span>分类分布</span><span>保修 / 状态</span></div>
+            <div class="meta"><span>趋势分析</span><span>分类分布</span><span>保修状态</span></div>
           </div>
 
-          <!-- 6. 数据安全与掌控能力 -->
           <div class="feature-chart reveal">
             <h3>数据安全与掌控能力</h3>
             <p class="feature-desc">包含本地优先存储、安全锁、备份恢复、导入导出、iCloud 同步等能力，保证资产数据可保存、可迁移、可恢复，也更私密可控。</p>
             <div class="chart-wrap">
-              <svg viewBox="0 0 400 120">
-                <defs>
-                  <marker id="ar-sec1" markerWidth="5" markerHeight="5" refX="4" refY="2.5" orient="auto"><path d="M0,0 L5,2.5 L0,5 Z" fill="#d4af37"/></marker>
-                  <marker id="ar-sec2" markerWidth="5" markerHeight="5" refX="4" refY="2.5" orient="auto"><path d="M0,0 L5,2.5 L0,5 Z" fill="rgba(0,0,0,.2)"/></marker>
-                </defs>
-                <!-- 安全锁顶层 -->
-                <rect x="152" y="6" width="96" height="22" rx="9" fill="rgba(212,175,55,.15)" stroke="#d4af37" stroke-width="1.2"/>
-                <rect x="190" y="1" width="20" height="8" rx="4" fill="#d4af37"/>
-                <text x="200" y="6" fill="#FFFEF5" font-size="5" font-weight="700" text-anchor="middle">LOCK</text>
-                <text x="200" y="21" fill="#d4af37" font-size="7" font-weight="700" text-anchor="middle">Face ID · 安全锁</text>
-                <!-- 本地存储中层 -->
-                <rect x="100" y="36" width="200" height="22" rx="9" fill="rgba(212,175,55,.08)" stroke="rgba(212,175,55,.3)" stroke-width="1"/>
-                <text x="200" y="51" fill="#d4af37" font-size="7" font-weight="600" text-anchor="middle">本地优先存储 · CoreData 沙盒</text>
-                <!-- 备份恢复中层 -->
-                <rect x="60" y="66" width="280" height="22" rx="9" fill="rgba(0,0,0,.03)" stroke="rgba(0,0,0,.08)" stroke-width="1"/>
-                <text x="200" y="81" fill="var(--text)" font-size="7" font-weight="600" text-anchor="middle">备份恢复 · 导入导出 · iCloud 同步</text>
-                <!-- 底层零泄露 -->
-                <rect x="30" y="96" width="340" height="20" rx="9" fill="rgba(0,0,0,.02)" stroke="rgba(0,0,0,.06)"/>
-                <text x="200" y="110" fill="var(--muted)" font-size="7" text-anchor="middle">零服务器 · 数据主权 · 可迁移 · 可恢复</text>
-                <!-- 连接线 -->
-                <path d="M200 28 L200 36" stroke="rgba(212,175,55,.4)" stroke-width="1.2"/>
-                <path d="M200 58 L200 66" stroke="rgba(0,0,0,.1)" stroke-width="1"/>
-                <path d="M200 88 L200 96" stroke="rgba(0,0,0,.1)" stroke-width="1"/>
-                <!-- 左侧功能标注 -->
-                <rect x="16" y="42" width="38" height="11" rx="5" fill="rgba(0,0,0,.05)"/>
-                <text x="35" y="50" fill="var(--muted)" font-size="5.5" text-anchor="middle">ZIP 导出</text>
-                <path d="M54 47 L98 47" stroke="rgba(0,0,0,.1)" stroke-width="1" marker-end="url(#ar-sec2)"/>
-                <!-- 右侧功能标注 -->
-                <rect x="344" y="42" width="40" height="11" rx="5" fill="rgba(0,0,0,.05)"/>
-                <text x="364" y="50" fill="var(--muted)" font-size="5.5" text-anchor="middle">iCloud ↕</text>
-                <path d="M344 47 L302 47" stroke="rgba(0,0,0,.1)" stroke-width="1" marker-end="url(#ar-sec2)"/>
-                <!-- 零泄露徽章 -->
-                <rect x="344" y="96" width="38" height="20" rx="9" fill="rgba(212,175,55,.1)" stroke="#d4af37" stroke-width="0.8"/>
-                <text x="363" y="110" fill="#d4af37" font-size="7" font-weight="700" text-anchor="middle">0 泄露</text>
+              <svg viewBox="0 0 400 100">
+                <rect x="140" y="4" width="120" height="22" rx="9" fill="rgba(212,175,55,.15)" stroke="#d4af37" stroke-width="1.2"/>
+                <rect x="188" y="0" width="24" height="8" rx="4" fill="#d4af37"/>
+                <text x="200" y="5" fill="#FFFEF5" font-size="5" font-weight="700" text-anchor="middle">LOCK</text>
+                <text x="200" y="19" fill="#d4af37" font-size="7" font-weight="700" text-anchor="middle">Face ID · 安全锁</text>
+                <rect x="90" y="32" width="220" height="22" rx="9" fill="rgba(212,175,55,.08)" stroke="rgba(212,175,55,.25)"/>
+                <text x="200" y="47" fill="#d4af37" font-size="7" font-weight="600" text-anchor="middle">本地优先存储 · CoreData 沙盒</text>
+                <rect x="60" y="60" width="280" height="22" rx="9" fill="rgba(0,0,0,.02)" stroke="rgba(0,0,0,.08)"/>
+                <text x="200" y="75" fill="var(--text)" font-size="7" font-weight="600" text-anchor="middle">备份恢复 · 导入导出 · iCloud 同步</text>
+                <rect x="80" y="88" width="240" height="10" rx="5" fill="rgba(212,175,55,.08)"/>
+                <text x="200" y="96" fill="#d4af37" font-size="6" font-weight="700" text-anchor="middle">零服务器 · 数据主权 · 可迁移 · 可恢复</text>
+                <path d="M200 26 L200 32" stroke="rgba(212,175,55,.4)" stroke-width="1"/>
+                <path d="M200 54 L200 60" stroke="rgba(0,0,0,.1)" stroke-width="1"/>
+                <path d="M200 82 L200 88" stroke="rgba(0,0,0,.08)" stroke-width="1"/>
               </svg>
             </div>
-            <div class="meta"><span>本地优先</span><span>Face ID 安全锁</span><span>备份 / iCloud</span></div>
+            <div class="meta"><span>本地优先</span><span>Face ID 锁</span><span>iCloud 备份</span></div>
           </div>
 
-        </div>
-      </div>
-    </section>
-
-    <section id="comparison" class="section reveal">
-      <div class="container">
-        <div class="subheading">版本对比</div>
-        <h2 class="section-title">免费版与 Pro 版功能详解</h2>
-        <div class="feat-scroll">
-          <button class="feat-scroll-btn feat-scroll-left" aria-label="向左滚动" onclick="const t=this.nextElementSibling;t.scrollBy({left:-230,behavior:'smooth'})">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
-          </button>
-          <div class="feat-scroll-track">
-            <div class="feat-card feat-free">
-              <span class="feat-card-index">01/12</span>
-              <h4 class="feat-card-name">物品管理</h4>
-              <p class="feat-card-desc">记录物品名称、品牌、价格、购买日期、保修期等，支持拍照存档，是应用的核心功能</p>
-              <span class="feat-card-badge both">Free & Pro</span>
-            </div>
-            <div class="feat-card feat-free">
-              <span class="feat-card-index">02/12</span>
-              <h4 class="feat-card-name">品牌管理</h4>
-              <p class="feat-card-desc">按品牌（如Apple、Nike）对物品分组，方便筛选和统计</p>
-              <span class="feat-card-badge both">Free & Pro</span>
-            </div>
-            <div class="feat-card feat-free">
-              <span class="feat-card-index">03/12</span>
-              <h4 class="feat-card-name">故事记忆</h4>
-              <p class="feat-card-desc">为物品添加回忆记录，以时间轴展示背后的故事</p>
-              <span class="feat-card-badge both">Free & Pro</span>
-            </div>
-            <div class="feat-card feat-free">
-              <span class="feat-card-index">04/12</span>
-              <h4 class="feat-card-name">数字保险箱</h4>
-              <p class="feat-card-desc">存储数字资产（证书、合同、会员卡等）的截图，随时查阅</p>
-              <span class="feat-card-badge both">Free & Pro</span>
-            </div>
-            <div class="feat-card feat-free">
-              <span class="feat-card-index">05/12</span>
-              <h4 class="feat-card-name">千位分隔符</h4>
-              <p class="feat-card-desc">控制数字显示格式，按偏好选择带分隔符或纯数字</p>
-              <span class="feat-card-badge both">Free & Pro</span>
-            </div>
-            <div class="feat-card feat-pro">
-              <span class="feat-card-index">06/12</span>
-              <h4 class="feat-card-name">分类管理</h4>
-              <p class="feat-card-desc">按类别（数码、服饰、家居）对物品精细分组，支持颜色标记</p>
-              <span class="feat-card-badge pro">Pro</span>
-            </div>
-            <div class="feat-card feat-pro">
-              <span class="feat-card-index">07/12</span>
-              <h4 class="feat-card-name">资产图片分组</h4>
-              <p class="feat-card-desc">将物品照片按资产维度分组，图库化管理</p>
-              <span class="feat-card-badge pro">Pro</span>
-            </div>
-            <div class="feat-card feat-pro">
-              <span class="feat-card-index">08/12</span>
-              <h4 class="feat-card-name">数据分析洞察</h4>
-              <p class="feat-card-desc">资产总值、持有周期、消耗趋势等多维度数据图表</p>
-              <span class="feat-card-badge pro">Pro</span>
-            </div>
-            <div class="feat-card feat-pro">
-              <span class="feat-card-index">09/12</span>
-              <h4 class="feat-card-name">空间管理</h4>
-              <p class="feat-card-desc">按存放位置（客厅、背包）管理物品，快速找到放哪了</p>
-              <span class="feat-card-badge pro">Pro</span>
-            </div>
-            <div class="feat-card feat-pro">
-              <span class="feat-card-index">10/12</span>
-              <h4 class="feat-card-name">场景功能</h4>
-              <p class="feat-card-desc">按使用场景（出差、旅行）打包清单，一键查看要带什么</p>
-              <span class="feat-card-badge pro">Pro</span>
-            </div>
-            <div class="feat-card feat-pro">
-              <span class="feat-card-index">11/12</span>
-              <h4 class="feat-card-name">批量操作</h4>
-              <p class="feat-card-desc">一次选择多个物品，批量修改分类、状态、位置等</p>
-              <span class="feat-card-badge pro">Pro</span>
-            </div>
-            <div class="feat-card feat-pro">
-              <span class="feat-card-index">12/12</span>
-              <h4 class="feat-card-name">iCloud 云同步</h4>
-              <p class="feat-card-desc">自动同步至iCloud，换手机无缝衔接，不丢数据</p>
-              <span class="feat-card-badge pro">Pro</span>
-            </div>
-          </div>
-          <button class="feat-scroll-btn feat-scroll-right" aria-label="向右滚动" onclick="const t=this.previousElementSibling;t.scrollBy({left:230,behavior:'smooth'})">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
-          </button>
-        </div>
-        <div class="feat-scroll-legend">
-          <span><span class="legend-dot legend-dot-free"></span> 免费版 & Pro 均可用（5项）</span>
-          <span><span class="legend-dot legend-dot-pro"></span> 仅 Pro 可用（7项）</span>
         </div>
       </div>
     </section>
@@ -768,23 +540,6 @@
       });
     }
 
-    // Feature scroll — arrow button boundary state
-    (function(){
-      var track = document.querySelector('.feat-scroll-track');
-      var leftBtn = document.querySelector('.feat-scroll-left');
-      var rightBtn = document.querySelector('.feat-scroll-right');
-      if (!track || !leftBtn || !rightBtn) return;
-      function update() {
-        var atStart = track.scrollLeft <= 2;
-        var atEnd = track.scrollLeft + track.clientWidth >= track.scrollWidth - 2;
-        leftBtn.style.opacity = atStart ? '0.2' : '1';
-        leftBtn.style.pointerEvents = atStart ? 'none' : 'auto';
-        rightBtn.style.opacity = atEnd ? '0.2' : '1';
-        rightBtn.style.pointerEvents = atEnd ? 'none' : 'auto';
-      }
-      track.addEventListener('scroll', update, {passive: true});
-      update();
-    })();
   </script>
 </body>
 </html>
