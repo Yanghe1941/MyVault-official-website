@@ -32,10 +32,60 @@
 
   <main class="container doc reveal active">
     <h1>MyVault Release Notes</h1>
-    <p class="section-lead">All releases are archived here. Current version: <strong>v1.8.4</strong> (2026-05-16).</p>
+    <p class="section-lead">All releases are archived here. Current version: <strong>v1.8.15</strong> (2026-07-11).</p>
 
     <div class="timeline">
       <details class="timeline-item current" open>
+        <summary>
+          <div class="timeline-heading">
+            <span class="version">v1.8.15</span>
+            <span class="date">2026-07-11</span>
+          </div>
+        </summary>
+        <div class="timeline-body">
+          <h3>1. New Features</h3>
+          <ul>
+            <li><strong>Brand Library Expansion to 50+</strong>: Introducing a comprehensive international premium brand library covering luxury goods (Rolex, Louis Vuitton, Prada, Cartier), technology brands (Beats, GoPro, Ledger, Trezor), automobiles (BMW, NIO, XPeng, BYD), and sportswear. Perfectly categorize every item in your collection.</li>
+            <li><strong>Redesigned Dashboard</strong>: Completely reimagined data visualization with clearer asset trends, allocation ratios, and warranty expiration monitoring. New HomeDashboardView (1000+ lines) provides elegant data visualization and comprehensive asset landscape overview.</li>
+            <li><strong>City-Based Purchase Tracking</strong>: New PurchaseCityManagementView enables categorizing purchases by city/region, tracking global shopping journeys, and filtering assets by purchase location.</li>
+            <li><strong>Six New App Themes</strong>: Introducing new themes including Gold, Bamboo, Turquoise, Rose, and Ocean with complete multi-resolution icon assets for each theme.</li>
+            <li><strong>Unified Design System</strong>: New DesignSystem.swift (195 lines) provides consistent color management, accessibility configuration, and design components throughout the app.</li>
+          </ul>
+          <h3>2. Bug Fixes</h3>
+          <ul>
+            <li><strong>Background Thread UI Updates</strong>: Fixed crashes and flickering caused by UI updates from background threads, particularly in AddItemView and ItemDetailView.</li>
+            <li><strong>ItemService Thread Safety</strong>: Ensured all ItemService callbacks execute on main thread, resolving SwiftUI state update anomalies from database operations.</li>
+            <li><strong>OCR Recognition Stability</strong>: Improved ReceiptOCRAnalyzer data validation and result format conversion with enhanced support for various receipt formats.</li>
+            <li><strong>Import/Export Reliability</strong>: Enhanced data consistency checks in BackupImportService and ExportService, improved bulk import performance and export format compatibility.</li>
+            <li><strong>Search Functionality</strong>: Fixed special character search failures, optimized mixed Chinese-English search, and improved search index update mechanism.</li>
+          </ul>
+          <h3>3. Performance Improvements</h3>
+          <ul>
+            <li><strong>Dashboard Loading 50% Faster</strong>: Optimized chart rendering algorithms, reduced unnecessary data recalculation, and implemented more efficient data caching.</li>
+            <li><strong>Memory Optimization (30% Reduction)</strong>: Improved LocalImageManager, ImageMigrationService, and StorageUsageService memory usage, enhanced large list memory release.</li>
+            <li><strong>Database Query Optimization</strong>: Reduced Core Data query frequency, optimized batch operation transactions, and improved WidgetSnapshotStore data access efficiency.</li>
+            <li><strong>UI Response Enhancement</strong>: Improved ItemListView scrolling smoothness, AddItemView form responsiveness, BatchEditItemsView bulk operation speed, and Dashboard card switching animations.</li>
+            <li><strong>Localization Loading Optimization</strong>: Optimized string loading mechanism in Localization.swift with faster multi-language switching response.</li>
+            <li><strong>Widget Performance Boost</strong>: Optimized snapshot generation algorithm, reduced background refresh overhead, and improved Widget data sync efficiency.</li>
+          </ul>
+          <h3>4. Other Enhancements</h3>
+          <ul>
+            <li><strong>Improved Accessibility</strong>: Unified touch target areas (44pt minimum), better screen reader support, improved animation effect options.</li>
+            <li><strong>Complete Localization</strong>: Updated 50+ brand names in Chinese and English, optimized English terminology translation, enhanced localization completeness.</li>
+            <li><strong>Code Quality</strong>: Improved error handling and exception capture, enhanced data validation logic, optimized memory leak issues.</li>
+            <li><strong>Scene & Space Management</strong>: Improved scene creation/editing flow, optimized space picker interface, enhanced scene data consistency.</li>
+          </ul>
+          <h3>5. Technical Summary</h3>
+          <ul>
+            <li>Files changed: 500+</li>
+            <li>Code additions: 45,000+ lines</li>
+            <li>Build number: 30 → 35</li>
+            <li>Module coverage: App, Views (8+ modules), ViewModels, Services (10+), Models, Assets (200+ brands), Localization</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="timeline-item">
         <summary>
           <div class="timeline-heading">
             <span class="version">v1.8.4</span>
