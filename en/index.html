@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://api.producthunt.com https://www.producthunt.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://ph-files.imgix.net https://api.producthunt.com; font-src 'self'; connect-src 'self'; frame-src https://www.producthunt.com" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>MyVault — Manage Real Assets & Preserve Their Stories</title>
   <meta name="description" content="MyVault is a privacy-first, local-first iOS app for cataloguing real-world assets, finances, and the memories behind them." />
@@ -9,9 +11,14 @@
   <meta property="og:description" content="Privacy-first, local-first asset notebook. Capture physical specs, financial attributes, and emotional memories. Data never leaves your device." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://myvault.moodex.cc/en/" />
-  <meta property="og:image" content="https://myvault.moodex.cc/assets/og-cover.svg" />
+  <meta property="og:image" content="https://myvault.moodex.cc/assets/og-cover.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://myvault.moodex.cc/assets/og-cover.png" />
   <link rel="stylesheet" href="../assets/style.css?v=2.3" />
   <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
   <link rel="manifest" href="/manifest.json" />
   <meta name="theme-color" content="#d4af37" />
   <link rel="canonical" href="https://myvault.moodex.cc/en/" />
@@ -31,11 +38,6 @@
       "@type": "Offer",
       "price": "0",
       "priceCurrency": "USD"
-    },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.8",
-      "ratingCount": "128"
     }
   }
   </script>
@@ -120,7 +122,7 @@
             </div>
             <div class="cta-row">
               <a class="ghost-link" href="guide.html">Read the guide</a>
-              <a class="ghost-link" href="https://linear.app/myvault" target="_blank" rel="noopener">Product roadmap</a>
+              <a class="ghost-link" href="changelog.html">Changelog</a>
               <button class="skip-typing" aria-label="Skip typing animation" onclick="skipTyping()">Skip animation</button>
             </div>
           </div>
@@ -513,6 +515,7 @@
       <p class="footer-copy">© <span id="y"></span> MyVault. Privacy-first, Local-first.</p>
       <div class="footer-links">
         <a href="guide.html">User Guide</a>
+        <a href="faq.html">FAQ</a>
         <a href="privacy.html">Privacy Policy</a>
         <a href="terms.html">User Terms</a>
         <a href="changelog.html">Release Notes</a>
@@ -537,6 +540,7 @@
       typingIntervals = [];
     }
 
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     document.querySelectorAll('.typing').forEach(target => {
       const fullText = target.textContent.trim();
       target.setAttribute('data-full-text', fullText);
@@ -544,6 +548,12 @@
       const delay = Math.max(1600, fullText.length * speed * 0.6);
       const container = target.closest('.h-title');
       if (!container) return;
+      if (prefersReducedMotion) {
+        container.classList.add('typing-complete');
+        const caret = container.querySelector('.typing-caret');
+        if (caret) caret.style.display = 'none';
+        return;
+      }
 
       const runTyping = () => {
         container.classList.remove('typing-complete');

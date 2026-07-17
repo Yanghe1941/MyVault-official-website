@@ -4,6 +4,7 @@
 
   <url>
     <loc>https://myvault.moodex.cc/</loc>
+    <lastmod>2026-07-17</lastmod>
     <xhtml:link rel="alternate" hreflang="zh" href="https://myvault.moodex.cc/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://myvault.moodex.cc/en/"/>
     <changefreq>monthly</changefreq>
@@ -12,6 +13,7 @@
 
   <url>
     <loc>https://myvault.moodex.cc/en/</loc>
+    <lastmod>2026-07-17</lastmod>
     <xhtml:link rel="alternate" hreflang="zh" href="https://myvault.moodex.cc/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://myvault.moodex.cc/en/"/>
     <changefreq>monthly</changefreq>
@@ -20,6 +22,7 @@
 
   <url>
     <loc>https://myvault.moodex.cc/zh/guide.html</loc>
+    <lastmod>2026-07-17</lastmod>
     <xhtml:link rel="alternate" hreflang="zh" href="https://myvault.moodex.cc/zh/guide.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://myvault.moodex.cc/en/guide.html"/>
     <changefreq>monthly</changefreq>
@@ -28,6 +31,7 @@
 
   <url>
     <loc>https://myvault.moodex.cc/en/guide.html</loc>
+    <lastmod>2026-07-17</lastmod>
     <xhtml:link rel="alternate" hreflang="zh" href="https://myvault.moodex.cc/zh/guide.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://myvault.moodex.cc/en/guide.html"/>
     <changefreq>monthly</changefreq>
@@ -36,6 +40,7 @@
 
   <url>
     <loc>https://myvault.moodex.cc/zh/privacy.html</loc>
+    <lastmod>2026-07-17</lastmod>
     <xhtml:link rel="alternate" hreflang="zh" href="https://myvault.moodex.cc/zh/privacy.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://myvault.moodex.cc/en/privacy.html"/>
     <changefreq>yearly</changefreq>
@@ -44,6 +49,7 @@
 
   <url>
     <loc>https://myvault.moodex.cc/en/privacy.html</loc>
+    <lastmod>2026-07-17</lastmod>
     <xhtml:link rel="alternate" hreflang="zh" href="https://myvault.moodex.cc/zh/privacy.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://myvault.moodex.cc/en/privacy.html"/>
     <changefreq>yearly</changefreq>
@@ -52,6 +58,7 @@
 
   <url>
     <loc>https://myvault.moodex.cc/zh/terms.html</loc>
+    <lastmod>2026-07-17</lastmod>
     <xhtml:link rel="alternate" hreflang="zh" href="https://myvault.moodex.cc/zh/terms.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://myvault.moodex.cc/en/terms.html"/>
     <changefreq>yearly</changefreq>
@@ -60,6 +67,7 @@
 
   <url>
     <loc>https://myvault.moodex.cc/en/terms.html</loc>
+    <lastmod>2026-07-17</lastmod>
     <xhtml:link rel="alternate" hreflang="zh" href="https://myvault.moodex.cc/zh/terms.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://myvault.moodex.cc/en/terms.html"/>
     <changefreq>yearly</changefreq>
@@ -68,6 +76,7 @@
 
   <url>
     <loc>https://myvault.moodex.cc/zh/changelog.html</loc>
+    <lastmod>2026-07-17</lastmod>
     <xhtml:link rel="alternate" hreflang="zh" href="https://myvault.moodex.cc/zh/changelog.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://myvault.moodex.cc/en/changelog.html"/>
     <changefreq>weekly</changefreq>
@@ -76,10 +85,29 @@
 
   <url>
     <loc>https://myvault.moodex.cc/en/changelog.html</loc>
+    <lastmod>2026-07-17</lastmod>
     <xhtml:link rel="alternate" hreflang="zh" href="https://myvault.moodex.cc/zh/changelog.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://myvault.moodex.cc/en/changelog.html"/>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://myvault.moodex.cc/zh/faq.html</loc>
+    <lastmod>2026-07-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://myvault.moodex.cc/zh/faq.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://myvault.moodex.cc/en/faq.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://myvault.moodex.cc/en/faq.html</loc>
+    <lastmod>2026-07-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://myvault.moodex.cc/zh/faq.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://myvault.moodex.cc/en/faq.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 
 </urlset>
