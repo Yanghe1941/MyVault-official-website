@@ -39,9 +39,19 @@
       <a href="../index.html">← 返回首页</a>
     </div>
 
+    <nav class="guide-quick-actions" aria-label="常用任务入口">
+      <a href="#2-开始使用">首次设置</a>
+      <a href="#4-资产记录查找与维护每件物品">录入与维护资产</a>
+      <a href="#3-首页先看全局">查看首页分析</a>
+      <a href="#5-探索把记录变成可行动的信息">使用探索</a>
+      <a href="#6-我的个性化数据与安全">数据与安全</a>
+      <a href="#7-pro-权益">了解 Pro 权益</a>
+    </nav>
+
     <article class="doc-section">
       <blockquote><p>适用范围：归元 iOS 当前版本。本文按应用内实际入口编写；部分功能会因 Pro 状态、系统权限或「我的」中的开关而显示不同。</p></blockquote>
-      <h2 id="目录">目录</h2>
+      <details class="guide-toc" open>
+      <summary><span id="目录">目录</span></summary>
       <ol>
       <li><a href="#1-认识归元">认识归元</a></li>
       <li><a href="#2-开始使用">开始使用</a></li>
@@ -53,6 +63,7 @@
       <li><a href="#8-数据安全与常见问题">数据、安全与常见问题</a></li>
       <li><a href="#9-使用建议从记下到持续可用">使用建议：从“记下”到“持续可用”</a></li>
       </ol>
+      </details>
       <hr>
       <h2 id="1-认识归元">1. 认识归元</h2>
       <p>归元是一个 Local-First（本地优先）的现实资产档案工具。它适合管理实物资产、收藏、设备、证件、保单和有纪念意义的物品：为每件物品保存购买信息、照片、保修、存放位置、使用周期、维护记录与故事；再从这些记录中查看资产结构、到期事项和长期使用成本。</p>
@@ -316,6 +327,9 @@
       const next = current === 'light' ? 'dark' : 'light';
       document.documentElement.setAttribute('data-theme', next);
       localStorage.setItem('theme', next);
+    }
+    if (window.matchMedia('(max-width: 600px)').matches) {
+      document.querySelector('.guide-toc')?.removeAttribute('open');
     }
   </script>
 </body>
